@@ -1,0 +1,123 @@
+---
+title: "Lab 3: Generalized Linear Models"
+editor: source
+date: 10-26-2022
+draft: false
+---
+
+## R Packages Used
+
+```{r}
+library(VGAM) # Multinomial and Ordinal Regression
+library(survival) # Data sets
+library(MASS) # Data Set
+library(GLMsData) # Data Set
+library(tidyverse)
+library(haven) # Reading Stata File
+```
+
+## References
+
+For more information on this topic, I recommend you reading the following books:
+
+1. Generalized Linear Models with Examples in R - Dunn
+
+2. Vectorized Generalized Linear and Additive Models - Yee
+
+## Generalized Linear Models
+
+In linear regression, we are fitting a model between a set of predictors and an outcome variable. The outcome variable is generally normally distributed. However, if the outcome is not normally distributed, you must use a generalized linear model to assess the association between a set of predictors and an outcome variable.
+
+### Link Functions
+
+Due to the outcome variable being non-normally distributed, we must use link functions. The link function allows us to link the outcome variable to a linear model.
+
+### Logistic Regression
+
+A logistic regression model is used when the outcome is binary, yes and no. The link function is the logit function that models the association between a set of linear predictors and the odds of observing yes:
+
+$$
+\log\left\{\frac{P(Y=1)}{P(Y=0)}\right\} = \boldsymbol{X^T\beta}
+$$
+Fitting a logistic regression requires you to use the `glm()` function and specifying `family=binomial`. Then use the summary function to obtain the coefficients and `broom::tidy()`^[The double colon tells R to use a specific function from a package. Here, use the tidy function from the broom package.]
+
+```{r}
+logit_glm <- glm(y ~ ap + hilo, data = bacteria, 
+                 family = binomial)
+summary(logit_glm)
+
+## OR ##
+
+logit_glm %>% broom::tidy(exp=T)
+```
+
+A $\beta$ coefficient is interpreted as an odds ratio. The odds of success when `ap=p` is `r round(exp(0.7933),2)` times higher than when `ap=a`, after adjusting for `hilo`.
+
+
+### Poisson Regression
+
+Poisson regression is used when the outcome is count data. The link function is the log of the mean count:
+
+$$
+\log(\mu)=\boldsymbol{X^T\beta}
+$$
+
+Fitting a Poisson regression requires you to use the `glm()` function and specifying `family=poisson`. Then use the summary function to obtain the coefficients and `broom::tidy()`^[The double colon tells R to use a specific function from a package. Here, use the tidy function from the broom package.]
+
+```{r}
+pois_glm <- glm(recur ~ treatment + number, data = bladder1, 
+                family = poisson)
+summary(pois_glm)
+pois_glm %>% broom::tidy(exp=T)
+```
+The line `pois_glm %>% broom::tidy(exp=T)` provides the exponentiated values of the $\beta$ coefficients. Interpreting the `number` variable, as the initial number of tumors increases, the mean number of recurrences increases by a factor of 1.12, adjusting for treatment status.
+
+
+### Multinomial Regression
+
+Multinomial Regression is used when the outcome is categorical variable with 3 or more categories. We fit a model using a logit link function for each category and the reference variable. For $k=1,\ldots,m$ categories and reference level $2$, the logit link function is modeled as:
+
+$$
+\log\left\{\frac{P(Y=j)}{P(Y=2)}\right\}=\boldsymbol{X^T\beta}\ \ j\in\{1,3,4,5,\ldots,m\}
+$$
+
+You can fit a multinomial regression model when using the `vglm()` function and setting `family = multinomial(refLevel=k)`, where `k` is your reference group. For more information of the data, visit this site: https://stats.oarc.ucla.edu/r/dae/multinomial-logistic-regression/.
+
+
+```{r}
+ml <- read_dta("https://stats.idre.ucla.edu/stat/data/hsbdemo.dta")
+mglm <- vglm(factor(prog) ~ factor(ses) + write, data = ml, family = multinomial(refLevel = "2"))
+summary(mglm)
+exp(coef(mglm))
+```
+
+The line `exp(coef(mglm))` provides the exponentiated `\beta` coefficients for categorical variable. Interpreting `write` for `group=1` (academic): as writing score increased by 1 unit, the odds of of being in the academic group decreases by a factor of 0.94, adjusting of social economic status. 
+
+
+### Ordinal Regression
+
+Ordinal regression is a subclass of multinomial regression, but the categories have an ordinal component to it. For example, a likert scale can be considered ordinal: Strongly Disagree to Strongly Agree. An ordinal regression model uses the logit link function for model the probability of observing something greater:
+
+$$
+\log\left\{\frac{P(Y\ge j)}{P(Y<j)}\right\}=\boldsymbol{X^T\beta}\ \ j\in\{1,2,\ldots,m\}
+$$
+You can fit a ordinal regression model when using the `vglm()` function and setting `family = propodds`.
+
+
+```{r}
+dat <- read_dta("https://stats.idre.ucla.edu/stat/data/ologit.dta")
+oglm <- vglm(apply~pared+public+gpa, data = dat, family = propodds)
+summary(oglm)
+exp(coef(oglm))
+```
+Intepreting `gpa`, as gpa increases by 1 point, the odds of being likely to apply increases by a factor of 1.851, adjusting for parental undergraduate education and plubic vs private college. 
+
+## Questions
+
+1.  What is the link function for a gamma distribution?
+
+2. When will you use gamma regression?
+
+3. The `lime` data set contains 385 observations on small-leaved lime trees. The `Foliage` variable measures the foliage biomass. Fit a regression model between `Foliage` and the following covariates: `DBH` tree diameter and `Age`. Make sure to print out your results.
+
+**Submit your assignment as an html file. You can use either a QMD or RMD file to create the html**

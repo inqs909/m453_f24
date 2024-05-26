@@ -1,0 +1,10 @@
+---
+title: "Homework"
+editor: visual
+listing:
+  contents: hws
+  sort: "date desc"
+  type: default
+---
+
+Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.

@@ -1,0 +1,92 @@
+---
+title: "Lab 2: Optimization"
+editor: visual
+date: 10-26-2022
+draft: false
+---
+
+## Optimization and Maximum Likelihood Estimators
+
+In class, we learned how to find estimates for the parameters of interest of commonly used distribution functions. We find these parameters by maximizing the Likelihood function with respect to parameter. However, when we are working with distributions where closed-form solutions do not exist, then we need to rely with numerical techniques to maximize the likelihood function. This leads to optimization techniques.
+
+Optimization is a set of algorithms that can be used to identify a set of parameters that maximize a function. In R, we will use the `optim` function to minimize a function. Therefore, we will minimize the negative log-likelihood function.
+
+## Normal Distribution
+
+To begin we will simulate 250 random variables from $N(2,1.5)$.
+
+```{r}
+x <- rnorm(250, 2, sqrt(1.5))
+```
+
+Then, we construct a function that will provide the negative log-likelihood function. We will create a function using `function` and set two arguments: `data` to specify a vector data, and `params` as a vector for $\mu$ and $\sigma²$. To obtain the log-likelihood values, we will use the `dnorm` function and set `log=T`. Then, we sill add up all the values and return the negative values. The code below is used to construct the function:
+
+```{r}
+ll_norm <- function(data, params){
+  ll <- sum(dnorm(data, params[1], sqrt(params[2]), log = T))
+  return(-ll)
+}
+```
+
+To minimize the function, we will `optim` and provide the initial values for `params` \[`c(0,1)`\], then the function `ll_norm`, and `data=x`. R will minimize the function and provide output to interpret.
+
+```{r}
+optim(c(0,1), ll_norm, data = x)
+```
+
+The `par` element provides the values for the parameters. The first value is for $\mu$ and the second value is for $\sigma²$. Notice how close it is from the true values. Notice that it is slightly off to $\bar x$ and $(n-1)s²/n$.
+
+## Uniform Distribution
+
+Simulate 250 random variables from $U(0,3)$.
+
+```{r}
+x <- runif(250, max = 3)
+```
+
+Let's assume that we know the lower bound 0 and was interested in estimating the upper bound from the data. We will construct an R function that provides the negative log-likelihood function. We will follow similar steps to the normal distribution:
+
+```{r}
+ll_unif <- function(data, params){
+  ll <- sum(dunif(data, 0, params, log = T))
+  return(-ll)
+}
+```
+
+Now we will use `optim` to minimize the function. We will use the maximum of `x` for the initial value of the upper bound:
+
+```{r}
+optim(max(x), ll_unif, data = x)
+```
+
+Is this value close the maximum of the data?
+
+## Questions
+
+Construct the R code to find the maximum likelihood estimators.
+
+1.  Find the MLE for the following data:
+
+    ```{r}
+    x <- rpois(250, 4)
+    ```
+
+2.  Find the MLE for the following data:
+
+    ```{r}
+    x <- rexp(250, 1.5)
+    ```
+
+3.  Find the MLE for the following data:
+
+    ```{r}
+    x <- rgamma(250, shape = 2, rate = 2)
+    ```
+
+4.  Find the MLE for the following data:
+
+    ```{r}
+    x <- rbeta(250, shape1 = 2, shape2 = 3)
+    ```
+
+**Complete the assignment and submit your code as a QMD file. Submit your file to Canvas on 11/3/2022 at 11:59 PM.**

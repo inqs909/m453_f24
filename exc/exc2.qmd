@@ -1,0 +1,34 @@
+---
+title: "Extra Credit 2"
+description: Instructions for extra credit two.
+date: 08-31-2022
+editor: visual
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf:
+    geometry: 
+      - top=30mm
+      - left=30mm
+---
+
+The PDF version of this webpage can be found here [here](exc2.pdf).
+
+Write a book report on *Algorithms of Oppression: How search engines reinforce Racism* by Safiya Noble. Provide a summary of the book, an write a brief analysis in supporting or opposing the book, and a personal reaction of the book.
+
+Report guidelines
+
+-   3-4 Pages
+
+-   Must include a title page
+
+-   Double Spaced
+
+-   12 point font
+
+-   Proofread your work
+
+-   Submit a pdf of your work to Canvas
+
+-   Due 12/2/2022

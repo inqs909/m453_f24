@@ -1,0 +1,23 @@
+---
+title: "Homework 3"
+editor: visual
+date: 9-16-2022
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf:
+    geometry: 
+      - top=30mm
+      - left=30mm
+---
+
+**Homework 3 is due 9/23/2022 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
+
+The PDF version of this assignment can be found [here](hw3.pdf).
+
+1.  Let $X_1, X_2, \ldots, X_n\overset{iid}{\sim}N(\mu,\sigma^2)$ and $Z_i = \frac{X_i-\mu}{\sigma}$. Find the distribution of $Y=\sum^n_{i=1}Z_i^2$.
+
+2.  Let $X_1, X_2, \ldots, X_n\overset{iid}{\sim}N(\mu,\sigma^2)$ and $a_1,a_2, \ldots,a_n$ be a set of known constants. Find the distribution of $Y=\sum^n_{i=1} a_iX_i$.
+
+3.  Let $X_1\sim Bin(n_1,p)$ and $X_2\sim Bin(n_2, p)$. Find the distribution function of $Y=X_1 + X_2$. Assume $X_1\perp X_2$.

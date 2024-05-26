@@ -1,0 +1,29 @@
+---
+title: "Extra Credit 1"
+description: Instructions for extra credit one.
+date: 08-29-2022
+editor: visual
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf:
+    geometry: 
+      - top=30mm
+      - left=30mm
+---
+
+The PDF version of this webpage can be found here [here](ec1.pdf).
+
+Write a 1-2 page report related to your favorite activity. Provide details of the activity and why you like the activity.
+
+
+Report guidelines
+
+-   1-2 Pages
+
+-   Double Spaced
+
+-   12 point font
+
+-   Due 9/9/2022

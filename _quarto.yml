@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: public
+  resources:
+    - "*.json"
+    - "files"
+
+
+website:
+  repo-url: https://github.com/inqs909/m453_f24
+  title: "MATH 453"
+  site-url: m453.inqs.info
+  navbar:
+    right:
+      - syllabus.qmd
+      - hw.qmd
+      - ec.qmd
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+
+

@@ -1,0 +1,11 @@
+---
+title: "R Labs"
+editor: visual
+listing:
+  contents: r
+  sort: "date desc"
+  type: default
+  fields: [date, title, description]
+---
+
+Below are the R Labs for the course. Make sure you complete and submit your QMD file by the deadline on Canvas.

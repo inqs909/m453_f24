@@ -1,0 +1,189 @@
+---
+title: "Syllabus"
+editor: visual
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf:
+    geometry: 
+      - top=30mm
+      - left=30mm
+---
+
+## Math 453: Mathematical Statistics
+
+### Course Information
+
+**Term:** Fall 2022
+
+**Instructor:** Isaac Quintanilla Salinas
+
+**Contact:** isaac.quintanillasalinas\@csuci.edu or isaac.qs\@csuci.edu
+
+**Office Location:** BTE 2840
+
+**Office Hours:** Wednesday 12:30-2:30 PM and Thursday 11AM-12PM or by Zoom appointment
+
+**Lecture:** Monday and Wednesday 3:00-4:15 PM in BT 1642
+
+[**Pre-Requisites**](https://math.csuci.edu/programs/course-list.htm)**:** MATH 201 or MATH 202/PSY 202 or MATH 300 or MATH 352
+
+**PDF Version** of the syllabus can be found [here](syllabus.pdf).
+
+### Course Description
+
+This course is an introduction to mathematical statistics with an emphasis on statistical estimation and hypothesis testing. The course will be comprised of both theory and applications. We begin with a condensed review of fundamental concepts from Math 352; particularly, we briefly review important discrete and continuous probability distributions. We will then begin our discussion on the main topic of this course, statistical inference, through the study of distributions of functions of random variables using the method of moment-generating functions and order statistics. We then discuss ideas of convergence with sampling distributions and the central limit theorem. Next, we consider the topics of estimation, properties of point estimators, and methods of estimation. Finally, we study the theory of statistical tests and likelihood ratio tests. Depending on time, other topics may be added or removed.
+
+### Learning Outcomes
+
+1.  Demonstrate statistical knowledge and apply it to various data sets.
+2.  Use basic principles of statistical inference (both Bayesian and frequentist).
+3.  Build a starter statistical toolbox and discuss the utility and limitations of these techniques.
+4.  Use software and simulation to do statistics.
+5.  Demonstrate ability to discuss statistical information in oral and written form.
+
+### Required Texts
+
+1.  Modern Mathematical Statistics (MMS) with Applications, by Jay L. Devore and Kenneth N. Berk , Second Edition, Springer, 2012. (available online for free through the Broome Library).
+2.  OpenIntro Statistics (OIS), by David Diez, Christopher Barr, and Mine Çetinkaya-Rundel (available online for free: <https://www.openintro.org/book/os/>)
+
+### Required Software
+
+For this course, we will use R, Quarto, and RStudio. Please download and install on your computer.
+
+-   **R** is a free statistical software program that is available for download at: <https://www.r-project.org/>.
+
+-   **Quarto** is the next generation of [RMarkdown](https://rmarkdown.rstudio.com/) that enhances your experience in scientific documentation. Quarto is freely available at: <https://quarto.org/>
+
+-   **RStudio** provides free and open source tools for your data analysis in R: <https://www.rstudio.com/>
+
+### Course Grading
+
+| Category | Percentage |
+|:---------|:-----------|
+| Homework | 20%        |
+| R Labs   | 20%        |
+| Exam 1   | 20%        |
+| Exam 2   | 20%        |
+| Exam 3   | 20%        |
+
+At the end of the quarter, course grades will be assigned according to the following scale:
+
+|         |            |        |            |         |            |         |            |       |       |
+|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+| **A+**  | 98 -- 100  | **B+** | 87 -- \<90 | **C+**  | 77 -- \<80 | **D+**  | 67 -- \<70 |       |       |
+| **A**   | 93 -- \<98 | **B**  | 83 -- \<87 | **C**   | 73 -- \<77 | **D**   | 63 -- \<67 | **F** | \< 60 |
+| **A--** | 90 - \<93  | **B-** | 80 -- \<83 | **C--** | 70 -- \<73 | **D--** | 60 -- \<63 |       |       |
+
+#### Homework
+
+Homework will be assigned on a regular basis and posted on <https://m453.inqs.info/hw.html> and CANVAS. All homework assignments are due at the beginning of class. The homework is to help you practice the concepts learned in lecture and to help you study. You must turn in your own individual homework and show your understanding of the material. At the end of the semester, the three lowest homework grades will be dropped.
+
+#### R Labs
+
+The objective of the labs are to develop your programming skills and introduce you to topics that are essential for a statisticians.
+
+#### Exams
+
+There will be three exams and Final.
+
+Exam #1 will most likely be during the 6th week of the semester. Exam #2 will most likely be during the 11th week of the semester. Exam #3 will be on finals week.
+
+While the exams are not considered cumulative, the material builds on each other. Developing a strong understanding of the material through out the course is important for your success.
+
+At the end of the semester, your lowest exam grade will be replaced by your median average exam grade.
+
+This course will operate under a zero-tolerance policy. Talking during the time of the exam, sharing materials, looking at another students' exam, or not following directions given will be subject to the
+
+University's academic integrity policy.
+
+#### Extra Credit
+
+There will be 4 extra credit opportunities worth a total of 10% of your overall grade. (There are no make-ups for missed extra credit assignments!) More information will be provided on the extra credit assignments on a later date.
+
+### Class Schedule
+
+The following outline may be subject to change. Any changes will be announced in class.
+
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| Week               | Lecture      | Topic                                                 | Reading                                                                                                                                           |
++====================+==============+=======================================================+===================================================================================================================================================+
+| **1** 8/22-8/26    | 1 Monday     | Introduction to Statistics                            | OIS: 1.1-1.3                                                                                                                                      |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 2 Wednesday  | Introduction to R                                     | [OIS: Chapter 2, Lab 1](http://openintrostat.github.io/oilabs-tidy/02_intro_to_data/intro_to_data.html)                                           |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **2** 8/29-9/2     | 3 Monday     | Review: RV and Probability Density Function           | MMS: 3.1, 3.5-3.7, 4.1, 4.3-4.5, [Lab4](http://openintrostat.github.io/oilabs-tidy/04_normal_distribution/normal_distribution.html#More_Practice) |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 4 Wednesday  | Review: Moments and MGF                               | MMS: 3.4, 4.2                                                                                                                                     |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **3** 9/5-9/9      | 5 Monday     | No Class                                              |                                                                                                                                                   |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 6 Wednesday  | Introduction to R/QMD                                 | Handouts                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **4** 9/12- 9/16   | 7 Monday     | Functions of RV                                       | MMS: 5.5                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 8 Wednesday  | Sampling Distributions                                | MMS: 6.1                                                                                                                                          |
+|                    |              |                                                       |                                                                                                                                                   |
+|                    |              |                                                       | [OIS: Lab 5.1](https://openintro.shinyapps.io/sampling_distributions/)                                                                            |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **5** 9/19-9/23    | 9 Monday     | CLT and Normal Approximation of Binomial Distribution | MMS: 6.2-6.4                                                                                                                                      |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 10 Wednesday | Bias and MSE, Unbiased Point Estimator                | MMS: 7.1                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **6** 9/26-9/30    | 11 Monday    | Review                                                | Handouts                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 12 Wednesday | Exam #1                                               |                                                                                                                                                   |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **7** 10/3-10/7    | 13 Monday    | Maximum Likelihood Approach                           | MMS: 7.2                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 14 Wednesday | Method of Moments                                     | MMS:7.2                                                                                                                                           |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **8** 10/10-10/14  | 15 Monday    | Evaluating Goodness of Point Estimators               | MMS:7.1-7.4                                                                                                                                       |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 16 Wednesday | Relative Efficiency and Consistency                   | MMS: 7.1-7.4                                                                                                                                      |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **9** 10/17-10/21  | 17 Monday    | Sufficiency                                           | MMS: 7.1-7.4                                                                                                                                      |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 18 Wednesday | Rao-Blackwell Theorem and MVUE                        | MMS: 7.1-7.4                                                                                                                                      |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **10** 10/24-10/28 | 19 Monday    | R Lab: CLT                                            | MMS: 7.4                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 20 Wednesday | R Lab: Optimization                                   | MMS: 7.1                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **11** 11/7-11/11  | 21 Monday    | Intro to Hypothesis Tests                             | MMS: 9.1-9.2                                                                                                                                      |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 22 Wednesday | Type I and II Error                                   | MMS: 9.2                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **12** 11/14-11/18 | 23 Monday    | Review                                                | Handouts                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 24 Wednesday | Exam #2                                               |                                                                                                                                                   |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **13** 11/21-11/25 | 25 Monday    | Power of Tests and Neyman-Pearson Lemma               | MMS: 10.2, 10.3                                                                                                                                   |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 26 Wednesday | Likelihood Ratio Test                                 | MMS 9.1-9.4                                                                                                                                       |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **14** 11/28-12/2  | 27 Monday    | 1-Sample Hypothesis Test                              | MMS: 9.7                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 28 Wednesday | 2-Sample Hypothesis Test                              | MMS: 9.5                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| **15** 12/4-12/8   | 29 Monday    | R Lab: Bootstrap Approach                             |                                                                                                                                                   |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    | 30 Wednesday | Review                                                | Handouts                                                                                                                                          |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+|                    |              | Exam #3                                               |                                                                                                                                                   |
++--------------------+--------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+
+### University Policies
+
+1.  **Academic Honesty**:
+
+    Please conduct yourself with honesty and integrity. Do not submit others' work as your own. For assignments and quizzes that allow you to work with a group, only put your name on what the group submits if you genuinely contributed to the work. Work completely independently on exams, using only the materials that are indicated as allowed. Failure to observe academic honesty results in substantial penalties that can include failing the course.
+
+2.  **Disabilities:**
+
+    If you are a student with a disability requesting reasonable accommodations in this course, you need to contact Disability Accommodations and Support Services (DASS) located on the second floor of Arroyo Hall, via email accommodations\@csuci.edu or call 805-437-3331. All requests for reasonable accommodations require registration with DASS in advance of need: <https://www.csuci.edu/dass/students/apply-for-services.htm>. Faculty, students and DASS will work together regarding classroom accommodations. You are encouraged to discuss approved.
+
+3.  **Emergency Procedure Notice to Students:**
+
+    CSUCI is following guidelines and public orders from the California Department of Public Health and Ventura County Public Health for the COVID-19 pandemic as it pertains to CSUCI students, employees and visitors on the campus. Students are expected to adhere to all health and safety requirements as noted on the University's Fall 2022 Semester [website](https://www.csuci.edu/news/campus-updates/covid-19/index.htm) or they may be subject to removal from the classroom.

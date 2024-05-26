@@ -1,0 +1,98 @@
+---
+title: "Week 1"
+date: 08-22-22
+description: This week is designed to be an introduction week. We will briefly discuss topics related statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.
+editor: visual
+---
+
+## Learning Outcomes
+
+### Monday
+
+-   Define and identify population, sample, parameter, and statistics
+
+-   Define and identify different variable types (quantitative and categorical)
+
+-   Define concept of random samples and sampling methods
+
+### Wednesday
+
+-   Installing R, Rstudio, and Quarto
+
+-   Scripts
+
+-   R Packages
+
+-   R Environment
+
+## Important Concepts
+
+### Monday
+
+### Wednesday
+
+#### Accessing R & RStudio
+
+If you are on a tablet or chromebook, you can access R & RStudio via [rstudio.cloud](https://rstudio.cloud/) for free. However, they have limited computing resources. Be mindful on your experimentation. You may also be able to use Quarto in Rstudio cloud.
+
+You can install R via their website: <https://www.r-project.org/>.
+
+You can install RStudio for free from their website: <https://www.rstudio.com/products/rstudio/download/>
+
+#### Using R
+
+R can be used as a calculator, below are a few examples:
+
+```{r}
+1+2
+3/4
+9*8
+exp(4)
+```
+
+#### R Functions
+
+R has specialized functions that can compute specific values. R functions requires and inputs, known as arguments, to produce a certain output.
+
+For example, the `log()` function can be used to compute the natural logarithm of a specified input:
+
+```{r}
+log(34)
+```
+
+If you want to know information about a specific function, you can use the `?` operator:
+
+```{r}
+#| eval: false 
+?log
+```
+
+which will open the help tab. Notice there are 2 arguments: `x` and `base`. This means that the `log()` function can be extended to other base. To use common log[^1], specify the arguments:
+
+[^1]: $\log_{10}(x)$
+
+```{r}
+log(x=34, base=10)
+```
+
+Notice that I specified the arguments. You can also type this:
+
+```{r}
+log(34, 10)
+```
+
+which produces the same results. This is because R uses positions in the function to determine argument values; therefore, if the positions are correct, you do not need to specify the argument name.
+
+Going back to the first example, `log(34)`, we did not specify the base. This is because functions have default values for arguments. In the help documentation, it tells us what arguments have defaults and not need to be specified.
+
+## Resources
+
+### Presentations
+
+[Monday's Lecture](https://m453.inqs.info/files/Lecture_1/index.html)
+
+### Videos
+
+[Monday's Lecture](https://drive.google.com/file/d/1f3SbILsRqnVS47_c-Mp3NARfCnyHh0ho/view?usp=sharing)
+
+[Wednesday's Lecture](https://drive.google.com/file/d/1orTJShTyWgJKaahsOTQbmDPLW3tzVKP9/view?usp=sharing)

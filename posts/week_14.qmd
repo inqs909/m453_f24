@@ -1,0 +1,57 @@
+---
+title: "Week 13"
+date: 11-15-22
+description: We will discuss Linear Regression.
+editor: visual
+draft: false
+---
+
+## Learning Outcomes
+
+### Monday
+
+-   Simple Linear Regression
+-   Ordinary Least Squares
+-   Standard Errors
+-   Unbiasedness
+-   R Code
+
+### Wednesday
+
+-   Matrix Notation
+-   Multiple Linear Regression
+-   Standard Errors
+-   R Code
+
+## Important Concepts
+
+### Simple Linear Regression
+
+#### Model
+
+#### Ordinary Least Squares
+
+#### Standard Error
+
+#### Unbiasedness
+
+### Multiple Linear Regression
+
+#### Model
+
+#### Matrix Notation
+
+#### Standard Errors
+
+### R Code
+
+## Resources
+
+You must log on to your CI Google account to access the video.
+
+Press the "b" key to access hidden notes.
+
+| Lecture   | Slides                                                             | Videos |
+|-----------|--------------------------------------------------------------------|--------|
+| Monday    | [Slides](https://m453.inqs.info/files/Lecture_17_class/index.html) |        |
+| Wednesday |                                                                    |        |

@@ -1,0 +1,82 @@
+---
+title: "Week 4"
+date: 09-12-22
+description: This week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem.
+editor: visual
+draft: false
+---
+
+## Learning Outcomes
+
+### Monday
+
+-   Functions of Random Variables
+
+-   Method of Transformation
+
+-   Method of Moment Generating Functions
+
+-   Method of Distribution Functions
+
+### Wednesday
+
+-   Sampling Distributions
+
+-   Central Limit Theorem
+
+## Reading
+
+| Day                 | Reading  |
+|---------------------|----------|
+| Monday's Lecture    | MMS: 4.7 |
+| Wednesday's Lecture | MMS: 6.1 |
+
+## Homework
+
+To be announced.
+
+## Important Concepts
+
+### Functions of Random Variables
+
+#### Method of Distribution Function
+
+Let $Y=g(X)$ be a function of a Random variable $X$. The density function of $Y$ can be found with the following steps:
+
+1.  Find the region of $Y$ in the $X$ space.
+2.  Find the region of $Y\leq y$
+3.  Find $F_Y(y)=P(Y\le y)$ by integrating over the region of $Y\le y$
+4.  Find the density function $f_Y(y)=\frac{dF_Y(y)}{dy}$
+
+#### Method of Transformations
+
+Let $Y=g(X)$ be a function of a Random variable $X$, if $g(X)$ is either increasing or decreasing for all values of $X$ such that $f_X(x)>0$. Then the density function of $Y=g(X)$ is given as
+
+$$
+f_Y(y) = f_X\{g^{-1}(y)\}\left|\frac{dh^{-1}(y)}{dy}\right|
+$$
+
+#### Method of Moment Generating Functions
+
+Let $Y=g(X)$ be a function of a Random variable $X$. Find the moment generating function $M_Y(t)$. Compare $M_Y(t)$ to known moment generating functions.
+
+### Sampling Distributions
+
+### Observing Random Variables
+
+When collecting a sample of $n$, we tend to observe individual random variables: $\{X_1, X_2, \cdots,X_n\}$.
+
+### Sum of Random Variables
+
+Let $X_i$, for $i=1, \cdots, n$, be identically and independently distributed (iid) normal distribution with mean $\mu$ and variance $\sigma^2$. Let$T=\sum_{i=1}^nX_i$ follow an normal distribution with mean $\mu$ and variance $n\sigma^2$.
+
+## Resources
+
+You must log on to your CI Google account to access the video.
+
+Press the "b" key to access hidden notes.
+
+| Lecture   | Slides                                                            | Videos                                                                                      |
+|-----------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Monday    | [Slides](https://m453.inqs.info/files/Lecture_5_class/index.html) | [Video](https://drive.google.com/file/d/1ewitxPZFEGnH1HUDdjLSTZ70Y4_U-qp_/view?usp=sharing) |
+| Wednesday | [Slides](https://m453.inqs.info/files/Lecture_6_class/index.html) | [Video](https://drive.google.com/file/d/1NgERRQ_W59dm1nCrHVMQiwp5aiExgCjh/view?usp=sharing) |

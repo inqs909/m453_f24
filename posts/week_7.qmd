@@ -1,0 +1,103 @@
+---
+title: "Week 7"
+date: 10-03-22
+description: This week, we will learn about Maximum Likelihood Estimators and Method of Moments Estimators.
+editor: visual
+draft: false
+---
+
+## Learning Outcomes
+
+### Monday
+
+-   Maximum Likelihood Approach
+
+### Wednesday
+
+-   Method of Moments
+
+## Reading
+
+| Day                 | Reading  |
+|---------------------|----------|
+| Monday's Lecture    | MMS: 7.2 |
+| Wednesday's Lecture | MMS: 7.2 |
+
+## Homework
+
+HW 4 can be found [here](https://m453.inqs.info/hws/hw4.html). It is due October 14 at 11:59 PM.
+
+## Important Concepts
+
+### Data
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}F(\boldsymbol \theta)$ where $F(\cdot)$ is a known distribution function and $\boldsymbol\theta$ is a vector of parameters. Let $\boldsymbol X = (X_1,\ldots, X_n)^\mathrm{T}$, be the sample collected.
+
+### Maximum Likelihood Estimator
+
+#### Likelihood Function
+
+Using the joint pdf or pmf of the sample $\boldsymbol X$, the likelihood function is a function of $\boldsymbol \theta$, given the observed data $\boldsymbol X =\boldsymbol x$, defined as
+
+$$
+L(\boldsymbol \theta|\boldsymbol x)=f(\boldsymbol x|\boldsymbol \theta)
+$$
+
+If the data is iid, then
+
+$$
+f(\boldsymbol x|\boldsymbol \theta) = \prod^n_{i=1}f(x_i|\boldsymbol\theta)
+$$
+
+#### Estimator
+
+The maximum likelihood estimator are the estimates of $\boldsymbol \theta$ that maximize $L(\boldsymbol\theta)$.
+
+#### Log-Likelihood Approach
+
+If $\ln\{L(\boldsymbol \theta)\}$ is monotone of $\boldsymbol \theta$, then maximizing $\ln\{L(\boldsymbol \theta)\}$ will yield the maximum likelihood estimators.
+
+### Method of Moments
+
+Let the $k$th moment be defined as $\mu_k$ and the corresponding $k$th moment average $\frac{1}{n}\sum^n_{i=1}X_i^{k}$:
+
+$$
+\mu_k = \frac{1}{n}\sum^n_{i=1}X_i^k.
+$$
+
+The parameter estimates are for $t$ parameters are the solutions for $\mu_k$ for $k=1,\ldots,t$.
+
+## Resources
+
+You must log on to your CI Google account to access the video.
+
+Press the "b" key to access hidden notes.
+
+| Lecture   | Slides                                                             | Videos |
+|-----------|--------------------------------------------------------------------|--------|
+| Monday    | [Slides](https://m453.inqs.info/files/Lecture_9_class/index.html)  | N/A    |
+| Wednesday | [Slides](https://m453.inqs.info/files/Lecture_10_class/index.html) |        |
+
+### Extra Resources on Maximum Likelihood Estimators
+
+[Probability 4 Data Science](https://probability4datascience.com/video_ch08.html)
+
+[MLE Basics](https://www.youtube.com/watch?v=93fPFOf547Q)
+
+[MLE of Poisson](https://www.youtube.com/watch?v=n8YcOUZRZy8)
+
+[MLE of Uniform](https://www.youtube.com/watch?v=Cq9qADGtc1s)
+
+[MLE of Binomial](https://www.youtube.com/watch?v=lp_RvQe7gec&list=PLdxWrq0zBgPXWD7_sc7uf8BdirORFRA2-&index=2)
+
+#### In MMS Chapter 7:
+
+Problems: 27.b; 33.a
+
+### Extra Resources on Method of Moments Estimators
+
+[Probability 4 Data Science](https://probability4datascience.com/ch08.html)
+
+[Method of Moments Basics](https://youtu.be/I2ZfKIHMb2o)
+
+[Methods of Moments: Mean and Variance](https://youtu.be/GwDzZuwTsxM)

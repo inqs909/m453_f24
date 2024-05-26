@@ -1,0 +1,40 @@
+---
+title: "Extra Credit 4"
+description: Instructions for extra credit four.
+date: 08-31-2022
+editor: visual
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf:
+    geometry: 
+      - top=30mm
+      - left=30mm
+---
+
+The PDF version of this webpage can be found here [here](exc4.pdf).
+
+Write a report on the debate Frequentist vs Bayesianists. Provide a brief description of each position, highlight notable accomplishments of each group, decide if you think more like a frequentist or a bayesianist.
+
+#### Resources
+
+-   https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6406060/
+
+-   https://towardsdatascience.com/statistics-are-you-bayesian-or-frequentist-4943f953f21b
+
+#### Report Guideline
+
+-   3-4 Pages
+
+-   Must include a title page
+
+-   Double Spaced
+
+-   12 point font
+
+-   Proofread your work
+
+-   Submit a pdf of your work to Canvas
+
+-   Due 12/2/2022
