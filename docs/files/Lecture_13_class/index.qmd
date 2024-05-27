@@ -1,0 +1,64 @@
+---
+title: "Sufficiency"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: true 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+## Learning Outcomes
+
+-   Sufficiency
+
+# Sufficiency
+
+## Sufficiency
+
+Sufficiency evaluates whether a statistic (or estimator) contains enough information of a parameter $\theta$. In essence a statistic is considered sufficient to infer $\theta$ if it provides enough information about $\theta$.
+
+## Sufficiency
+
+Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameter $\theta$. A statistic $T=t(X_1,\ldots,X_n)$ is said to be sufficient for making inferences of a parameter $\theta$ if condition joint distribution of $X_1,\ldots,X_n$ given $T=t$ does not depend on $\theta$.
+
+## Joint Sufficient Statistics
+
+Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameters $\boldsymbol\theta=(\theta_1,\ldots,\theta_m)^\mathrm{T}$. A joint statistic $\boldsymbol T=\left\{t_1(X_1,\ldots,X_n),\ldots ,t_k(X_1,\ldots,X_n)\right\}^\mathrm{T}$ is said to be sufficient for making inferences on paramters $\boldsymbol \theta$ if condition joint distribution of $X_1,\ldots,X_n$ given $\boldsymbol T=\boldsymbol t$ does not depend on $\boldsymbol \theta$.
+
+## Factorization Theorem
+
+Let $f(x_1, \ldots, x_n;\theta)$ be the joint PMF of PDF of $X_1, \ldots,X_n$. Then $T=t(X_1,\ldots,X_n)$ is a sufficient statistic for $\theta$ if and only if there exist 2 nonnegative functions, $g$ and $h$, such that
+
+$$
+f(x_1,\ldots,x_n) = g\{t(x_1,\ldots,x_n);\theta\}h(x_1,\ldots,x_n).
+$$
+
+## Minimum Sufficient Statistics
+
+A minimum sufficient statistic is a sufficient statistic that has the smallest dimensionality, which represents the greatest possible reduction of the data without any information loss.
+
+# Examples
+
+## Example 1
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}Pois(\lambda)$, show that $\sum^n_{i=1} X_i$ is a sufficient statistic for $\lambda$.
+
+## Example 2
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}N(\mu,\sigma^2)$, show that $(\sum^n_{i=1} X_i,\sum^n_{i=1} X^2_i)^\mathrm{T}$ is a sufficient statistic for $\mu$ and $\sigma²$.
+
+## Example 3
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}logN(\mu,\sigma^2)$, find the joint sufficient statistics for $\mu$ and $\sigma^2$,
+
+$$
+f(x)=\frac{1}{x\sqrt{2\pi\sigma^2}}\exp\left[
+-\frac{\{\log(x)-\mu)^2}{2\sigma^2}\right]$$

@@ -1,0 +1,57 @@
+---
+title: "Sampling Distributions"
+format:
+  revealjs:
+    incremental: true 
+    chalkboard:
+      src: chalkboard.json
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+## Learning Outcomes
+
+-   Covariance Properties
+
+-   Sampling Distributions
+
+-   Central Limit Theorem
+
+# Covariance
+
+## Covariance
+
+# Observing Data
+
+## Observing Data
+
+# Descriptive Statistics
+
+## Descriptive Statistics
+
+## Sample Mean
+
+## Sample Variance
+
+# Properties
+
+## Expected Value
+
+## Variance
+
+# Sampling Distributions
+
+## Sampling Mean
+
+## Sampling Mean
+
+# Central Limit Theorem
+
+## Central Limit Theorem
+
+Let $X_1, X_2, \ldots, X_n$ be identical and independent distributed random variables with $E(X_i)=\mu$ and $Var(X_i) = \sigma²$. We define $$
+Y_n = \sqrt n \left(\frac{\bar X-\mu}{\sigma}\right) \mathrm{ where }\ \bar X = \frac{1}{n}\sum^n_{i=1}X_i.
+$$
+
+Then, the distribution of the function $Y_n$ converges to a standard normal distribution function as $n\rightarrow \infty$.

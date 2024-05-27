@@ -1,0 +1,68 @@
+---
+title: "Maximum Likelihood Estimator"
+format:
+  revealjs:
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: true 
+    chalkboard:
+      src: chalkboard.json
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+## Learning Outcomes
+
+-   Likelihood Function
+
+-   Maximum Likelihood Estimator
+
+-   Log-Likelihood Function
+
+# Background Information
+
+## Estimators
+
+An *estimator* is an operation computing the value of an estimate, that targets the parameter, using measurements from a sample.
+
+## Data
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}F(\boldsymbol \theta)$ where $F(\cdot)$ is a known distribution function and $\boldsymbol\theta$ is a vector of parameters. Let $\boldsymbol X = (X_1,\ldots, X_n)^\mathrm{T}$, be the sample collected.
+
+# Likelihood Function
+
+## Likelihood Function
+
+Using the joint pdf or pmf of the sample $\boldsymbol X$, the likelihood function is a function of $\boldsymbol \theta$, given the observed data $\boldsymbol X =\boldsymbol x$, defined as
+
+$$
+L(\boldsymbol \theta|\boldsymbol x)=f(\boldsymbol x|\boldsymbol \theta)
+$$
+
+If the data is iid, then
+
+$$
+f(\boldsymbol x|\boldsymbol \theta) = \prod^n_{i=1}f(x_i|\boldsymbol\theta)
+$$
+
+# Maximum Likelihood Estimator
+
+The maximum likelihood estimator are the estimates of $\boldsymbol \theta$ that maximize $L(\boldsymbol\theta)$.
+
+# Log-Likelihood Function
+
+## Log-Likelihood Function
+
+If $\ln\{L(\boldsymbol \theta)\}$ is monotone of $\boldsymbol \theta$, then maximizing $\ln\{L(\boldsymbol \theta)\}$ will yield the maximum likelihood estimators.
+
+# Examples
+
+## Bernoulli Distribution
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}\mathrm{Bernoulli}(p)$, show that the MLE of $p$ is $\bar x$.
+
+## Normal Distribution
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}N(\mu,\sigma^2)$. Show that the MLE's of $\mu$ and $\sigma^2$ are $\bar x$ and $\frac{n-1}{n}s^2$, respectively.

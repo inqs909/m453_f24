@@ -1,0 +1,151 @@
+---
+title: "Introduction to Statistics"
+format:
+  revealjs:
+    incremental: true 
+    chalkboard:
+      src: chalkboard.json
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+## Introductions
+
+-   San Bernardino, CA
+
+-   CSU Monterey Bay
+
+    -   BS Biology
+
+-   San Diego State University
+
+    -   Master's in Public Health
+
+-   UC Riverside
+
+    -   PhD in Applied Statistics
+
+## Introductions
+
+::: nonincremental
+-   Name
+
+-   Year
+
+-   Major
+
+-   Fun Fact
+
+-   Career Goal
+:::
+
+## Learning Objectives
+
+-   Define and identify population, sample, parameter, and statistics
+
+-   Define and identify different variable types (quantitative and categorical)
+
+-   Define concept of random samples and sampling methods
+
+# Fundamental of Statistics
+
+## Fundamental of Statistics
+
+-   Observational Unit
+
+-   Variable
+
+    -   Types of Variables
+
+        -   Quantitative
+
+        -   Categorical
+
+    -   Roles of Variables
+
+        -   Predictors
+
+        -   Outcome
+
+## Observational Unit
+
+## Type of Variable - Quantitative
+
+## Type of Variable - Qualitative
+
+## Predictor Variables
+
+## Outcomes
+
+## Activity
+
+-   How many Harry Potter books have you read?
+
+-   With which hand do you write?
+
+-   How many hours have you slept in the past 24 hours?
+
+-   Have you have slept for at least 7 hours in the past 24 hours?
+
+-   Which college is your major in?
+
+-   How many states have you visited?
+
+## Activity
+
+-   What is the average number of Harry Potter books read by a student in this class?
+
+-   What percentage of students in this class are left-handed?
+
+# Fundamental of Statistical Inference
+
+## Fundamental of Statistical Inference {.nonincremental}
+
+::: columns
+::: {.column .nonincremental width="40%"}
+-   Categorical Variables
+
+    -   Proportions
+
+        -   p or $\pi$
+
+        -   $\hat p$
+:::
+
+::: {.column .nonincremental width="60%"}
+-   Continuous Variables
+
+    -   Means or Averages
+
+        -   $\mu$
+
+        -   $\hat \mu$ or $\bar X$
+
+    -   Variances
+
+        -   $\sigma^2$
+
+        -   $\hat \sigma^2$ or $s^2$
+:::
+:::
+
+# Sampling Techniques
+
+## Sampling Techniques
+
+-   Simple Random Sampling
+
+-   Stratified Sampling
+
+-   Cluster Sampling
+
+-   Multistage Sampling
+
+## Simple Random Sampling
+
+## Stratified Sampling
+
+## Cluster Sampling
+
+## Multistage Sampling

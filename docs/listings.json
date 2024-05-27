@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/r.html",
+    "items": [
+      "/r/r_lab_2.html",
+      "/r/r_lab_3.html",
+      "/r/r_lab_1.html",
+      "/r/r_lab_0.html"
+    ]
+  },
+  {
+    "listing": "/ec.html",
+    "items": []
+  },
+  {
+    "listing": "/hw.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
+    "items": []
+  }
+]

@@ -1,0 +1,74 @@
+---
+title: "Likelihood Ratio Test"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: true 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+## Learning Outcomes
+
+-   Likelihood Ratio Test
+
+# Likelihood Ratio Test
+
+## Likelihood Ratio Test
+
+The likelihood ratio test is used when you cannot find a uniformly most powerful test for a given set of hypothesis. This will yield a very good test that is decently powerful.
+
+## Hypothesis
+
+::: columns
+::: {.column width="40%"}
+$H_0:\ \theta\in\Theta_0$
+:::
+
+::: {.column width="40%"}
+$H_a:\ \theta\in\Theta_a$
+:::
+:::
+
+-   $\Theta = \Theta_0\cup\Theta_a$
+
+-   $\Theta$ is the parameters space
+
+## Test Statistic
+
+$$
+\Lambda = \frac{L(\hat\theta_0)}{L(\hat\theta)}=\frac{f(x_1,\ldots,x_n;\hat\theta_0)}{f(x_1,\ldots,x_n;\hat\theta)}
+$$
+
+-   $\hat\theta_0=\underset{\theta\in\Theta_0}{\arg\max}\ L(\theta)$
+
+-   $\hat\theta=\underset{\theta\in\Theta}{\arg\max}\ L(\theta)$: MLE
+
+## Decision
+
+Reject $H_0$ if $\Lambda\le k$
+
+# Examples
+
+## One-Sample t-test
+
+::: columns
+::: {.column width="40%"}
+$H_0:\ \mu=\mu_0$
+:::
+
+::: {.column width="40%"}
+$H_a:\ \mu\ne\mu_0$
+:::
+:::
+
+$$
+X_1,\ldots,X_n\sim N(\mu,\sigma^2)
+$$
