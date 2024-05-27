@@ -1,9 +1,9 @@
 ---
 title: "Week 9"
-date: 10-16-22
+date: 10-16-24
 description: This week, we will evaluate the goodness of point estimators.
 editor: visual
-draft: false
+draft: true
 ---
 
 ## Learning Outcomes

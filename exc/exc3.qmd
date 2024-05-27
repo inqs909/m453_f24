@@ -1,20 +1,10 @@
 ---
 title: "Extra Credit 3"
 description: Instructions for extra credit three.
-date: 08-31-2022
+date: 08-31-2024
 editor: visual
-draft: false
-format:
-  html: 
-    code-fold: true
-    html-math-method: katex
-  pdf:
-    geometry: 
-      - top=30mm
-      - left=30mm
+draft: true
 ---
-
-The PDF version of this webpage can be found here [here](exc3.pdf).
 
 Create a website using either [Quarto](https://quarto.org/), [RMarkdown](https://rmarkdown.rstudio.com/), [Blogdown](https://bookdown.org/yihui/blogdown/), [Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll), or any other website building tools that are not point-and-click based. Once you are finished creating your website, you must host it on [GitHub Pages](https://pages.github.com/)[^1]. Below are the guidelines for the website:
 

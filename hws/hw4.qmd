@@ -1,18 +1,11 @@
 ---
 title: "Homework 4"
-editor: visual
-date: 10-05-2022
-format:
-  html: 
-    code-fold: true
-    html-math-method: katex
-  pdf:
-    geometry: 
-      - top=30mm
-      - left=30mm
+editor: source
+date: 10-05-2024
+draft: true
 ---
 
-**Homework 4 is due 10/14/2022 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
+**Homework 4 is due 10/14/2024 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
 
 The PDF version of this assignment can be found [here](hw4.pdf).
 

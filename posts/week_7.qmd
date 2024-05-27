@@ -1,9 +1,9 @@
 ---
 title: "Week 7"
-date: 10-03-22
+date: 10-03-24
 description: This week, we will learn about Maximum Likelihood Estimators and Method of Moments Estimators.
 editor: visual
-draft: false
+draft: true
 ---
 
 ## Learning Outcomes
@@ -74,7 +74,7 @@ You must log on to your CI Google account to access the video.
 Press the "b" key to access hidden notes.
 
 | Lecture   | Slides                                                             | Videos |
-|-----------|--------------------------------------------------------------------|--------|
+|------------|------------------------------------------------|------------|
 | Monday    | [Slides](https://m453.inqs.info/files/Lecture_9_class/index.html)  | N/A    |
 | Wednesday | [Slides](https://m453.inqs.info/files/Lecture_10_class/index.html) |        |
 

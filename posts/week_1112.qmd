@@ -1,12 +1,12 @@
 ---
 title: "Week 11 and Week 12"
-date: 11-08-22
+date: 11-08-24
 description: These two weeks, we begin our discussion on hypothesis testing.
 editor: visual
 format:
   html:
     toc: false
-draft: false
+draft: true
 ---
 
 ## Learning Outcomes
@@ -208,7 +208,7 @@ leveneTest(z, g)
 ## Resources
 
 | Playlist                    | Playlists                                                                          | Notes |
-|-----------------|--------------------------------------|-----------------|
+|------------------|-------------------------------------|------------------|
 | Hypothesis Testing          | [Videos](https://www.youtube.com/playlist?list=PLQmJJJJVDVnM9NFOQEzgyHjcl02LhFQYp) |       |
 | Hypothesis Testing Examples | [Videos](https://www.youtube.com/playlist?list=PLQmJJJJVDVnPizJhMcCjGn0i2TzXMw3WA) |       |
 | Hypothesis Test Assumptions | [Videos](https://www.youtube.com/playlist?list=PLQmJJJJVDVnPdIRn4NLNaynUzOvBOCAF6) |       |
