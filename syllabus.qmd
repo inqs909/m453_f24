@@ -1,5 +1,5 @@
 ---
-title: "Syllabus"
+title: "Tentative Syllabus"
 editor: visual
 format:
   html: 
