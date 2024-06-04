@@ -161,10 +161,6 @@ window.Quarto = {
     <a class="nav-link" href="../hw.html"> 
 <span class="menu-text">Homework</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../ec.html"> 
-<span class="menu-text">Extra Credit</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -538,7 +534,7 @@ PE \pm CV *SE
     Shapiro-Wilk normality test
 
 data:  x
-W = 0.99783, p-value = 0.2185</code></pre>
+W = 0.99759, p-value = 0.1489</code></pre>
 </div>
 </div>
 </section>
@@ -573,13 +569,13 @@ W = 0.99783, p-value = 0.2185</code></pre>
     F test to compare two variances
 
 data:  x and y
-F = 4.1718, num df = 999, denom df = 999, p-value &lt; 2.2e-16
+F = 4.0454, num df = 999, denom df = 999, p-value &lt; 2.2e-16
 alternative hypothesis: true ratio of variances is not equal to 1
 95 percent confidence interval:
- 3.684969 4.723008
+ 3.573284 4.579861
 sample estimates:
 ratio of variances 
-          4.171827 </code></pre>
+          4.045386 </code></pre>
 </div>
 </div>
 </section>
@@ -619,14 +615,14 @@ ratio of variances
     Bartlett test of homogeneity of variances
 
 data:  z and g
-Bartlett's K-squared = 473.34, df = 1, p-value &lt; 2.2e-16</code></pre>
+Bartlett's K-squared = 389.64, df = 1, p-value &lt; 2.2e-16</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car) <span class="co"># Levene's test is found in the car package, you may need to install it</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">leveneTest</span>(z, g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Levene's Test for Homogeneity of Variance (center = median)
         Df F value    Pr(&gt;F)    
-group    1  361.12 &lt; 2.2e-16 ***
+group    1  325.93 &lt; 2.2e-16 ***
       1998                      
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
