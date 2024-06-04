@@ -8,7 +8,7 @@
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.506">
+  <meta name="generator" content="quarto-1.4.554">
 
   <title>MATH 453 - Relative Efficiency and Consistency</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -376,7 +376,7 @@ releff(\hat\theta_1,\hat\theta_2)=\frac{\hat\theta_1}{\hat\theta_2}
 </div>
 <p>Find the relative efficiency of <span class="math inline">\(\hat\mu_3\)</span> with respect to <span class="math inline">\(\hat\mu_1\)</span> and <span class="math inline">\(\hat\mu_2\)</span>.</p>
 </section>
-<section id="consistency" class="slide level2">
+<section id="consistency" class="slide level2 scrollable">
 <h2>Consistency</h2>
 <p>Let <span class="math inline">\(X_1,\ldots,X_n\)</span> be a random sample from a distribution with parameter <span class="math inline">\(\theta\)</span>. The estimator <span class="math inline">\(\hat \theta\)</span> is a consistent estimator of the <span class="math inline">\(\theta\)</span> if</p>
 <ol type="1">
@@ -400,8 +400,10 @@ P(\lim_{n\rightarrow\infty} |\bar X-\mu|&lt;\epsilon) = 1
 \]</span></p>
 <p>that is, <span class="math inline">\(\bar X_n\)</span> converges almost surely to <span class="math inline">\(\mu\)</span>.</p>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
 </div>
 </section>
     </div>
@@ -692,6 +694,24 @@ P(\lim_{n\rightarrow\infty} |\bar X-\mu|&lt;\epsilon) = 1
         // clear code selection
         e.clearSelection();
       });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("m453\.inqs\.info");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -728,7 +748,11 @@ P(\lim_{n\rightarrow\infty} |\bar X-\mu|&lt;\epsilon) = 1
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
