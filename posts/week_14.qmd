@@ -1,8 +1,9 @@
 ---
-title: "Week 13"
+title: "Week 14"
 date: 11-15-24
-description: We will discuss Linear Regression.
-editor: visual
+description: |
+  We will discuss Linear Regression.
+editor: source
 draft: true
 ---
 
@@ -52,6 +53,6 @@ You must log on to your CI Google account to access the video.
 Press the "b" key to access hidden notes.
 
 | Lecture   | Slides                                                             | Videos |
-|------------|------------------------------------------------|------------|
+|---------------|-------------------------------------------|---------------|
 | Monday    | [Slides](https://m453.inqs.info/files/Lecture_17_class/index.html) |        |
 | Wednesday |                                                                    |        |

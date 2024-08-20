@@ -1,7 +1,8 @@
 ---
 title: "Week 5"
 date: 09-19-24
-description: This week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem.
+description: |
+  This week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem.
 editor: visual
 draft: true
 ---
@@ -107,12 +108,12 @@ You must log on to your CI Google account to access the video.
 
 Press the "b" key to access hidden notes.
 
-+-----------+-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-| Lecture   | Slides                                                            | Videos                                                                                               |
-+===========+===================================================================+======================================================================================================+
-| Monday    | [Slides](https://m453.inqs.info/files/Lecture_7_class/index.html) | [Video](https://drive.google.com/file/d/1WPYVQEQFFzrfhkOIn-TIs9j5z4EQgdiQ/view?usp=sharing)          |
-+-----------+-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
-| Wednesday | [Slides](https://m453.inqs.info/files/Lecture_8_class/index.html) | [Video](https://drive.google.com/file/d/15BaEr7CH2IKltCoz750Xooa4zpa_U_Wa/view?usp=sharing)          |
-|           |                                                                   |                                                                                                      |
-|           |                                                                   | [HW 3 Problem 2](https://drive.google.com/file/d/1em45UJNCnqwo1VJ9m5SvyC0H3ljzCqnH/view?usp=sharing) |
-+-----------+-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
++------------+-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Lecture    | Slides                                                            | Videos                                                                                               |
++============+===================================================================+======================================================================================================+
+| Monday     | [Slides](https://m453.inqs.info/files/Lecture_7_class/index.html) | [Video](https://drive.google.com/file/d/1WPYVQEQFFzrfhkOIn-TIs9j5z4EQgdiQ/view?usp=sharing)          |
++------------+-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Wednesday  | [Slides](https://m453.inqs.info/files/Lecture_8_class/index.html) | [Video](https://drive.google.com/file/d/15BaEr7CH2IKltCoz750Xooa4zpa_U_Wa/view?usp=sharing)          |
+|            |                                                                   |                                                                                                      |
+|            |                                                                   | [HW 3 Problem 2](https://drive.google.com/file/d/1em45UJNCnqwo1VJ9m5SvyC0H3ljzCqnH/view?usp=sharing) |
++------------+-------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+

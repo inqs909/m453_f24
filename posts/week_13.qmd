@@ -1,8 +1,9 @@
 ---
 title: "Week 13"
 date: 11-15-24
-description: We will discuss essential concepts to hypothesis testing.
-editor: visual
+description: |
+  We will discuss essential concepts to hypothesis testing.
+editor: source
 draft: true
 ---
 
