@@ -1,5 +1,5 @@
 ---
-title: "Tentative Syllabus"
+title: "Syllabus"
 editor: visual
 format:
   html: 
@@ -87,7 +87,7 @@ There will be 4 extra credit opportunities worth a total of 10% of your overall 
 The following outline may be subject to change. Any changes will be announced in class.
 
 | Week               | Lecture      | Topic                                                          | Reading                         |
-|--------------|--------------|----------------------------|---------------|
+|----------------|----------------|-------------------------|----------------|
 | **1** 8/26-8/30    | 1 Monday     | Introduction to Statistics                                     | OIS: 1.1-1.3                    |
 |                    | 2 Wednesday  | Review: RV and Distribution Function                           | MMS: 3.1, 3.5-3.7, 4.1, 4.3-4.5 |
 | **2** 9/2-9/6      | 3 Labor Day  |                                                                |                                 |
