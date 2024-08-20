@@ -77,6 +77,6 @@ You must log on to your CI Google account to access the video.
 Press the "b" key to access hidden notes.
 
 | Lecture   | Slides                                                            | Videos                                                                                      |
-|--------------|------------------------|----------------------------------|
+|-----------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | Monday    | [Slides](https://m453.inqs.info/files/Lecture_5_class/index.html) | [Video](https://drive.google.com/file/d/1ewitxPZFEGnH1HUDdjLSTZ70Y4_U-qp_/view?usp=sharing) |
 | Wednesday | [Slides](https://m453.inqs.info/files/Lecture_6_class/index.html) | [Video](https://drive.google.com/file/d/1NgERRQ_W59dm1nCrHVMQiwp5aiExgCjh/view?usp=sharing) |

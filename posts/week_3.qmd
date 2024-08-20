@@ -60,6 +60,6 @@ Let $X$ and $Y$ have the following distributions $F_X(x)$ and $F_Y(y)$ and MGFs 
 You must log on to your CI Google account to access the video.
 
 | Lecture   | Slides                                                      | Videos                                                                                      |
-|-----------------|---------------------|----------------------------------|
+|-----------|-------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | Monday    | N/A                                                         | N/A                                                                                         |
 | Wednesday | [Slides](https://m453.inqs.info/files/Lecture_4/index.html) | [Video](https://drive.google.com/file/d/1Y2kMfWXOGn-32QqrYiFS2TZ_bNaiPH6A/view?usp=sharing) |
