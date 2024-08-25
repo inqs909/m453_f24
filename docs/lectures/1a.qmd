@@ -70,6 +70,8 @@ editor: source
 
 -   Define concept of random samples and sampling methods
 
+## Website and Syllabus
+
 # Fundamental of Statistics
 
 ## Fundamental of Statistics
