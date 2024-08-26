@@ -133,6 +133,6 @@ $$
 You must log on to your CI Google account to access the video.
 
 | Lecture   | Slides                                                                        | Videos                                                                                      |
-|--------------|---------------------------|--------------------------------|
+|-----------|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | Monday    | [Slides](https://m453.inqs.info/files/Lecture_3/index.html#/expected-value-3) | [Video](https://drive.google.com/file/d/1HTfVYUyXynl2EoeT9s2EaCWeJZiCgeSU/view?usp=sharing) |
 | Wednesday | [Slides](https://m453.inqs.info/files/Lecture_4/index.html)                   | [Video](https://drive.google.com/file/d/1PtWOUrl6ucFNc9IFJ_U6iHvt4rU3GJiC/view?usp=sharing) |
