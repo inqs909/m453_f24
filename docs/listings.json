@@ -10,7 +10,9 @@
   },
   {
     "listing": "/ec.html",
-    "items": []
+    "items": [
+      "/exc/exc1.html"
+    ]
   },
   {
     "listing": "/hw.html",

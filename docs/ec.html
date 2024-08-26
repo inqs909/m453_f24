@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -155,6 +155,10 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link" href="./hw.html"> 
 <span class="menu-text">Homework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./ec.html" aria-current="page"> 
+<span class="menu-text">Extra Credit</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -236,7 +240,31 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1724914800000" data-listing-file-modified-sort="1724700635334" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="thumbnail">
+<p><a href="./exc/exc1.html" class="no-external"></a></p><a href="./exc/exc1.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./exc/exc1.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./exc/exc1.html" class="no-external">Extra Credit 1</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./exc/exc1.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./exc/exc1.html" class="no-external">Instructions for extra credit one.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./exc/exc1.html" class="no-external">
+<div class="listing-date">
+Aug 29, 2024
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
