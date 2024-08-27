@@ -1,7 +1,7 @@
 ---
 title: "Extra Credit 3"
 description: Instructions for extra credit three.
-date: 08-31-2024
+date: 08-20-2024
 editor: visual
 draft: true
 ---
@@ -30,7 +30,7 @@ Create a website using either [Quarto](https://quarto.org/), [RMarkdown](https:/
 
 -   Must submit the URL of your website and github repo
 
--   Due 12/2/2024
+-   Due 12/6/2024
 
 ## Example Website
 
