@@ -30,7 +30,7 @@ Create a website using either [Quarto](https://quarto.org/), [RMarkdown](https:/
 
 -   Must submit the URL of your website and github repo
 
--   Due 12/2/2022
+-   Due 12/2/2024
 
 ## Example Website
 

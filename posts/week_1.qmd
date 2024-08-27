@@ -14,6 +14,6 @@ draft: false
 
 | Lecture   | Slides                                    | Video     |
 |-----------|-------------------------------------------|----------|
-| Monday    | [Slides](https://m453.inqs.info/lectures/1a) | [Video]() |
+| Monday    | [Slides](https://m453.inqs.info/lectures/1a) | [Video](https://youtu.be/43dVJ9Vais0) |
 | Wednesday | [Slides](https://m453.inqs.info/lectures/1b) | [Video]() |
 
