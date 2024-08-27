@@ -3,7 +3,7 @@ title: "Extra Credit 4"
 description: Instructions for extra credit four.
 date: 08-20-2024
 editor: visual
-draft: true
+draft: false
 ---
 
 Write a report on one of the topics below. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of the topic in R.

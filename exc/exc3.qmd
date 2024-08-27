@@ -3,7 +3,7 @@ title: "Extra Credit 3"
 description: Instructions for extra credit three.
 date: 08-20-2024
 editor: visual
-draft: true
+draft: false
 ---
 
 Create a website using either [Quarto](https://quarto.org/), [RMarkdown](https://rmarkdown.rstudio.com/), [Blogdown](https://bookdown.org/yihui/blogdown/), [Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll), or any other website building tools that are not point-and-click based. Once you are finished creating your website, you must host it on [GitHub Pages](https://pages.github.com/)[^1]. Below are the guidelines for the website:
