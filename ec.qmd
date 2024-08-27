@@ -8,11 +8,4 @@ listing:
 
 Extra Credit is designed to expand on different topics that related to Probability and Statistics, but are not necessarily required for the course. Additionally, these opportunities provide students relief when unexpected situations occur during the semester. While it is not required, I encourage everyone to attempt each opportunity.
 
-| Assignment  | Description                                                                                                        | Due Date          | Percentage |
-|-------------|--------------------------------------------------------------------------------------------------------------------|-------------------|------------|
-| Report      | Write a brief report on an activity you care about that is not academic.                                           | September 9, 2022 | 1          |
-| Book Report | Read *Algorithms of Oppression: How Search Engines Reinforce Racism* by Safiya Noble and write a book report.      | December 2, 2022  | 3          |
-| Website     | Create a website using Quarto or [Blogdown](https://bookdown.org/yihui/blogdown/) and host it on GitHub or GitLab. | December 2, 2022  | 3          |
-| Report      | Write a report on *Frequentist vs Bayesian* Statistics.                                                            | December 2, 2022  | 3          |
-
-Below is more information on each assignment. (Will be provided soon.)
+Below is more information on each assignment.
