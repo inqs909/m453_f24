@@ -19,7 +19,9 @@
   },
   {
     "listing": "/hw.html",
-    "items": []
+    "items": [
+      "/hws/hw1.html"
+    ]
   },
   {
     "listing": "/index.html",
