@@ -15,7 +15,7 @@ format:
 
 **Homework 1 is due 9/7/2024 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
 
-1.  $X\sim Bin(n,p)$, show the variance of Binomial distribution to be $np(1-p)$.
-2.  $X\sim Pois(\lambda)$ , show that the expected value of a Poisson distribution to be $\lambda$.
-2.  $X\sim Pois(\lambda)$ , show the variance of a Poisson distribution to be $\lambda$.
-4.  $X\sim N(\mu,\sigma^2)$, show that the expected value to be $\mu$.
+1.  $X\sim Bin(n,p)$, show that the variance of Binomial distribution is $np(1-p)$.
+2.  $X\sim Pois(\lambda)$ , show that the expected value of a Poisson distribution is $\lambda$.
+2.  $X\sim Pois(\lambda)$ , show that the variance of a Poisson distribution is $\lambda$.
+4.  $X\sim N(\mu,\sigma^2)$, show that the expected value is $\mu$.
