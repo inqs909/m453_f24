@@ -4,17 +4,16 @@ date: 09-5-24
 description: |
   This week, we will cover Transformations of Random Variables
 editor: visual
-draft: true
+draft: false
 ---
 
 ## Learning Outcomes
-
 
 ## Resources
 
 You must log on to your CI Google account to access the video.
 
-| Lecture   | Slides                       | Videos  |
-|-----------|---------------------|----------------------------------|
-| Monday    | [Slides](https://m453.inqs.info/lectures/3a) |  |
-| Wednesday | [Slides](https://m453.inqs.info/lectures/3b) |  |
+| Lecture   | Slides                                       | Videos |
+|-----------|----------------------------------------------|--------|
+| Monday    | [Slides](https://m453.inqs.info/lectures/3a) |        |
+| Wednesday | [Slides](https://m453.inqs.info/lectures/3b) |        |
