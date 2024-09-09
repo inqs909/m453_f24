@@ -7,17 +7,10 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/quarto-contrib/reveal-header-1.0.0/add_header.js" defer="true"></script>
-<link href="../site_libs/quarto-contrib/reveal-header-1.0.0/add_header.css" rel="stylesheet">
-<script src="../site_libs/quarto-contrib/jquery-3.6.3/jquery-3.6.3.min.js"></script>
-<script src="../site_libs/quarto-contrib/code-fullscreen-1.0.0/code-fullscreen.js" defer="true"></script>
-<link href="../site_libs/quarto-contrib/code-fullscreen-1.0.0/code-fullscreen.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/grid-no-htext-1.0.0/grid_no_htext.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/reveal-auto-agenda-0.0.3/reveal-auto-agenda.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>MATH 453 – Functions of Random Variables</title>
+  <title>MATH 453 – Joint Distribution Functions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -42,8 +35,6 @@
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-pointer/pointer.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/verticator/verticator.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -254,7 +245,6 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
-      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -331,183 +321,209 @@
       margin-right: 0; 
     }
   </style>
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      TeX: {
-        Macros: {
-          //Bold Lowecase Greek Letters
-          'balpha': '\\boldsymbol \\alpha',
-          'bbeta': '\\boldsymbol \\beta',
-          'bgamma': '\\boldsymbol \\gamma', 
-          'bdelta': '\\boldsymbol \\delta',
-          'bepsilon': '\\boldsymbol \\epsilon',
-          'bzeta': '\\boldsymbol \\zeta',
-          'boeta': '\\boldsymbol \\eta',
-          'btheta': '\\boldsymbol \\theta',
-          'biota': '\\boldsymbol \\iota',
-          'bkappa': '\\boldsymbol \\kappa',
-          'blambda': '\\boldsymbol \\lambda',
-          'bmu': '\\boldsymbol \\mu',
-          'bnu': '\\boldsymbol \\nu',
-          'bxi': '\\boldsymbol \\xi',
-          'bomicron': '\\boldsymbol \\omicron',
-          'bpi': '\\boldsymbol \\pi',
-          'brho': '\\boldsymbol \\rho',
-          'bsigma': '\\boldsymbol \\sigma',
-          'btau': '\\boldsymbol \\tau',
-          'bupsilon': '\\boldsymbol \\upsilon',
-          'bphi': '\\boldsymbol \\phi',
-          'bchi': '\\boldsymbol \\chi',
-          'bpsi': '\\boldsymbol \\psi',
-          'bomega': '\\boldsymbol \\omega',
-          //Bold Uppercase Greek Letters
-          'bGamma': '\\boldsymbol \\Gamma', 
-          'bDelta': '\\boldsymbol \\Delta',
-          'bTheta': '\\boldsymbol \\Theta',
-          'bLambda': '\\boldsymbol \\Lambda',
-          'bXi': '\\boldsymbol \\Xi',
-          'bPi': '\\boldsymbol \\Pi',
-          'bSigma': '\\boldsymbol \\Sigma',
-          'bPhi': '\\boldsymbol \\Phi',
-          'bPsi': '\\boldsymbol \\Psi',
-          'bOmega': '\\boldsymbol \\Omega',
-          // Bold Vars
-          'bvarphi': '\\boldsymbol \\varphi',
-          'bvarrho': '\\boldsymbol \\varrho',
-          'bvartheta': '\\boldsymbol \\vartheta',
-          // Math Remove
-          'mrT': '\\mathrm T',
-          'mrth': '\\mathrm{th}',
-          'inv': '\^{-1}',
-          'tr': '\\mathrm{tr}',
-          'Cov': '\\mathrm{Cov}',
-          'Cor': '\\mathrm{Cor}',
-          'Var': '\\mathrm{Var}',
-          'E': '\\mathrm{E}',
-          'mrTr': '\^\\mathrm T',
-          // Bold Letters
-          'bX': '\\boldsymbol X',
-          'bx': '\\boldsymbol x',
-          'bF': '\\boldsymbol F',
-          'bY': '\\boldsymbol Y',
-          'by': '\\boldsymbol y',
-          'bK': '\\boldsymbol K',
-          'bZ': '\\boldsymbol Z',
-          'bT': '\\boldsymbol T',
-          'bz': '\\boldsymbol z',
-          'bB': '\\boldsymbol B',
-          'ba': '\\boldsymbol a',
-          'bb': '\\boldsymbol b',
-          'bI': '\\boldsymbol I',
-          'bR': '\\boldsymbol R',
-          'bc': '\\boldsymbol c',
-          'bW': '\\boldsymbol W',
-          'bt': '\\boldsymbol t',
-          'bd': '\\boldsymbol d',
-          'bD': '\\boldsymbol D',
-          'bG': '\\boldsymbol G',
-          'bJ': '\\boldsymbol J',
-          'bS': '\\boldsymbol S',
-          'bV': '\\boldsymbol V',
-          'bH': '\\boldsymbol H',
-          'bA': '\\boldsymbol A',
-          'bU': '\\boldsymbol U',
-          'bu': '\\boldsymbol u',
-          'bv': '\\boldsymbol v',
-          'bP': '\\boldsymbol P',
-          'bw': '\\boldsymbol w',
-          'br': '\\boldsymbol r',
-          // MathCal
-          // Regular
-          'mcA': '\\mathcal{A}',
-          'mcB': '\\mathcal{B}',
-          'mcC': '\\mathcal{C}',
-          'mcD': '\\mathcal{D}',
-          'mcJ': '\\mathcal{J}',
-          'mcL': '\\mathcal{L}',
-          'mcM': '\\mathcal{M}',
-          'mcR': '\\mathcal{R}',
-          'mcP': '\\mathcal{P}',
-          'mcX': '\\mathcal{X}',
-          'mcZ': '\\mathcal{Z}',
-          'mcb': '\\mathcal{b}',
-          'mcp': '\\mathcal{p}',
-          // bold
-          'bmcH': '\\boldsymbol{\\mathcal{H}}',
-          'bmcS': '\\boldsymbol{\\mathcal{S}}',
-          'bmcV': '\\boldsymbol{\\mathcal{V}}',
-          'bmcX': '\\boldsymbol{\\mathcal{X}}',
-          'bmcD': '\\boldsymbol{\\mathcal{D}}',
-          'bmcU': '\\boldsymbol{\\mathcal{U}}',
-          'bmcG': '\\boldsymbol{\\mathcal{G}}',
-          'bmcI': '\\boldsymbol{\\mathcal{I}}',
-          'bmcZ': '\\boldsymbol{\\mathcal{Z}}',
-          'bmcb': '\\mathbcal{\\boldsymbol{b}}',
-          'bmcp': '\\mathbcal{\\boldsymbol{p}}',
-          
-          // Script Fonts
-          'msL': '\\mathscr{L}',
-          'msF': '\\mathscr{F}',
-          'msG': '\\mathscr{G}',
-          'msP': '\\mathscr{P}',
-          'msV': '\\mathscr{V}',
-          'msX': '\\mathscr{X}',
-          'msY': '\\mathscr{Y}',
-          'msZ': '\\mathscr{Z}',
-          
-          // Fraktur Fonts
-          'mfL': '\\mathfrak{L}',
-          'mfF': '\\mathfrak{F}',
-          'mfG': '\\mathfrak{G}',
-          'mfP': '\\mathfrak{P}',
-          'mfV': '\\mathfrak{V}',
-          'mfX': '\\mathfrak{X}',
-          'mfY': '\\mathfrak{Y}',
-          'mfZ': '\\mathfrak{Z}',
-          
-          //Bold Numbers
-          'bzero': '\\boldsymbol{0}',
-          'bone': '\\boldsymbol{1}',
-
-        }
-      }
-    });
-  </script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Functions of Random Variables</h1>
+  <h1 class="title">Joint Distribution Functions</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section class="slide level2">
+<section id="learning-outcomes" class="slide level2">
+<h2>Learning Outcomes</h2>
+<ul>
+<li><p>Conditional Distributions</p></li>
+<li><p>Independence</p></li>
+<li><p>Expectations</p></li>
+<li><p>Covariance</p></li>
+</ul>
+</section>
+<section>
+<section id="conditional-distributions" class="title-slide slide level1 center">
+<h1>Conditional Distributions</h1>
 
+</section>
+<section id="conditional-distributions-1" class="slide level2">
+<h2>Conditional Distributions</h2>
+<p>A conditional distribution provides the probability of a random variable, given that it was conditioned on the value of a second random variable.</p>
+</section>
+<section id="discrete-conditional-distributions" class="slide level2">
+<h2>Discrete Conditional Distributions</h2>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 discrete random variables, with a joint distribution function of</p>
+<p><span class="math display">\[
+p_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).
+\]</span></p>
+<p>The conditional distribution of <span class="math inline">\(X_1|X_2=x_2\)</span> is defined as</p>
+<p><span class="math display">\[
+p_{X_1|X_2}(x_1) = \frac{p_{X_1,X_2}(x_1,x_2)}{p_{X_2}(x_2)}
+\]</span></p>
+</section>
+<section id="continuous-conditional-distributions" class="slide level2">
+<h2>Continuous Conditional Distributions</h2>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 continuous random variables, with a joint density function of <span class="math inline">\(f_{X_1,X_2}(x_1,x_2)\)</span>. The conditional distribution of <span class="math inline">\(X_1|X_2=x_2\)</span> is defined as</p>
+<p><span class="math display">\[
+f_{X_1|X_2}(x_1) = \frac{f_{X_1,X_2}(x_1,x_2)}{f_{X_2}(x_2)}
+\]</span></p>
+</section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<p>Let the joint density function of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be defined as</p>
+<p><span class="math display">\[
+f_{X_1,X_2}(x_1,x_2)=\left\{\begin{array}{cc}
+30x_1x_2² &amp; x_1 -1 \le x_2 \le 1-x_1; 0\le x_1\le 1\\
+0 &amp; \mathrm{elsewhere}
+\end{array}\right.
+\]</span></p>
+<p>Find the conditional density function of <span class="math inline">\(X_2|X_1=x_1\)</span>.</p>
+</section></section>
+<section>
+<section id="independence" class="title-slide slide level1 center">
+<h1>Independence</h1>
+
+</section>
+<section id="independent-random-variables" class="slide level2">
+<h2>Independent Random Variables</h2>
+<p>Random variables are considered independent of each other if the probability of one variable does not affect the probability of another variable.</p>
+</section>
+<section id="discrete-independent-random-variables" class="slide level2">
+<h2>Discrete Independent Random Variables</h2>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 discrete random variables, with a joint density function of <span class="math inline">\(p_{X_1,X_2}(x_1,x_2)\)</span>. <span class="math inline">\(X_1\)</span> is independent of <span class="math inline">\(X_2\)</span> if and only if</p>
+<p><span class="math display">\[
+p_{X_1,X_2}(x_1,x_2) = p_{X_1}(x_1)p_{X_2}(x_2)
+\]</span></p>
+</section>
+<section id="continuous-independent-random-variables" class="slide level2">
+<h2>Continuous Independent Random Variables</h2>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 continuous random variables, with a joint density function of <span class="math inline">\(f_{X_1,X_2}(x_1,x_2)\)</span>. <span class="math inline">\(X_1\)</span> is independent of <span class="math inline">\(X_2\)</span> if and only if</p>
+<p><span class="math display">\[
+f_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2)
+\]</span></p>
+</section>
+<section id="matrix-algebra" class="slide level2">
+<h2>Matrix Algebra</h2>
+<p><span class="math display">\[
+A = \left(\begin{array}{cc}
+a_1 &amp; 0\\
+0 &amp; a_2
+\end{array}\right)
+\]</span></p>
+<p><span class="math display">\[
+\det(A) = a_1a_2
+\]</span></p>
+<p><span class="math display">\[
+A^{-1}=\left(\begin{array}{cc}
+1/a_1 &amp; 0 \\
+0 &amp; 1/a_2
+\end{array}\right)
+\]</span></p>
+</section>
+<section id="bivariate-normal-distribution" class="slide level2">
+<h2>Bivariate Normal Distribution</h2>
+<p><span class="math display">\[
+\left(\begin{array}{c}
+X\\
+Y
+\end{array}\right)\sim N \left\{
+\left(\begin{array}{c}
+\mu_x\\
+\mu_y
+\end{array}\right),\left(\begin{array}{cc}
+\sigma_x^2 &amp; 0\\
+0 &amp; \sigma_y^2
+\end{array}\right)
+\right\}
+\]</span></p>
+<p><span class="math display">\[
+f_{X,Y}(x,y)=\det(2\pi\Sigma)^{-1/2}\exp\left\{-\frac{1}{2}(\boldsymbol{w}-\boldsymbol\mu)^T\Sigma^{-1}(\boldsymbol w-\boldsymbol\mu)\right\}
+\]</span></p>
+<p>where <span class="math inline">\(\Sigma=\left(\begin{array}{cc}\sigma_y^2 &amp; 0\\0 &amp; \sigma_y^2\end{array}\right)\)</span>, <span class="math inline">\(\boldsymbol \mu = \left(\begin{array}{cc}\mu_x\\ \mu_y \end{array}\right)\)</span>, and <span class="math inline">\(\boldsymbol w = \left(\begin{array}{cc} x\\ y \end{array}\right)\)</span></p>
+</section></section>
+<section>
+<section id="expectations" class="title-slide slide level1 center">
+<h1>Expectations</h1>
+
+</section>
+<section id="expectations-1" class="slide level2">
+<h2>Expectations</h2>
+<p>Let <span class="math inline">\(X_1, X_2, \ldots,X_n\)</span> be a set of random variables, the expectation of a function <span class="math inline">\(g(X_1,\ldots, X_n)\)</span> is defined as</p>
+<p><span class="math display">\[
+E\{g(X_1,\ldots, X_n)\} = \sum_{x_1\in X_1}\cdots\sum_{x_n\in X_n}g(X_1,\ldots, X_n)p(x_1,\ldots,x_n)
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+E\{g(\boldsymbol X)\} = \int_{x_1\in X_1}\cdots\int_{x_n\in X_n}g(\boldsymbol X)f(\boldsymbol X)dx_n \cdots dx_1
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\boldsymbol X = (X_1,\cdots, X_n)\)</span></li>
+</ul>
+</section>
+<section id="expected-value-and-variance-of-linear-functions" class="slide level2">
+<h2>Expected Value and Variance of Linear Functions</h2>
+<p>Let <span class="math inline">\(X_1,\ldots,X_n\)</span> and <span class="math inline">\(Y_1,\ldots,Y_m\)</span> be random variables with <span class="math inline">\(E(X_i)=\mu_i\)</span> and <span class="math inline">\(E(Y_j)=\tau_j\)</span>. Furthermore, let <span class="math inline">\(U = \sum^n_{i=1}a_iX_i\)</span> and <span class="math inline">\(V=\sum^m_{j=1}b_jY_j\)</span> where <span class="math inline">\(\{a_i\}^n_{i=1}\)</span> and <span class="math inline">\(\{b_j\}_{j=1}^m\)</span> are constants. We have the following properties:</p>
+<ul>
+<li><p><span class="math inline">\(E(U)=\sum_{i=1}^na_i\mu_i\)</span></p></li>
+<li><p><span class="math inline">\(Var(U)=\sum^n_{i=1}a_i^2Var(X_i)+2\underset{i&lt;j}{\sum\sum}a_ia_jCov(X_i,X_j)\)</span></p></li>
+<li><p><span class="math inline">\(Cov(U,V)=\sum^n_{i=1}\sum^m_{j=1}Cov(X_i,Y_j)\)</span></p></li>
+</ul>
+</section>
+<section id="conditional-expectations" class="slide level2">
+<h2>Conditional Expectations</h2>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be two random variables, the conditional expectation of <span class="math inline">\(g(X_1)\)</span>, given <span class="math inline">\(X_2=x_2\)</span>, is defined as</p>
+<p><span class="math display">\[
+E\{g(X_1)|X_2=x_2\}=\sum_{x_1}g(x_1)p(x_1|x_2)
+\]</span></p>
+<p>or</p>
+<p><span class="math display">\[
+E\{g(X_1)|X_2=x_2\}=\int_{x_1}g(x_1)f(x_1|x_2)dx_1.
+\]</span></p>
+</section>
+<section id="conditional-expectations-1" class="slide level2">
+<h2>Conditional Expectations</h2>
+<p>Furthermore,</p>
+<p><span class="math display">\[
+E(X_1)=E_{X_2}\{E_{X_1|X_2}(X_1|X_2)\}
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+Var(X_1) = E_{X_2}\{Var_{X_1|X_2}(X_1|X_2)\} + Var_{X_2}\{E_{X_1|X_2}(X_1|X_2)\}
+\]</span></p>
+</section></section>
+<section>
+<section id="covariance" class="title-slide slide level1 center">
+<h1>Covariance</h1>
+
+</section>
+<section id="covariance-1" class="slide level2">
+<h2>Covariance</h2>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 random variables with mean <span class="math inline">\(E(X_1)=\mu_1\)</span> and <span class="math inline">\(E(X_2)=\mu_2\)</span>, respectively. The covariance of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> is defined as</p>
+<p><span class="math display">\[
+\begin{eqnarray*}
+Cov(X_1,X_2) &amp; = &amp; E\{(X_1-\mu_1)(X_2-\mu_2)\}\\
+&amp; =&amp; E(X_1X_2)-\mu_1\mu_2
+\end{eqnarray*}
+\]</span></p>
+<p>If <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> are independent random variables, then</p>
+<p><span class="math display">\[
+Cov(X_1,X_2)=0
+\]</span></p>
+</section>
+<section id="correlation" class="slide level2">
+<h2>Correlation</h2>
+<p>The correlation of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> is defined as</p>
+<p><span class="math display">\[
+\rho = Cor(X_1,X_2) = \frac{Cov(X_1,X_2)}{\sqrt{Var(X_1)Var(X_2)}}
+\]</span></p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-<div class="reveal-header">
-<div class="header-logo">
-<img data-src="">
-</div>
-<div class="sc-title">
-<p> </p>
-</div>
-<div class="header-text">
-<p> </p>
-</div>
-<div class="sb-title">
-<p> </p>
-</div>
-</div>
-</section>
+</section></section>
     </div>
   </div>
 
@@ -519,8 +535,6 @@
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-pointer/pointer.js"></script>
-  <script src="../site_libs/revealjs/plugin/verticator/verticator.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -542,9 +556,7 @@
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true,"theme":"whiteboard","chalkWidth":4},
-'pointer': {"key":"q","color":"red","pointerSize":16,"alwaysVisible":false},
-'verticator': {"themetag":"h1","color":"","inversecolor":"","skipuncounted":false,"clickable":true,"position":"auto","offset":"3vmin","autogenerate":true,"tooltip":false,"scale":1},
+'chalkboard': {"buttons":true,"src":"chalkboard.json","theme":"whiteboard","chalkWidth":4},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -715,7 +727,7 @@
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, RevealPointer, Verticator, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
           RevealNotes,

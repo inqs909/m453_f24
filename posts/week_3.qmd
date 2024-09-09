@@ -2,65 +2,19 @@
 title: "Week 3"
 date: 09-5-24
 description: |
-  This week, we will review basic properties of MGFs and introduce markdown and R/QMDs.
+  This week, we will cover Transformations of Random Variables
 editor: visual
 draft: true
 ---
 
 ## Learning Outcomes
 
-### Wednesday
-
--   Moment Generating Functions Properties
-
--   Introduction to Q/RMD
-
-## Reading
-
-| Day                 | Reading  |
-|---------------------|----------|
-| Monday's Lecture    | Holiday  |
-| Wednesday's Lecture | MMS: 4.2 |
-
-## Homework
-
-Homework 2 can be found here: <https://m453.inqs.info/hws/hw2.html>
-
-It is due **9/16/2022 at 11:59PM.**
-
-## Important Concepts
-
-### MGF Properties
-
-#### Linearity
-
-Let $X$ follow a distribution $f$, with the an MGF $M_X(t)$, the MGF of $Y=aX+b$ is given as
-
-$$
-M_Y(t) = e^{tb}M_X(at)
-$$
-
-Let $X$ and $Y$ be two random variables with MGFs $M_X(t)$ and $M_Y(t)$, respectively, and are independent. The MGF of $U=X-Y$
-
-$$
-M_U(t) = M_X(t)M_Y(-t)
-$$
-
-#### Uniqueness
-
-Let $X$ and $Y$ have the following distributions $F_X(x)$ and $F_Y(y)$ and MGFs $M_X(t)$ and $M_Y(t)$, respectively. $X$ and $Y$ have the same distribution $F_X(x)=F_Y(y)$ if and only if $M_X(t)=M_Y(t)$.
-
-### Rmarkdown and Quarto
-
-[Rmarkdown](https://rmarkdown.rstudio.com/) is a documentation system that allows you to embed R code and/or output to you document. Additionally, Rmarkdown allows you to export the document to different formats, such as html, word, or pdf.
-
-[Quarto](https://quarto.org/) is the next generation of Rmarkdown that expands it's capabilities to more formats and different languages. Additionally, Quarto allows to be utilized in different IDE's such as RStudio and Visual Code.
 
 ## Resources
 
 You must log on to your CI Google account to access the video.
 
-| Lecture   | Slides                                                      | Videos                                                                                      |
-|--------------|----------------------|------------------------------------|
-| Monday    | N/A                                                         | N/A                                                                                         |
-| Wednesday | [Slides](https://m453.inqs.info/files/Lecture_4/index.html) | [Video](https://drive.google.com/file/d/1Y2kMfWXOGn-32QqrYiFS2TZ_bNaiPH6A/view?usp=sharing) |
+| Lecture   | Slides                       | Videos  |
+|-----------|---------------------|----------------------------------|
+| Monday    | [Slides](https://m453.inqs.info/lectures/3a) |  |
+| Wednesday | [Slides](https://m453.inqs.info/lectures/3b) |  |
