@@ -13,7 +13,7 @@ draft: false
 
 You must log on to your CI Google account to access the video.
 
-| Lecture   | Slides                                       | Videos |
-|-----------|----------------------------------------------|--------|
-| Monday    | [Slides](https://m453.inqs.info/lectures/3a) |        |
-| Wednesday | [Slides](https://m453.inqs.info/lectures/3b) |        |
+| Lecture   | Slides                                       | Videos                                |
+|-----------|----------------------------------------------|---------------------------------------|
+| Monday    | [Slides](https://m453.inqs.info/lectures/3a) | [Video](https://youtu.be/4geO1vYEPRM) |
+| Wednesday | [Slides](https://m453.inqs.info/lectures/3b) |                                       |
