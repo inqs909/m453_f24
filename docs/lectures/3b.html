@@ -333,15 +333,108 @@
 </div>
 
 </section>
-<section id="learning-outcomes" class="slide level2">
-<h2>Learning Outcomes</h2>
+<section class="slide level2">
+
 <ul>
+<li><p>Joint Distributions</p></li>
+<li><p>Marginal Distributions</p></li>
 <li><p>Conditional Distributions</p></li>
 <li><p>Independence</p></li>
 <li><p>Expectations</p></li>
 <li><p>Covariance</p></li>
 </ul>
 </section>
+<section>
+<section id="joint-distributions" class="title-slide slide level1 center">
+<h1>Joint Distributions</h1>
+
+</section>
+<section id="partial-derivatives" class="slide level2">
+<h2>Partial Derivatives</h2>
+<p>For a function <span class="math inline">\(f(x,y)\)</span>, the partial derivative with respect to <span class="math inline">\(x\)</span> is taken by differentiating <span class="math inline">\(f(x,y)\)</span> with respect to <span class="math inline">\(x\)</span> while treating <span class="math inline">\(y\)</span> as a constant. For example:</p>
+<p><span class="math inline">\(f(x,y) = x^2 + \ln(y)\)</span></p>
+</section>
+<section id="multiple-integration" class="slide level2">
+<h2>Multiple Integration</h2>
+<p>Multiple integration is when you integrate a multivariate function by multiple variables. This is done by integrating the function by an individual variable at a time. For example:</p>
+<p><span class="math inline">\(f(x,y)=x^2 + y^2\)</span> which can be integrated as:</p>
+</section>
+<section id="joint-distributions-1" class="slide level2">
+<h2>Joint Distributions</h2>
+<p>A joint distribution is a process where more than one random variable is generated; for example, collecting biomedical data, such as multiple biomarkers, are considered to follow a joint distribution. In mathematical terms, instead of dealing with a random variable, we are dealing with a random vector. Observing a particular random vector will have a probability attached to it.</p>
+</section>
+<section id="bivariate-discrete-distributions" class="slide level2">
+<h2>Bivariate Discrete Distributions</h2>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 discrete random variables, the joint distribution function of <span class="math inline">\((X_1, X_2)\)</span> is defined as</p>
+<p><span class="math display">\[
+p_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).
+\]</span></p>
+<p>The properties of a bivariate discrete distribution are</p>
+<ul>
+<li><p><span class="math inline">\(p_{X_1,X_2}(x_1,x_2)\ge 0\)</span> for all <span class="math inline">\(x_1,\ x_2\)</span></p></li>
+<li><p><span class="math inline">\(\sum_{x_1}\sum_{x2}p(x_1,x_2)=1\)</span></p></li>
+</ul>
+</section>
+<section id="bivariate-continuous-distribution" class="slide level2">
+<h2>Bivariate Continuous Distribution</h2>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 continuous random variables, the joint distribution function of <span class="math inline">\((X_1, X_2)\)</span> is defined as</p>
+<p><span class="math display">\[
+F_{X_1,X_2}(x_1, x_2) = P(X_1\le x_1, X_2 \le x_2).
+\]</span></p>
+<p>The properties of a bivariate continuous distribution are</p>
+<ul>
+<li><p><span class="math inline">\(f_{X_1,X_2}(x_1,x_2)=\frac{\partial^2F(x_1,x_2)}{\partial x_1\partial x_2}\)</span></p></li>
+<li><p><span class="math inline">\(f_{X_1,X_2}(x_1, x_2)\ge 0\)</span></p></li>
+<li><p><span class="math inline">\(\int_{x_1}\int_{x_2}f_{X_1,X_2}(x_1,x_2)dx_2dx_1=1\)</span></p></li>
+</ul>
+</section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<p><span class="math display">\[
+f(x,y) \left\{\begin{array}{cc}
+3x &amp; 0\le y\le x\le 1\\
+0 &amp; \mathrm{otherwise}
+\end{array}\right.
+\]</span></p>
+<p>Find <span class="math inline">\(P(0\le X\le 0.5,0.25\le Y)\)</span></p>
+</section></section>
+<section>
+<section id="marginal-density-function" class="title-slide slide level1 center">
+<h1>Marginal Density Function</h1>
+
+</section>
+<section id="marginal-density-functions" class="slide level2">
+<h2>Marginal Density Functions</h2>
+<p>A Marginal Density Function is density function of one random variable from a random vector.</p>
+</section>
+<section id="marginal-discrete-probability-mass-function" class="slide level2">
+<h2>Marginal Discrete Probability Mass Function</h2>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 discrete random variables, with a joint distribution function of</p>
+<p><span class="math display">\[
+p_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).
+\]</span></p>
+<p>The marginal distribution of <span class="math inline">\(X_1\)</span> is defined as</p>
+<p><span class="math display">\[
+p_{X_1}(x_1) = \sum_{x_2}p_{X_1,X_2}(x_1,x_2)
+\]</span></p>
+</section>
+<section id="marginal-continuous-density-function" class="slide level2">
+<h2>Marginal Continuous Density Function</h2>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 continuous random variables, with a joint density function of <span class="math inline">\(f_{X_1,X_2}(x_1,x_2)\)</span>. The marginal distribution of <span class="math inline">\(X_1\)</span> is defined as</p>
+<p><span class="math display">\[
+f_{X_1}(x_1) = \int_{x_2}f_{X_1,X_2}(x_1,x_2)dx_2
+\]</span></p>
+</section>
+<section id="example-1" class="slide level2">
+<h2>Example</h2>
+<p><span class="math display">\[
+f_{X,Y}(x,y) \left\{\begin{array}{cc}
+2x &amp; 0\le y \le 1;\ 0 \le x\le 1\\
+0 &amp; \mathrm{otherwise}
+\end{array}\right.
+\]</span></p>
+<p>Find <span class="math inline">\(f_X(x)\)</span></p>
+</section></section>
 <section>
 <section id="conditional-distributions" class="title-slide slide level1 center">
 <h1>Conditional Distributions</h1>
@@ -364,12 +457,12 @@ p_{X_1|X_2}(x_1) = \frac{p_{X_1,X_2}(x_1,x_2)}{p_{X_2}(x_2)}
 </section>
 <section id="continuous-conditional-distributions" class="slide level2">
 <h2>Continuous Conditional Distributions</h2>
-<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 continuous random variables, with a joint density function of <span class="math inline">\(f_{X_1,X_2}(x_1,x_2)\)</span>. The conditional distribution of <span class="math inline">\(X_1|X_2=x_2\)</span> is defined as</p>
+<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 continuous random variables, with a joint density function of <span class="math inline">\(f_{X_1,X_2}(x_1,x_2)\)</span>. The conditional distribution of <span class="math inline">\(X_1|X_2=_2\)</span> is defined as</p>
 <p><span class="math display">\[
 f_{X_1|X_2}(x_1) = \frac{f_{X_1,X_2}(x_1,x_2)}{f_{X_2}(x_2)}
 \]</span></p>
 </section>
-<section id="example" class="slide level2">
+<section id="example-2" class="slide level2">
 <h2>Example</h2>
 <p>Let the joint density function of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be defined as</p>
 <p><span class="math display">\[
@@ -421,8 +514,8 @@ A^{-1}=\left(\begin{array}{cc}
 \end{array}\right)
 \]</span></p>
 </section>
-<section id="bivariate-normal-distribution" class="slide level2">
-<h2>Bivariate Normal Distribution</h2>
+<section id="example-3" class="slide level2">
+<h2>Example</h2>
 <p><span class="math display">\[
 \left(\begin{array}{c}
 X\\
@@ -437,6 +530,7 @@ Y
 \end{array}\right)
 \right\}
 \]</span></p>
+<p>Show that <span class="math inline">\(X\perp Y\)</span>.</p>
 <p><span class="math display">\[
 f_{X,Y}(x,y)=\det(2\pi\Sigma)^{-1/2}\exp\left\{-\frac{1}{2}(\boldsymbol{w}-\boldsymbol\mu)^T\Sigma^{-1}(\boldsymbol w-\boldsymbol\mu)\right\}
 \]</span></p>

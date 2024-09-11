@@ -20,7 +20,9 @@ knitr::opts_chunk$set(echo = T)
 
 ```
 
-## Learning Outcomes
+-   Joint Distributions
+
+-   Marginal Distributions
 
 -   Conditional Distributions
 
@@ -29,6 +31,104 @@ knitr::opts_chunk$set(echo = T)
 -   Expectations
 
 -   Covariance
+
+# Joint Distributions
+
+## Partial Derivatives
+
+For a function $f(x,y)$, the partial derivative with respect to $x$ is taken by differentiating $f(x,y)$ with respect to $x$ while treating $y$ as a constant. For example:
+
+$f(x,y) = x^2 + \ln(y)$
+
+## Multiple Integration
+
+Multiple integration is when you integrate a multivariate function by multiple variables. This is done by integrating the function by an individual variable at a time. For example:
+
+$f(x,y)=x^2 + y^2$ which can be integrated as:
+
+## Joint Distributions
+
+A joint distribution is a process where more than one random variable is generated; for example, collecting biomedical data, such as multiple biomarkers, are considered to follow a joint distribution. In mathematical terms, instead of dealing with a random variable, we are dealing with a random vector. Observing a particular random vector will have a probability attached to it.
+
+## Bivariate Discrete Distributions
+
+Let $X_1$ and $X_2$ be 2 discrete random variables, the joint distribution function of $(X_1, X_2)$ is defined as
+
+$$
+p_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).
+$$
+
+The properties of a bivariate discrete distribution are
+
+-   $p_{X_1,X_2}(x_1,x_2)\ge 0$ for all $x_1,\ x_2$
+
+-   $\sum_{x_1}\sum_{x2}p(x_1,x_2)=1$
+
+## Bivariate Continuous Distribution
+
+Let $X_1$ and $X_2$ be 2 continuous random variables, the joint distribution function of $(X_1, X_2)$ is defined as
+
+$$
+F_{X_1,X_2}(x_1, x_2) = P(X_1\le x_1, X_2 \le x_2).
+$$
+
+The properties of a bivariate continuous distribution are
+
+-   $f_{X_1,X_2}(x_1,x_2)=\frac{\partial^2F(x_1,x_2)}{\partial x_1\partial x_2}$
+
+-   $f_{X_1,X_2}(x_1, x_2)\ge 0$
+
+-   $\int_{x_1}\int_{x_2}f_{X_1,X_2}(x_1,x_2)dx_2dx_1=1$
+
+## Example
+
+$$
+f(x,y) \left\{\begin{array}{cc}
+3x & 0\le y\le x\le 1\\
+0 & \mathrm{otherwise}
+\end{array}\right.
+$$
+
+Find $P(0\le X\le 0.5,0.25\le Y)$
+
+# Marginal Density Function
+
+## Marginal Density Functions
+
+A Marginal Density Function is density function of one random variable from a random vector.
+
+## Marginal Discrete Probability Mass Function
+
+Let $X_1$ and $X_2$ be 2 discrete random variables, with a joint distribution function of
+
+$$
+p_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).
+$$
+
+The marginal distribution of $X_1$ is defined as
+
+$$
+p_{X_1}(x_1) = \sum_{x_2}p_{X_1,X_2}(x_1,x_2)
+$$
+
+## Marginal Continuous Density Function
+
+Let $X_1$ and $X_2$ be 2 continuous random variables, with a joint density function of $f_{X_1,X_2}(x_1,x_2)$. The marginal distribution of $X_1$ is defined as
+
+$$
+f_{X_1}(x_1) = \int_{x_2}f_{X_1,X_2}(x_1,x_2)dx_2
+$$
+
+## Example
+
+$$
+f_{X,Y}(x,y) \left\{\begin{array}{cc}
+2x & 0\le y \le 1;\ 0 \le x\le 1\\
+0 & \mathrm{otherwise}
+\end{array}\right.
+$$
+
+Find $f_X(x)$
 
 # Conditional Distributions
 
@@ -52,7 +152,7 @@ $$
 
 ## Continuous Conditional Distributions
 
-Let $X_1$ and $X_2$ be 2 continuous random variables, with a joint density function of $f_{X_1,X_2}(x_1,x_2)$. The conditional distribution of $X_1|X_2=x_2$ is defined as
+Let $X_1$ and $X_2$ be 2 continuous random variables, with a joint density function of $f_{X_1,X_2}(x_1,x_2)$. The conditional distribution of $X_1|X_2=_2$ is defined as
 
 $$
 f_{X_1|X_2}(x_1) = \frac{f_{X_1,X_2}(x_1,x_2)}{f_{X_2}(x_2)}
@@ -113,7 +213,7 @@ A^{-1}=\left(\begin{array}{cc}
 \end{array}\right)
 $$
 
-## Bivariate Normal Distribution
+## Example
 
 $$
 \left(\begin{array}{c}
@@ -129,6 +229,8 @@ Y
 \end{array}\right)
 \right\}
 $$
+
+Show that $X\perp Y$.
 
 $$
 f_{X,Y}(x,y)=\det(2\pi\Sigma)^{-1/2}\exp\left\{-\frac{1}{2}(\boldsymbol{w}-\boldsymbol\mu)^T\Sigma^{-1}(\boldsymbol w-\boldsymbol\mu)\right\}
