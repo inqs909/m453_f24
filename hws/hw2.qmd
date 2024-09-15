@@ -1,19 +1,15 @@
 ---
 title: "Homework 2"
 editor: source
-date: 9-6-2024
-draft: true
+date: 9-14-2024
+draft: false
 ---
 
-**Homework 2 is due 9/16/2024 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
+**Homework 2 is due 9/22/2024 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
 
-The PDF version of this assignment can be found [here](hw2.pdf).
+1.  Show that the moment generating function for a random variable $X\sim Gamma(\alpha,\beta)$ is $\left(1-\beta t\right)^{-\alpha}$.
 
-1.  $X$ is a random variable with the following pdf $f(x)=\frac{2x}{\pi^2}$ for $x\in [0,\pi]$, show that the pdf is valid.
-
-2.  $X\sim Pois(\lambda)$, what is the moment generating function of $Y=\log(X+4)$?
-
-3.  Let $X$ be a discrete random variable with PMF
+2.  Let $X$ be a discrete random variable with PMF
 
     $$
     P(X=x)=\left\{\begin{array}{cc}
@@ -24,4 +20,21 @@ The PDF version of this assignment can be found [here](hw2.pdf).
     \end{array}\right.
     $$ Show that the PMF is valid.
 
-4.  Let $Y$ be random variable with support $(0,1)$. What is the normalizing constant $c$ to make $f(x)=cx$ valid?
+
+3. Let $X$ and $Y$ be two random variables that have the following joint distribution function:
+
+$$
+f(x,y)=\left\{\begin{array}{cc}
+e^{-x/2}ye^{-y²} & x>0;y>0\\
+0 & \mathrm{otherwise}
+\end{array}
+\right.
+$$
+
+What is the marginal distribution of $Y$?
+
+4.  Find the moment-generating function of $X\sim\chi^2_k$ and $f_X(x)=\frac{x^{k/2-1}\exp\{-x/2\}}{2^{k/2}\Gamma(k/2)}$ with $x>0$.
+
+
+
+
