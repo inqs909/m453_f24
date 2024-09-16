@@ -42,66 +42,22 @@
   </url>
   <url>
     <loc>m453.inqs.info/lectures/3b.html</loc>
-    <lastmod>2024-09-11T16:59:14.800Z</lastmod>
+    <lastmod>2024-09-16T04:20:52.674Z</lastmod>
   </url>
   <url>
-    <loc>m453.inqs.info/lectures/3a.html</loc>
+    <loc>m453.inqs.info/lectures/2b.html</loc>
     <lastmod>2024-06-04T20:24:10.148Z</lastmod>
   </url>
   <url>
-    <loc>m453.inqs.info/r.html</loc>
-    <lastmod>2024-06-04T20:24:10.148Z</lastmod>
+    <loc>m453.inqs.info/lectures/1b.html</loc>
+    <lastmod>2024-08-25T21:22:18.454Z</lastmod>
   </url>
   <url>
-    <loc>m453.inqs.info/hws/hw1.html</loc>
-    <lastmod>2024-08-29T01:04:15.771Z</lastmod>
+    <loc>m453.inqs.info/hws/hw2.html</loc>
+    <lastmod>2024-09-15T00:43:53.602Z</lastmod>
   </url>
   <url>
-    <loc>m453.inqs.info/posts/week_1.html</loc>
-    <lastmod>2024-08-29T00:59:08.451Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/posts/week_2.html</loc>
-    <lastmod>2024-09-05T22:19:28.816Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/ec.html</loc>
-    <lastmod>2024-08-27T18:51:43.735Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/exc/exc4.html</loc>
-    <lastmod>2024-08-27T18:45:39.504Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/exc/exc1.html</loc>
-    <lastmod>2024-08-27T18:33:31.090Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/r/r_lab_2.html</loc>
-    <lastmod>2024-06-04T20:24:10.148Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/r/r_lab_0.html</loc>
-    <lastmod>2024-06-04T20:24:10.148Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/r/r_lab_1.html</loc>
-    <lastmod>2024-06-04T20:24:10.148Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/r/r_lab_3.html</loc>
-    <lastmod>2024-06-04T20:24:10.148Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/exc/exc2.html</loc>
-    <lastmod>2024-08-27T18:40:24.808Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/exc/exc3.html</loc>
-    <lastmod>2024-08-27T18:45:39.481Z</lastmod>
-  </url>
-  <url>
-    <loc>m453.inqs.info/hw.html</loc>
+    <loc>m453.inqs.info/index.html</loc>
     <lastmod>2024-06-04T20:24:10.148Z</lastmod>
   </url>
   <url>
@@ -109,20 +65,72 @@
     <lastmod>2024-09-10T17:30:37.950Z</lastmod>
   </url>
   <url>
-    <loc>m453.inqs.info/index.html</loc>
+    <loc>m453.inqs.info/hw.html</loc>
     <lastmod>2024-06-04T20:24:10.148Z</lastmod>
   </url>
   <url>
-    <loc>m453.inqs.info/hws/hw2.html</loc>
-    <lastmod>2024-09-15T00:43:53.602Z</lastmod>
+    <loc>m453.inqs.info/exc/exc3.html</loc>
+    <lastmod>2024-08-27T18:45:39.481Z</lastmod>
   </url>
   <url>
-    <loc>m453.inqs.info/lectures/1b.html</loc>
-    <lastmod>2024-08-25T21:22:18.454Z</lastmod>
+    <loc>m453.inqs.info/exc/exc2.html</loc>
+    <lastmod>2024-08-27T18:40:24.808Z</lastmod>
   </url>
   <url>
-    <loc>m453.inqs.info/lectures/2b.html</loc>
+    <loc>m453.inqs.info/r/r_lab_3.html</loc>
     <lastmod>2024-06-04T20:24:10.148Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/r/r_lab_1.html</loc>
+    <lastmod>2024-06-04T20:24:10.148Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/r/r_lab_0.html</loc>
+    <lastmod>2024-06-04T20:24:10.148Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/r/r_lab_2.html</loc>
+    <lastmod>2024-06-04T20:24:10.148Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/exc/exc1.html</loc>
+    <lastmod>2024-08-27T18:33:31.090Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/exc/exc4.html</loc>
+    <lastmod>2024-08-27T18:45:39.504Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/ec.html</loc>
+    <lastmod>2024-08-27T18:51:43.735Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/posts/week_4.html</loc>
+    <lastmod>2024-09-16T04:55:18.310Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/posts/week_2.html</loc>
+    <lastmod>2024-09-05T22:19:28.816Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/posts/week_1.html</loc>
+    <lastmod>2024-08-29T00:59:08.451Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/hws/hw1.html</loc>
+    <lastmod>2024-08-29T01:04:15.771Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/r.html</loc>
+    <lastmod>2024-06-04T20:24:10.148Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/lectures/3a.html</loc>
+    <lastmod>2024-06-04T20:24:10.148Z</lastmod>
+  </url>
+  <url>
+    <loc>m453.inqs.info/lectures/4a.html</loc>
+    <lastmod>2024-09-16T04:53:37.763Z</lastmod>
   </url>
   <url>
     <loc>m453.inqs.info/lectures/1a.html</loc>
