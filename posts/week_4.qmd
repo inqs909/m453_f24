@@ -9,7 +9,7 @@ draft: false
 
 ## Learning Outcomes
 
-| Lecture   | Slides                                       | Videos |
-|-----------|----------------------------------------------|--------|
-| Monday    | [Slides](https://m453.inqs.info/lectures/4a) |        |
-| Wednesday |                                              |        |
+| Lecture   | Slides                                       | Videos                                |
+|-----------|----------------------------------------------|---------------------------------------|
+| Monday    | [Slides](https://m453.inqs.info/lectures/4a) | [Video](https://youtu.be/IkkGXur7DWQ) |
+| Wednesday |                                              |                                       |
