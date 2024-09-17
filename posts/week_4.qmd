@@ -12,4 +12,4 @@ draft: false
 | Lecture   | Slides                                       | Videos                                |
 |-----------|----------------------------------------------|---------------------------------------|
 | Monday    | [Slides](https://m453.inqs.info/lectures/4a) | [Video](https://youtu.be/IkkGXur7DWQ) |
-| Wednesday |                                              |                                       |
+| Wednesday | [Slides](https://m453.inqs.info/lectures/4b) |                                       |
