@@ -7,7 +7,7 @@ format:
     controls-tutorial: true
     incremental: false 
     chalkboard:
-      src: chalkboard.json
+      src: notes/4b.json
       theme: whiteboard
       chalk-width: 4
 
