@@ -17,7 +17,7 @@
 <link href="../site_libs/quarto-contrib/reveal-auto-agenda-0.0.3/reveal-auto-agenda.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.56">
 
-  <title>MATH 453 – Order Statistics</title>
+  <title>MATH 453 – Sampling Distributions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -336,25 +336,123 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Order Statistics</h1>
+  <h1 class="title">Sampling Distributions</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
 <section>
+<section id="sampling-distributions" class="title-slide slide level1 agenda-slide center">
+<h1>Sampling Distributions</h1>
+<div class="agenda">
+<ul>
+<li><div class="agenda-active">
+<p>Sampling Distributions</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Central Limit Theorem</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Order Statistics</p>
+</div></li>
+</ul>
+</div>
+</section>
+<section id="s2" class="slide level2">
+<h2><span class="math inline">\(s^2\)</span></h2>
+</section>
+<section id="t-distribution" class="slide level2">
+<h2>t-distribution</h2>
+<p>Let <span class="math inline">\(Z\sim N(0,1)\)</span>, <span class="math inline">\(W\sim \chi^2_\nu\)</span>, <span class="math inline">\(Z\perp W\)</span>; therefore:</p>
+<p><span class="math display">\[
+T=\frac{Z}{\sqrt{W/\nu}} \sim t_\nu
+\]</span></p>
+</section>
+<section id="f-distribution" class="slide level2">
+<h2>F-distribution</h2>
+<p>Let <span class="math inline">\(W_1\sim\chi^2_{\nu_1}\)</span> <span class="math inline">\(W_2\sim\chi^2_{\nu_2}\)</span>, and <span class="math inline">\(W_1\perp W_2\)</span>; therefore:</p>
+<p><span class="math display">\[
+F = \frac{W_1/\nu_1}{W_2/\nu_2}\sim F_{\nu_1,\nu_2}
+\]</span></p>
+</section></section>
+<section>
+<section id="central-limit-theorem" class="title-slide slide level1 agenda-slide center">
+<h1>Central Limit Theorem</h1>
+<div class="agenda">
+<ul>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Sampling Distributions</p>
+</div></li>
+<li><div class="agenda-active">
+<p>Central Limit Theorem</p>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active">
+<p>Order Statistics</p>
+</div></li>
+</ul>
+</div>
+</section>
+<section id="central-limit-theorem-1" class="slide level2">
+<h2>Central Limit Theorem</h2>
+<p>Let <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> be identical and independent distributed random variables with <span class="math inline">\(E(X_i)=\mu\)</span> and <span class="math inline">\(Var(X_i) = \sigma²\)</span>. We define</p>
+<p><span class="math display">\[
+Y_n = \sqrt n \left(\frac{\bar X-\mu}{\sigma}\right) \mathrm{ where }\ \bar X = x\frac{1}{n}\sum^n_{i=1}X_i.
+\]</span></p>
+<p>Then, the distribution of the function <span class="math inline">\(Y_n\)</span> converges to a standard normal distribution function as <span class="math inline">\(n\rightarrow \infty\)</span>.</p>
+</section>
+<section id="central-limit-theorem-2" class="slide level2">
+<h2>Central Limit Theorem</h2>
+<p><span class="math display">\[
+\bar X \sim N\left(\mu, \frac{\sigma^2}{n}\right)
+\]</span></p>
+</section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<p>Let <span class="math inline">\(X_1, \ldots, X_n \overset{iid}{\sim} \chi^2_p\)</span>, the MGF is <span class="math inline">\(M(t)=(1-2t)^{-p/2}\)</span>. Find the distribution of <span class="math inline">\(\bar X\)</span> as <span class="math inline">\(n \rightarrow \infty\)</span>.</p>
+</section></section>
+<section>
 <section id="order-statistics" class="title-slide slide level1 agenda-slide center">
 <h1>Order Statistics</h1>
 <div class="agenda">
 <ul>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Sampling Distributions</p>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active">
+<p>Central Limit Theorem</p>
+</div></li>
 <li><div class="agenda-active">
 <p>Order Statistics</p>
 </div></li>
 </ul>
 </div>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
+<section id="order-statistics-1" class="slide level2">
+<h2>Order Statistics</h2>
+<p>Order statistics are a fundamental concept in statistics and probability, dealing with the properties of sorted random variables. They provide insights into the distribution and behavior of sample data, such as minimum, maximum, and quantiles. Understanding order statistics is crucial in various fields such as risk management, quality control, and data analysis.</p>
+</section>
+<section id="order-statistics-2" class="slide level2">
+<h2>Order Statistics</h2>
+<p>Let <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> be a sample of <span class="math inline">\(n\)</span> independent and identically distributed (i.i.d.) random variables with a common probability density function <span class="math inline">\(f(x)\)</span>. The order statistics are the sorted values of this sample, denoted as:</p>
+<p><span class="math display">\[
+  X_{(1)} \leq X_{(2)} \leq \cdots \leq X_{(n)}
+  \]</span></p>
+<p>Here, <span class="math inline">\(X_{(1)}\)</span> is the minimum, and <span class="math inline">\(X_{(n)}\)</span> is the maximum of the sample.</p>
+</section>
+<section id="order-statistics-3" class="slide level2">
+<h2>Order Statistics</h2>
+<ul>
+<li><span class="math inline">\(X_{(k)}\)</span>: The <span class="math inline">\(k\)</span>-th order statistic, representing the <span class="math inline">\(k\)</span>-th smallest value in the sample.</li>
+<li><span class="math inline">\(X_{(1)}, X_{(n)}\)</span>: The minimum and maximum of the sample, respectively.</li>
+</ul>
+</section>
+<section id="distribution-of-order-statistic" class="slide level2">
+<h2>Distribution of Order Statistic</h2>
+<p>The distribution of the <span class="math inline">\(k\)</span>-th order statistic <span class="math inline">\(X_{(k)}\)</span> can be derived using combinatorial arguments. Its PDF is given by: <span class="math display">\[
+  f_{X_{(k)}}(x) = \frac{n!}{(k-1)!(n-k)!} [F(x)]^{k-1} [1 - F(x)]^{n-k} f(x)
+  \]</span></p>
+<p>This formula shows how the distribution of <span class="math inline">\(X_{(k)}\)</span> depends on the underlying distribution of the sample and its position <span class="math inline">\(k\)</span>.</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
