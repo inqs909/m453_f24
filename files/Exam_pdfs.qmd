@@ -1,0 +1,48 @@
+---
+format:  
+  pdf:
+    classoption: [landscape]
+    geometry: 
+      - top=20mm
+      - left=15mm
+      - right=15mm
+      - bottom=40mm
+editor: visual
+---
+
+## Discrete Distributions
+
+| Distribution      | $\theta$  | PMF                                | $E(X)$           | $Var(X)$             | MGF                                 | Support                 |
+|------------|-------|-----------|-----------|-----------|-----------|-----------|
+| Bernoulli         | $p$       | $p^x(1-p)^{1-x}$                   | $p$              | $p(1-p)$             | $1-p+pe^t$                          | $X = 0,1$               |
+|                   |           |                                    |                  |                      |                                     |                         |
+| Binomial          | $n,p$     | $(^n_x)p^x(1-p)^{n-x}$             | $np$             | $np(1-p)$            | $(1-p+pe^t)^n$                      | $X = 0,1,\ldots,n$      |
+|                   |           |                                    |                  |                      |                                     |                         |
+| Poisson           | $\lambda$ | $\frac{e^{-\lambda}\lambda^x}{x!}$ | $\lambda$        | $\lambda$            | $e^{\lambda(e^t-1)}$                | $X = 0,1,\ldots,\infty$ |
+|                   |           |                                    |                  |                      |                                     |                         |
+| Geometric         | $p$       | $p(1-p)^{x-1}$                     | $\frac{1}{p}$    | $\frac{1-p}{p²}$     | $\frac{pe^t}{1-(1-p)e^t}$           | $X=1,2,\ldots,\infty$   |
+|                   |           |                                    |                  |                      |                                     |                         |
+| Negative Binomial | $r,$ $p$  | $(^{x-1}_{r-1})p^{r-1}(1-p)^{x-r}$ | $\frac{pr}{1-p}$ | $\frac{(1-p)r}{p^2}$ | $\left(\frac{1-p}{1-pe^t}\right)^n$ | $X=0,1,\ldots,\infty$   |
+|                   |           |                                    |                  |                      |                                     |                         |
+
+\newpage
+
+## Continuous Distributions
+
+| Distribution | $\theta$       | PDF                                                                                 | $E(X)$                        | $Var(X)$                                               | MGF                                                                 | Support                    |
+|-----------|------|-----------|-----------|-----------|-----------|-----------|
+| Uniform      | $a,b$          | $\frac{1}{b-a}$                                                                     | $\frac{a+b}{2}$               | $\frac{(b-a)^2}{12}$                                   | $\frac{e^{tb}-e^{ta}}{t(b-a)}$                                      | $a \le X \le b$            |
+|              |                |                                                                                     |                               |                                                        |                                                                     |                            |
+| Normal       | $\mu,\sigma^2$ | $\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$                     | $\mu$                         | $\sigma^2$                                             | $e^{\mu t+ \frac{t^2}{2}\sigma^2}$                                  | $-\infty \le X \le \infty$ |
+|              |                |                                                                                     |                               |                                                        |                                                                     |                            |
+| Exponential  | $\lambda$      | $\lambda e^{-x\lambda}$                                                             | $1/\lambda$                   | $1/\lambda^2$                                          | $\frac{\lambda}{\lambda-t}$                                         | $0 \le X$                  |
+|              |                |                                                                                     |                               |                                                        |                                                                     |                            |
+| $\chi^2$     | $k$            | $\frac{1}{2^{k/2}\Gamma(k/2)}x^{k/2-1}e^{-x/2}$                                     | $k$                           | $2k$                                                   | $(1-2t)^{-k/2}$                                                     | $0 \le X$                  |
+|              |                |                                                                                     |                               |                                                        |                                                                     |                            |
+| Gamma        | $\alpha,\beta$ | $\frac{1}{\beta^{\alpha}\Gamma(\alpha)}x^{\alpha-1}e^{-x/\beta}$                    | $\alpha\beta$                 | $\alpha\beta^2$                                        | $\left(1-\beta t\right)^{-\alpha}$                                  | $0 \le X$                  |
+|              |                |                                                                                     |                               |                                                        |                                                                     |                            |
+| Beta         | $\alpha,\beta$ | $\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}x^{\alpha-1}(1-x)^{\beta}$ | $\frac{\alpha}{\alpha+\beta}$ | $\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$ |                                                                     | $0\le X \le 1$             |
+|              |                |                                                                                     |                               |                                                        |                                                                     |                            |
+| Laplace      | $\mu,b$        | $\frac{1}{2b}e^{-\frac{|x-\mu|}{b}}$                                                | $\mu$                         | $2b^2$                                                 | $\frac{e^{\mu t}}{1-b^2t^2}$                                        | $-\infty\le X\le \infty$   |
+|              |                |                                                                                     |                               |                                                        |                                                                     |                            |
+| Logistic     | $\mu,s$        | $\frac{e^{\frac{-(x-\mu)}{s}}}{s\left(1+e^{\frac{-(x-\mu)}{s}}\right)^2}$           | $\mu$                         | $\frac{s^2\pi^2}{3}$                                   | $e^{\mu t}\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}$ | $-\infty\le X\le \infty$   |
