@@ -1190,291 +1190,200 @@
     "text": "Correlation\nThe correlation of \\(X_1\\) and \\(X_2\\) is defined as\n\\[\n\\rho = Cor(X_1,X_2) = \\frac{Cov(X_1,X_2)}{\\sqrt{Var(X_1)Var(X_2)}}\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#learning-outcomes",
-    "href": "lectures/2b.html#learning-outcomes",
-    "title": "Review:",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nDefine Moment Generating Functions\nDiscuss Properties"
+    "objectID": "lectures/4a.html#independent-random-variables",
+    "href": "lectures/4a.html#independent-random-variables",
+    "title": "Joint Distribution Functions",
+    "section": "Independent Random Variables",
+    "text": "Independent Random Variables\nRandom variables are considered independent of each other if the probability of one variable does not affect the probability of another variable."
   },
   {
-    "objectID": "lectures/2b.html#moments",
-    "href": "lectures/2b.html#moments",
-    "title": "Review:",
-    "section": "Moments",
-    "text": "Moments\nThe \\(k\\)th moment is defined as the expectation of the random variable, raised to the \\(k\\)th power, defined as \\(E(X^k)\\)."
+    "objectID": "lectures/4a.html#discrete-independent-random-variables",
+    "href": "lectures/4a.html#discrete-independent-random-variables",
+    "title": "Joint Distribution Functions",
+    "section": "Discrete Independent Random Variables",
+    "text": "Discrete Independent Random Variables\nLet \\(X_1\\) and \\(X_2\\) be 2 discrete random variables, with a joint density function of \\(p_{X_1,X_2}(x_1,x_2)\\). \\(X_1\\) is independent of \\(X_2\\) if and only if\n\\[\np_{X_1,X_2}(x_1,x_2) = p_{X_1}(x_1)p_{X_2}(x_2)\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#moment-generating-functions-1",
-    "href": "lectures/2b.html#moment-generating-functions-1",
-    "title": "Review:",
-    "section": "Moment Generating Functions",
-    "text": "Moment Generating Functions\nThe moment generating functions is used to obtain the \\(k\\)th moment. The mgf is defined as\n\\[\nm(t) = E(e^{tX})\n\\]\nThe \\(k\\)th moment can be obtained by taking the \\(k\\)th derivative of the mgf, with respect to \\(t\\), and setting \\(t\\) equal to 0:\n\\[\nE(X^k)=\\frac{d^km(t)}{dt}\\Bigg|_{t=0}\n\\]"
+    "objectID": "lectures/4a.html#continuous-independent-random-variables",
+    "href": "lectures/4a.html#continuous-independent-random-variables",
+    "title": "Joint Distribution Functions",
+    "section": "Continuous Independent Random Variables",
+    "text": "Continuous Independent Random Variables\nLet \\(X_1\\) and \\(X_2\\) be 2 continuous random variables, with a joint density function of \\(f_{X_1,X_2}(x_1,x_2)\\). \\(X_1\\) is independent of \\(X_2\\) if and only if\n\\[\nf_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2)\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#mgf",
-    "href": "lectures/2b.html#mgf",
-    "title": "Review:",
-    "section": "MGF",
-    "text": "MGF"
+    "objectID": "lectures/4a.html#matrix-algebra",
+    "href": "lectures/4a.html#matrix-algebra",
+    "title": "Joint Distribution Functions",
+    "section": "Matrix Algebra",
+    "text": "Matrix Algebra\n\\[\nA = \\left(\\begin{array}{cc}\na_1 & 0\\\\\n0 & a_2\n\\end{array}\\right)\n\\]\n\\[\n\\det(A) = a_1a_2\n\\]\n\\[\nA^{-1}=\\left(\\begin{array}{cc}\n1/a_1 & 0 \\\\\n0 & 1/a_2\n\\end{array}\\right)\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#expected-value",
-    "href": "lectures/2b.html#expected-value",
-    "title": "Review:",
-    "section": "Expected Value",
-    "text": "Expected Value"
+    "objectID": "lectures/4a.html#example",
+    "href": "lectures/4a.html#example",
+    "title": "Joint Distribution Functions",
+    "section": "Example",
+    "text": "Example\n\\[\n\\left(\\begin{array}{c}\nX\\\\\nY\n\\end{array}\\right)\\sim N \\left\\{\n\\left(\\begin{array}{c}\n\\mu_x\\\\\n\\mu_y\n\\end{array}\\right),\\left(\\begin{array}{cc}\n\\sigma_x^2 & 0\\\\\n0 & \\sigma_y^2\n\\end{array}\\right)\n\\right\\}\n\\]\nShow that \\(X\\perp Y\\).\n\\[\nf_{X,Y}(x,y)=\\det(2\\pi\\Sigma)^{-1/2}\\exp\\left\\{-\\frac{1}{2}(\\boldsymbol{w}-\\boldsymbol\\mu)^T\\Sigma^{-1}(\\boldsymbol w-\\boldsymbol\\mu)\\right\\}\n\\]\nwhere \\(\\Sigma=\\left(\\begin{array}{cc}\\sigma_y^2 & 0\\\\0 & \\sigma_y^2\\end{array}\\right)\\), \\(\\boldsymbol \\mu = \\left(\\begin{array}{cc}\\mu_x\\\\ \\mu_y \\end{array}\\right)\\), and \\(\\boldsymbol w = \\left(\\begin{array}{cc} x\\\\ y \\end{array}\\right)\\)"
   },
   {
-    "objectID": "lectures/2b.html#variance",
-    "href": "lectures/2b.html#variance",
-    "title": "Review:",
-    "section": "Variance",
-    "text": "Variance"
+    "objectID": "lectures/4a.html#expectations-1",
+    "href": "lectures/4a.html#expectations-1",
+    "title": "Joint Distribution Functions",
+    "section": "Expectations",
+    "text": "Expectations\nLet \\(X_1, X_2, \\ldots,X_n\\) be a set of random variables, the expectation of a function \\(g(X_1,\\ldots, X_n)\\) is defined as\n\\[\nE\\{g(X_1,\\ldots, X_n)\\} = \\sum_{x_1\\in X_1}\\cdots\\sum_{x_n\\in X_n}g(X_1,\\ldots, X_n)p(x_1,\\ldots,x_n)\n\\]\nor\n\\[\nE\\{g(\\boldsymbol X)\\} = \\int_{x_1\\in X_1}\\cdots\\int_{x_n\\in X_n}g(\\boldsymbol X)f(\\boldsymbol X)dx_n \\cdots dx_1\n\\]\n\n\\(\\boldsymbol X = (X_1,\\cdots, X_n)\\)"
   },
   {
-    "objectID": "lectures/2b.html#variance-1",
-    "href": "lectures/2b.html#variance-1",
-    "title": "Review:",
-    "section": "Variance",
-    "text": "Variance"
+    "objectID": "lectures/4a.html#expected-value-and-variance-of-linear-functions",
+    "href": "lectures/4a.html#expected-value-and-variance-of-linear-functions",
+    "title": "Joint Distribution Functions",
+    "section": "Expected Value and Variance of Linear Functions",
+    "text": "Expected Value and Variance of Linear Functions\nLet \\(X_1,\\ldots,X_n\\) and \\(Y_1,\\ldots,Y_m\\) be random variables with \\(E(X_i)=\\mu_i\\) and \\(E(Y_j)=\\tau_j\\). Furthermore, let \\(U = \\sum^n_{i=1}a_iX_i\\) and \\(V=\\sum^m_{j=1}b_jY_j\\) where \\(\\{a_i\\}^n_{i=1}\\) and \\(\\{b_j\\}_{j=1}^m\\) are constants. We have the following properties:\n\n\\(E(U)=\\sum_{i=1}^na_i\\mu_i\\)\n\\(Var(U)=\\sum^n_{i=1}a_i^2Var(X_i)+2\\underset{i&lt;j}{\\sum\\sum}a_ia_jCov(X_i,X_j)\\)\n\\(Cov(U,V)=\\sum^n_{i=1}\\sum^m_{j=1}Cov(X_i,Y_j)\\)"
   },
   {
-    "objectID": "lectures/2b.html#mgf-1",
-    "href": "lectures/2b.html#mgf-1",
-    "title": "Review:",
-    "section": "MGF",
-    "text": "MGF"
+    "objectID": "lectures/4a.html#expectation-of-product",
+    "href": "lectures/4a.html#expectation-of-product",
+    "title": "Joint Distribution Functions",
+    "section": "Expectation of Product",
+    "text": "Expectation of Product\nLet \\(X\\) and \\(Y\\) be independent random variables with Joint Function \\(f_{XY}(x,y)\\), then\n\\[\nE(XY) = E(X)E(Y)\n\\]\n\nProve it!"
   },
   {
-    "objectID": "lectures/2b.html#mgf-2",
-    "href": "lectures/2b.html#mgf-2",
-    "title": "Review:",
-    "section": "MGF",
-    "text": "MGF"
+    "objectID": "lectures/4a.html#conditional-expectations",
+    "href": "lectures/4a.html#conditional-expectations",
+    "title": "Joint Distribution Functions",
+    "section": "Conditional Expectations",
+    "text": "Conditional Expectations\nLet \\(X_1\\) and \\(X_2\\) be two random variables, the conditional expectation of \\(g(X_1)\\), given \\(X_2=x_2\\), is defined as\n\\[\nE\\{g(X_1)|X_2=x_2\\}=\\sum_{x_1}g(x_1)p(x_1|x_2)\n\\]\nor\n\\[\nE\\{g(X_1)|X_2=x_2\\}=\\int_{x_1}g(x_1)f(x_1|x_2)dx_1.\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#mgf-3",
-    "href": "lectures/2b.html#mgf-3",
-    "title": "Review:",
-    "section": "MGF",
-    "text": "MGF"
+    "objectID": "lectures/4a.html#conditional-expectations-1",
+    "href": "lectures/4a.html#conditional-expectations-1",
+    "title": "Joint Distribution Functions",
+    "section": "Conditional Expectations",
+    "text": "Conditional Expectations\nFurthermore,\n\\[\nE(X_1)=E_{X_2}\\{E_{X_1|X_2}(X_1|X_2)\\}\n\\]\nand\n\\[\nVar(X_1) = E_{X_2}\\{Var_{X_1|X_2}(X_1|X_2)\\} + Var_{X_2}\\{E_{X_1|X_2}(X_1|X_2)\\}\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#linearity",
-    "href": "lectures/2b.html#linearity",
-    "title": "Review:",
-    "section": "Linearity",
-    "text": "Linearity\nLet \\(X\\) follow a distribution \\(f\\), with the an MGF \\(M_X(t)\\), the MGF of \\(Y=aX+b\\) is given as\n\\[\nM_Y(t) = e^{tb}M_X(at)\n\\]"
+    "objectID": "lectures/4a.html#covariance-1",
+    "href": "lectures/4a.html#covariance-1",
+    "title": "Joint Distribution Functions",
+    "section": "Covariance",
+    "text": "Covariance\nLet \\(X_1\\) and \\(X_2\\) be 2 random variables with mean \\(E(X_1)=\\mu_1\\) and \\(E(X_2)=\\mu_2\\), respectively. The covariance of \\(X_1\\) and \\(X_2\\) is defined as\n\\[\n\\begin{eqnarray*}\nCov(X_1,X_2) & = & E\\{(X_1-\\mu_1)(X_2-\\mu_2)\\}\\\\\n& =& E(X_1X_2)-\\mu_1\\mu_2\n\\end{eqnarray*}\n\\]\nIf \\(X_1\\) and \\(X_2\\) are independent random variables, then\n\\[\nCov(X_1,X_2)=0\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#derivation",
-    "href": "lectures/2b.html#derivation",
-    "title": "Review:",
-    "section": "Derivation",
-    "text": "Derivation"
+    "objectID": "lectures/4a.html#correlation",
+    "href": "lectures/4a.html#correlation",
+    "title": "Joint Distribution Functions",
+    "section": "Correlation",
+    "text": "Correlation\nThe correlation of \\(X_1\\) and \\(X_2\\) is defined as\n\\[\n\\rho = Cor(X_1,X_2) = \\frac{Cov(X_1,X_2)}{\\sqrt{Var(X_1)Var(X_2)}}\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#linearity-1",
-    "href": "lectures/2b.html#linearity-1",
-    "title": "Review:",
-    "section": "Linearity",
-    "text": "Linearity\nLet \\(X\\) and \\(Y\\) be two random variables with MGFs \\(M_X(t)\\) and \\(M_Y(t)\\), respectively, and are independent. The MGF of \\(U=X-Y\\)\n\\[\nM_U(t) = M_X(t)M_Y(-t)\n\\]"
+    "objectID": "lectures/4a.html#mgf-property-independence",
+    "href": "lectures/4a.html#mgf-property-independence",
+    "title": "Joint Distribution Functions",
+    "section": "MGF Property: Independence",
+    "text": "MGF Property: Independence\nLet \\(X\\) and \\(Y\\) be independent random variables. Let \\(Z = X+Y\\), the MGF of Z is\n\\[\nM_Z(t) = M_X(t)M_Y(t)\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#derivation-1",
-    "href": "lectures/2b.html#derivation-1",
-    "title": "Review:",
-    "section": "Derivation",
-    "text": "Derivation"
+    "objectID": "lectures/4a.html#examples-1",
+    "href": "lectures/4a.html#examples-1",
+    "title": "Joint Distribution Functions",
+    "section": "Examples",
+    "text": "Examples\nLet \\(X_1\\sim Bin(n_1,p)\\) and \\(X_2\\sim Bin(n_2, p)\\). Find the distribution function of \\(Y=X_1 + X_2\\). Assume \\(X_1\\perp X_2\\)."
   },
   {
-    "objectID": "lectures/2b.html#uniqueness",
-    "href": "lectures/2b.html#uniqueness",
-    "title": "Review:",
-    "section": "Uniqueness",
-    "text": "Uniqueness\nLet \\(X\\) and \\(Y\\) have the following distributions \\(F_X(x)\\) and \\(F_Y(y)\\) and MGFs \\(M_X(t)\\) and \\(M_Y(t)\\), respectively. \\(X\\) and \\(Y\\) have the same distribution \\(F_X(x)=F_Y(y)\\) if and only if \\(M_X(t)=M_Y(t)\\)."
+    "objectID": "lectures/4a.html#examples-2",
+    "href": "lectures/4a.html#examples-2",
+    "title": "Joint Distribution Functions",
+    "section": "Examples",
+    "text": "Examples\nLet \\(X_1\\sim N(\\mu_1,\\sigma_1^2)\\) and \\(X_2\\sim N(\\mu_2,\\sigma_2^2)\\). Find the distribution function of \\(Y=X_1 + X_2\\). Assume \\(X_1\\perp X_2\\)."
   },
   {
-    "objectID": "lectures/2b.html#uniqueness-1",
-    "href": "lectures/2b.html#uniqueness-1",
-    "title": "Review:",
-    "section": "Uniqueness",
-    "text": "Uniqueness\nLet \\(X_1,\\cdots, X_n\\) be independent random variables, where \\(X_i\\sim N(\\mu_i, \\sigma^2_i)\\), with \\(M_{X_i}(t)=\\exp\\{\\mu_i t+\\sigma^2_it^2/2\\}\\) for \\(i=1,\\cdots, n\\). Find the MGF of \\(Y=a_1X_1+\\cdots+a_nX_n\\), where \\(a_1, \\cdots, a_n\\) are constants."
+    "objectID": "lectures/3a.html#function-of-random-variables-1",
+    "href": "lectures/3a.html#function-of-random-variables-1",
+    "title": "Functions of Random Variables",
+    "section": "Function of Random Variables",
+    "text": "Function of Random Variables"
   },
   {
-    "objectID": "lectures/1b.html#random-variables",
-    "href": "lectures/1b.html#random-variables",
-    "title": "Review:",
-    "section": "Random Variables",
-    "text": "Random Variables\nA random variable is function that maps the sample space to real value."
+    "objectID": "lectures/3a.html#using-the-distribution-function",
+    "href": "lectures/3a.html#using-the-distribution-function",
+    "title": "Functions of Random Variables",
+    "section": "Using the Distribution Function",
+    "text": "Using the Distribution Function\nLet there be a random variable \\(X\\) with a known distribution function \\(F_X(x)\\), the density function for the random variable \\(Y=g(X)\\) can be found with the following steps\n\n\n\nFind the region of \\(Y\\) in the space of \\(X\\), find \\(g^{-1}(y)\\)\nFind the region of \\(Y\\le y\\)\nFind \\(F_Y(y)=P(Y\\le y)\\) using the probability density function of \\(X\\) over region \\(Y\\le y\\)\nFind \\(f_Y(y)\\) by differentiating \\(F_Y(y)\\)"
   },
   {
-    "objectID": "lectures/1b.html#discrete-random-variables-1",
-    "href": "lectures/1b.html#discrete-random-variables-1",
-    "title": "Review:",
-    "section": "Discrete Random Variables",
-    "text": "Discrete Random Variables\nA random variable is considered to be discrete if it can only map to a finite or countably infinite number of distinct values."
+    "objectID": "lectures/3a.html#example-1",
+    "href": "lectures/3a.html#example-1",
+    "title": "Functions of Random Variables",
+    "section": "Example 1",
+    "text": "Example 1\nLet \\(X\\) have the following probability density function:\n\\[\nf_X(x)=\\left\\{\\begin{array}{cc}\n2x & 0\\le x \\le 1 \\\\\n0 & \\mathrm{otherwise}\n\\end{array}\n\\right.\n\\]\nFind the probability density function of \\(Y=3X-1\\)?"
   },
   {
-    "objectID": "lectures/1b.html#pmf",
-    "href": "lectures/1b.html#pmf",
-    "title": "Review:",
-    "section": "PMF",
-    "text": "PMF\nThe probability mass function of discrete variable can be represented by a formula, table, or a graph. The Probability of a random variable Y can be expressed as \\(P(Y=y)\\) for all values of \\(y\\)."
+    "objectID": "lectures/3a.html#using-the-pdf",
+    "href": "lectures/3a.html#using-the-pdf",
+    "title": "Functions of Random Variables",
+    "section": "Using the PDF",
+    "text": "Using the PDF\nLet there be a random variable \\(X\\) with a known distribution function \\(F_X(x)\\), if the random variable \\(Y=g(X)\\) is either increasing or decreasing, than the probability density function can be found as\n\\[\nf_Y(y) = f_X\\{g^{-1}(y)\\}\\left|\\frac{dg^{-1}(y)}{dy}\\right|\n\\]"
   },
   {
-    "objectID": "lectures/1b.html#cdf",
-    "href": "lectures/1b.html#cdf",
-    "title": "Review:",
-    "section": "CDF",
-    "text": "CDF\nThe cumulative distribution function provides the \\(P(Y\\leq y)\\) for a random variable \\(Y\\)."
+    "objectID": "lectures/3a.html#example-2",
+    "href": "lectures/3a.html#example-2",
+    "title": "Functions of Random Variables",
+    "section": "Example 2",
+    "text": "Example 2\nLet \\(X\\) have the following probability density function:\n\\[\nf_X(x)=\\left\\{\\begin{array}{cc}\n\\frac{3}{2}x^2 + x & 0\\le y \\le 1 \\\\\n0 & \\mathrm{otherwise}\n\\end{array}\n\\right.\n\\]\nFind the probability density function of \\(Y=5-(X/2)\\)?"
   },
   {
-    "objectID": "lectures/1b.html#expected-value",
-    "href": "lectures/1b.html#expected-value",
-    "title": "Review:",
-    "section": "Expected Value",
-    "text": "Expected Value\nThe expected value is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of Y is\n\\[\nE(Y)=\\sum_y yP(y)\n\\]"
+    "objectID": "lectures/3a.html#using-the-mgf",
+    "href": "lectures/3a.html#using-the-mgf",
+    "title": "Functions of Random Variables",
+    "section": "Using the MGF",
+    "text": "Using the MGF\nUsing the uniqueness property of Moment Generating Functions, for a random variable \\(X\\) with a known distribution function \\(F_X(x)\\) and random variable \\(Y=g(X)\\), the distribution of \\(Y\\) can be found by:\n\n\nFind the moment generating function of \\(Y\\), \\(M_Y(t)\\).\nCompare \\(M_Y(t)\\), with known moment generating functions. If \\(M_Y(t)=M_V(t)\\), for all values \\(t\\), them \\(Y\\) and \\(V\\) have identical distributions."
   },
   {
-    "objectID": "lectures/1b.html#variance",
-    "href": "lectures/1b.html#variance",
-    "title": "Review:",
-    "section": "Variance",
-    "text": "Variance\nThe variance is the expected squared difference between the random variable and expected value.\n\\[\nVar(Y)=\\sum_y\\{y-E(Y)\\}^2P(y)\n\\]\n\\[\nVar(Y) = E(X^2) - E(X)^2\n\\]"
+    "objectID": "lectures/3a.html#example-3",
+    "href": "lectures/3a.html#example-3",
+    "title": "Functions of Random Variables",
+    "section": "Example 3",
+    "text": "Example 3\nLet \\(X\\) follow a normal distribution with mean \\(\\mu\\) and variance \\(\\sigma^2\\). Find the distribution of \\(Z=\\frac{X-\\mu}{\\sigma}\\)."
   },
   {
-    "objectID": "lectures/1b.html#known-distributions",
-    "href": "lectures/1b.html#known-distributions",
-    "title": "Review:",
-    "section": "Known Distributions",
-    "text": "Known Distributions\n\n\n\n\n\n\n\n\nDistribution\nParameter(s)\nPMF \\(P(Y=y)\\)\n\n\n\n\nBernoulli\n\\(p\\)\n\\(p\\)\n\n\nBinomial\n\\(n\\) and \\(p\\)\n\\((^n_y)p^y(1-p)^{n-p}\\)\n\n\nGeometric\n\\(p\\)\n\\((1-p)^{y-1}p\\)\n\n\nNegative Binomial\n\\(r\\) and \\(p\\)\n\\((^{y-1}_{r-1})p^{r-1}(1-p)^{y-r}\\)\n\n\nHypergeometric\n\\(N\\), \\(n\\), and \\(r\\)\n\\(\\frac{(^r_y)(^{N-r}_{n-y})}{(^N_n)}\\)\n\n\nPoisson\n\\(\\lambda\\)\n\\(\\frac{\\lambda^y}{y!} e^{-\\lambda}\\)"
+    "objectID": "lectures/3a.html#example-4",
+    "href": "lectures/3a.html#example-4",
+    "title": "Functions of Random Variables",
+    "section": "Example 4",
+    "text": "Example 4\nLet \\(Z\\) follow a standard normal distribution with mean \\(0\\) and variance \\(1\\). Find the distribution of \\(Y=Z^2\\)"
   },
   {
-    "objectID": "lectures/1b.html#binomial-distribution-1",
-    "href": "lectures/1b.html#binomial-distribution-1",
-    "title": "Review:",
-    "section": "Binomial Distribution",
-    "text": "Binomial Distribution\nAn experiment is said to follow a binomial distribution if\n\nFixed \\(n\\)\nEach trial has 2 outcomes\nThe probability of success is a constant \\(p\\)\nThe trials are independent of each\n\n\n\\(P(X=x)=(^n_x)p^x(1-p)^{n-x}\\)"
-  },
-  {
-    "objectID": "lectures/1b.html#expected-value-of-a-binomial-distribution",
-    "href": "lectures/1b.html#expected-value-of-a-binomial-distribution",
-    "title": "Review:",
-    "section": "Expected Value of a Binomial Distribution",
-    "text": "Expected Value of a Binomial Distribution"
-  },
-  {
-    "objectID": "lectures/1b.html#continued",
-    "href": "lectures/1b.html#continued",
-    "title": "Review:",
-    "section": "Continued",
-    "text": "Continued"
-  },
-  {
-    "objectID": "lectures/1b.html#poisson-distribution-1",
-    "href": "lectures/1b.html#poisson-distribution-1",
-    "title": "Review:",
-    "section": "Poisson Distribution",
-    "text": "Poisson Distribution\nThe poisson distribution describes an experiment that measures that occurrence of an event at specific point and/or time period.\n\n\\(P(X=x)=\\frac{\\lambda^x}{x!}e^{-\\lambda}\\)"
-  },
-  {
-    "objectID": "lectures/1b.html#expected-value-of-a-poisson-distribution",
-    "href": "lectures/1b.html#expected-value-of-a-poisson-distribution",
-    "title": "Review:",
-    "section": "Expected Value of a Poisson Distribution",
-    "text": "Expected Value of a Poisson Distribution"
-  },
-  {
-    "objectID": "lectures/1b.html#continuous-random-variables-1",
-    "href": "lectures/1b.html#continuous-random-variables-1",
-    "title": "Review:",
-    "section": "Continuous Random Variables",
-    "text": "Continuous Random Variables\nA random variable \\(X\\) is considered continuous if the \\(P(X=x)\\) does not exist."
-  },
-  {
-    "objectID": "lectures/1b.html#cdf-1",
-    "href": "lectures/1b.html#cdf-1",
-    "title": "Review:",
-    "section": "CDF",
-    "text": "CDF\nThe cumulative distribution function of \\(X\\) provides the \\(P(X\\leq x)\\), denoted by \\(F(x)\\), for the domain of \\(X\\).\nProperties of the CDF of \\(X\\):\n\n\\(F(-\\infty)\\equiv \\lim_{y\\rightarrow -\\infty}F(y)=0\\)\n\\(F(\\infty)\\equiv \\lim_{y\\rightarrow \\infty}F(y)=1\\)\n\\(F(x)\\) is a nondecreaseing function"
-  },
-  {
-    "objectID": "lectures/1b.html#pdf",
-    "href": "lectures/1b.html#pdf",
-    "title": "Review:",
-    "section": "PDF",
-    "text": "PDF\nThe probability density function of the random variable \\(X\\) is given by\n\\[\nf(x)=\\frac{dF(x)}{d(x)}=F^\\prime(x)\n\\]\nwherever the derivative exists.\nProperties of pdfs:\n\n\\(f(x)\\geq 0\\)\n\\(\\int^\\infty_{-\\infty}f(x)dx=1\\)\n\\(P(a\\leq X\\leq b) = P(a&lt;X&lt;b)=\\int^b_af(x)dx\\)"
-  },
-  {
-    "objectID": "lectures/1b.html#expected-value-1",
-    "href": "lectures/1b.html#expected-value-1",
-    "title": "Review:",
-    "section": "Expected Value",
-    "text": "Expected Value\nThe expected value for a continuous distribution is defined as\n\\[\nE(X)=\\int x f(x)dx\n\\]\nThe expectation of a function \\(g(X)\\) is defined as\n\\[\nE\\{g(X)\\}=\\int g(x)f(x)dx\n\\]"
-  },
-  {
-    "objectID": "lectures/1b.html#expected-value-properties",
-    "href": "lectures/1b.html#expected-value-properties",
-    "title": "Review:",
-    "section": "Expected Value Properties",
-    "text": "Expected Value Properties\n\n\\(E(c)=c\\), where \\(c\\) is constant\n\\(E\\{cg(X)\\}=cE\\{g(X)\\}\\)\n\\(E\\{g_1(X)+g_2(X)+\\cdots+g_n(X)\\}=E\\{g_1(X)\\}+E\\{g_2(X)\\}+\\cdots+E\\{g_n(X)\\}\\)"
-  },
-  {
-    "objectID": "lectures/1b.html#variance-1",
-    "href": "lectures/1b.html#variance-1",
-    "title": "Review:",
-    "section": "Variance",
-    "text": "Variance\nThe variance of continuous variable is defined as\n\\[\nVar(X) =  E[\\{X-E(X)\\}^2] = \\int \\{X-E(X)\\}^2 f(x)dx\n\\]"
-  },
-  {
-    "objectID": "lectures/1b.html#uniform-distribution-1",
-    "href": "lectures/1b.html#uniform-distribution-1",
-    "title": "Review:",
-    "section": "Uniform Distribution",
-    "text": "Uniform Distribution\nA random variable is said to follow uniform distribution if the density function is constant between two parameters.\n\n\\[\nf(x) = \\left\\{\\begin{array}{cc}\n\\frac{1}{b-a} & a \\leq x \\leq b\\\\\n0 & \\mathrm{elsewhere}\n\\end{array}\\right.\n\\]"
-  },
-  {
-    "objectID": "lectures/1b.html#expected-value-2",
-    "href": "lectures/1b.html#expected-value-2",
-    "title": "Review:",
-    "section": "Expected Value",
-    "text": "Expected Value"
-  },
-  {
-    "objectID": "lectures/1b.html#normal-distribution-1",
-    "href": "lectures/1b.html#normal-distribution-1",
-    "title": "Review:",
-    "section": "Normal Distribution",
-    "text": "Normal Distribution\nA random variable is said to follow a normal distribution if the the frequency of occurrence follow a Gaussian function.\n\n\\[\nf(x)=\\frac{1}{\\sqrt{2\\pi \\sigma^2}}\\exp\\left\\{-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right\\}\n\\]"
-  },
-  {
-    "objectID": "lectures/1b.html#expected-value-3",
-    "href": "lectures/1b.html#expected-value-3",
-    "title": "Review:",
-    "section": "Expected Value",
-    "text": "Expected Value"
-  },
-  {
-    "objectID": "lectures/1b.html#continued-1",
-    "href": "lectures/1b.html#continued-1",
-    "title": "Review:",
-    "section": "Continued",
-    "text": "Continued"
-  },
-  {
-    "objectID": "hws/hw2.html",
-    "href": "hws/hw2.html",
-    "title": "Homework 2",
+    "objectID": "r.html",
+    "href": "r.html",
+    "title": "R Labs",
     "section": "",
-    "text": "Homework 2 is due 9/22/2024 at 11:59 PM. Submit your homework on Canvas as one PDF document.\n\nShow that the moment generating function for a random variable \\(X\\sim Gamma(\\alpha,\\beta)\\) is \\(\\left(1-\\beta t\\right)^{-\\alpha}\\).\nLet \\(X\\) be a discrete random variable with PMF\n\\[\nP(X=x)=\\left\\{\\begin{array}{cc}\n0.25+0.5e^{-\\theta} & x =0 \\\\\n0.25+0.5\\theta e^{-\\theta} & x =1 \\\\\n0.5\\frac{\\theta^x}{x!}e^{-\\theta} & x = 2,3,\\ldots\\\\\n0 & \\textrm{otherwise}\n\\end{array}\\right.\n\\] Show that the PMF is valid.\nLet \\(X\\) and \\(Y\\) be two random variables that have the following joint distribution function:\n\n\\[\nf(x,y)=\\left\\{\\begin{array}{cc}\ne^{-x/2}ye^{-y²} & x&gt;0;y&gt;0\\\\\n0 & \\mathrm{otherwise}\n\\end{array}\n\\right.\n\\]\nWhat is the marginal distribution of \\(Y\\)?\n\nFind the moment-generating function of \\(X\\sim\\chi^2_k\\) and \\(f_X(x)=\\frac{x^{k/2-1}\\exp\\{-x/2\\}}{2^{k/2}\\Gamma(k/2)}\\) with \\(x&gt;0\\)."
+    "text": "Below are the R Labs for the course. Make sure you complete and submit your QMD file by the deadline on Canvas.\n\n\n\n\n\n\n\n\n\nLab 2: Optimization\n\n\n\n\n\n\n\n\n\n\n\nOct 26, 2022\n\n\n\n\n\n\n\nLab 3: Generalized Linear Models\n\n\n\n\n\n\n\n\n\n\n\nOct 26, 2022\n\n\n\n\n\n\n\nCentral Limit Theorem\n\n\n\n\n\n\n\n\n\n\n\nOct 23, 2022\n\n\n\n\n\n\n\nIntroduction to R\n\n\n\n\n\n\n\n\n\n\n\nAug 16, 2022\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to Mathematical Statistics!",
+    "objectID": "hws/hw1.html",
+    "href": "hws/hw1.html",
+    "title": "Homework 1",
     "section": "",
-    "text": "Brief Introduction\n\n\n\n\n\nWelcome to the course! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 5\n\n\n\n\n\nThis week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem. \n\n\n\n\n\nSep 23, 2024\n\n\n\n\n\n\n\nWeek 4\n\n\n\n\n\nThis week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem. \n\n\n\n\n\nSep 12, 2024\n\n\n\n\n\n\n\nWeek 3\n\n\n\n\n\nThis week, we will cover Transformations of Random Variables \n\n\n\n\n\nSep 5, 2024\n\n\n\n\n\n\n\nWeek 2\n\n\n\n\n\nThis week we will review basic concepts related to distribution functions and random variables \n\n\n\n\n\nAug 29, 2024\n\n\n\n\n\n\n\nWeek 1\n\n\n\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R. \n\n\n\n\n\nAug 22, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Homework 1 is due 9/7/2024 at 11:59 PM. Submit your homework on Canvas as one PDF document.\n\nX\\sim Bin(n,p), show that the variance of Binomial distribution is np(1-p).\nX\\sim Pois(\\lambda) , show that the expected value of a Poisson distribution is \\lambda.\nX\\sim Pois(\\lambda) , show that the variance of a Poisson distribution is \\lambda.\nX\\sim N(\\mu,\\sigma^2), show that the expected value is \\mu."
+  },
+  {
+    "objectID": "posts/week_6.html",
+    "href": "posts/week_6.html",
+    "title": "Week 6",
+    "section": "",
+    "text": "Estimators\nMLE\n\n\n\n\n\nExam"
+  },
+  {
+    "objectID": "posts/week_6.html#learning-outcomes",
+    "href": "posts/week_6.html#learning-outcomes",
+    "title": "Week 6",
+    "section": "",
+    "text": "Estimators\nMLE\n\n\n\n\n\nExam"
+  },
+  {
+    "objectID": "posts/week_6.html#resources",
+    "href": "posts/week_6.html#resources",
+    "title": "Week 6",
+    "section": "Resources",
+    "text": "Resources\nYou must log on to your CI Google account to access the video.\nPress the “b” key to access hidden notes.\n\n\n\nLecture\nSlides\nVideos\n\n\n\n\nMonday\nSlides\n\n\n\nWednesday"
   },
   {
     "objectID": "posts/week_3.html#resources",
@@ -1705,14 +1614,14 @@
     "href": "r/r_lab_0.html#types-of-data",
     "title": "Introduction to R",
     "section": "Types of Data",
-    "text": "Types of Data\nIn R, the type of data, also known as class, that we are using dictates how the programming works. For the most part, users will use ‘numeric’,‘logical’, ‘POSIX’ and ‘character’ data types. Other types of data you may encounter are ‘integer’, ‘complex’, and ‘raw’. These types of data are rarely used. To obtain more information on them, use the ? operator.\n\nNumeric\nThe numeric class is the data that are numbers. Almost every analysis that you use will be based on the numeric class. To check if you have a numeric class, you just need to use the is.numeric() function. For example, try is.numeric(5):\n\nis.numeric(5)\n\n[1] TRUE\n\n\nNotice that when you input an number into R, it automatically changes it to a numeric class. R is changes data to the class that it most likely needs to be. Now this is great because you do not need to do anything on your end. Howerver, if you need a different class, you will need to change it.\n\n\nLogical\nA logical class are data where the only value is ‘TRUE’ or ‘FALSE’. Sometimes the data is coded as 1 for ‘TRUE’ and 0 for ‘FALSE’. The data may also be coded as ‘T’ or ‘F’. To check if data belongs in the logical class, you will need the is.logical() function. Try is.logical(3&lt;4):\n\nis.logical(3&lt;4)\n\n[1] TRUE\n\n\nRemember when we ran 3&lt;4 in the previous section. The output was ‘TRUE’. Now R is checking whether the output is of a logical class. Since it it, R returns ‘TRUE’. Now try is.logical(3&gt;4):\n\nis.logical(3&gt;4)\n\n[1] TRUE\n\n\nThe output is ‘TRUE’ as well even though the condition 3&gt;4 is ‘FALSE’. Since the output is a logical data type, it is a logical variable.\n\n\nPOSIX\nThe POSIX class are date-time data. Where the data value is a time component. The POSIX class can be very complex in how it is formatted. IF you would like to learn more try ?POSIXct or ?POSIClt. First, lets run Sys.time() to check what is today’s data and time:\n\nSys.time()\n\n[1] \"2024-09-25 11:57:01 PDT\"\n\n\nNow lets check if its of POSIX class, you can use the class() function to figure out which class is it. Try class(Sys.time()):\n\nclass(Sys.time())\n\n[1] \"POSIXct\" \"POSIXt\" \n\n\n\n\nCharacter\nA character value is where the data values follow a string format. Examples of characters values are letters, words and even numbers. A character value is any value surrounded by quotation marks. For example, the phrase “Hello World!” is considere as one character value. Another example if you data is coded with the actual words “yes” or “no”. To check if you have character data, use the is.character() function. Try is.character(\"Hello World!\"):\n\nis.character(\"Hello World!\")\n\n[1] TRUE\n\n\nNotice that the output says ‘TRUE’. Character values can be created with single quotations. Try is.character('Hello World!'):\n\nis.character('Hello World!')\n\n[1] TRUE\n\n\n\n\nIntegers\nIntegers are just whole numbers for the most part. To create an interger, type the letter ‘L’ after a number. To check if you are using integer data, use the is.integer() function. Try is.integer(5L):\n\nis.integer(5L)\n\n[1] TRUE\n\n\n\n\nComplex Numbers\nComplex numbers are data values where there is a real component and an imaginary component. The imaginary component is a number multiplied by \\(i=\\sqrt{-1}\\). To create a complect number, use the complex() function. To check if a number is complex, use the is.complex() function. Try the following to create a complex number complex(1,4,5):\n\ncomplex(1,4,5)\n\n[1] 4+5i\n\n\nNow try is.complex(complex(1,4,5)):\n\nis.complex(complex(1,4,5))\n\n[1] TRUE\n\n\n\n\nRaw\nYou will probably never use raw data. I have never used raw data in R. To create a raw value, use the raw() or charToRaw() functions. Try charToRaw('Hello World!'):\n\ncharToRaw('Hello World!')\n\n [1] 48 65 6c 6c 6f 20 57 6f 72 6c 64 21\n\n\nTo check if you have raw data, use the is.raw() function. Try is.raw(charToRaw('Hello World!')):\n\nis.raw(charToRaw('Hello World!'))\n\n[1] TRUE\n\n\n\n\nMissing\nThe last data class in R is missing data denoted as NA. Whenever you see NA in any of the analysis you see, it means that the data is missing. To check if you have missing data, use the is.na() function. Try is.na(NA):\n\nis.na(NA)\n\n[1] TRUE"
+    "text": "Types of Data\nIn R, the type of data, also known as class, that we are using dictates how the programming works. For the most part, users will use ‘numeric’,‘logical’, ‘POSIX’ and ‘character’ data types. Other types of data you may encounter are ‘integer’, ‘complex’, and ‘raw’. These types of data are rarely used. To obtain more information on them, use the ? operator.\n\nNumeric\nThe numeric class is the data that are numbers. Almost every analysis that you use will be based on the numeric class. To check if you have a numeric class, you just need to use the is.numeric() function. For example, try is.numeric(5):\n\nis.numeric(5)\n\n[1] TRUE\n\n\nNotice that when you input an number into R, it automatically changes it to a numeric class. R is changes data to the class that it most likely needs to be. Now this is great because you do not need to do anything on your end. Howerver, if you need a different class, you will need to change it.\n\n\nLogical\nA logical class are data where the only value is ‘TRUE’ or ‘FALSE’. Sometimes the data is coded as 1 for ‘TRUE’ and 0 for ‘FALSE’. The data may also be coded as ‘T’ or ‘F’. To check if data belongs in the logical class, you will need the is.logical() function. Try is.logical(3&lt;4):\n\nis.logical(3&lt;4)\n\n[1] TRUE\n\n\nRemember when we ran 3&lt;4 in the previous section. The output was ‘TRUE’. Now R is checking whether the output is of a logical class. Since it it, R returns ‘TRUE’. Now try is.logical(3&gt;4):\n\nis.logical(3&gt;4)\n\n[1] TRUE\n\n\nThe output is ‘TRUE’ as well even though the condition 3&gt;4 is ‘FALSE’. Since the output is a logical data type, it is a logical variable.\n\n\nPOSIX\nThe POSIX class are date-time data. Where the data value is a time component. The POSIX class can be very complex in how it is formatted. IF you would like to learn more try ?POSIXct or ?POSIClt. First, lets run Sys.time() to check what is today’s data and time:\n\nSys.time()\n\n[1] \"2024-09-30 11:22:41 PDT\"\n\n\nNow lets check if its of POSIX class, you can use the class() function to figure out which class is it. Try class(Sys.time()):\n\nclass(Sys.time())\n\n[1] \"POSIXct\" \"POSIXt\" \n\n\n\n\nCharacter\nA character value is where the data values follow a string format. Examples of characters values are letters, words and even numbers. A character value is any value surrounded by quotation marks. For example, the phrase “Hello World!” is considere as one character value. Another example if you data is coded with the actual words “yes” or “no”. To check if you have character data, use the is.character() function. Try is.character(\"Hello World!\"):\n\nis.character(\"Hello World!\")\n\n[1] TRUE\n\n\nNotice that the output says ‘TRUE’. Character values can be created with single quotations. Try is.character('Hello World!'):\n\nis.character('Hello World!')\n\n[1] TRUE\n\n\n\n\nIntegers\nIntegers are just whole numbers for the most part. To create an interger, type the letter ‘L’ after a number. To check if you are using integer data, use the is.integer() function. Try is.integer(5L):\n\nis.integer(5L)\n\n[1] TRUE\n\n\n\n\nComplex Numbers\nComplex numbers are data values where there is a real component and an imaginary component. The imaginary component is a number multiplied by \\(i=\\sqrt{-1}\\). To create a complect number, use the complex() function. To check if a number is complex, use the is.complex() function. Try the following to create a complex number complex(1,4,5):\n\ncomplex(1,4,5)\n\n[1] 4+5i\n\n\nNow try is.complex(complex(1,4,5)):\n\nis.complex(complex(1,4,5))\n\n[1] TRUE\n\n\n\n\nRaw\nYou will probably never use raw data. I have never used raw data in R. To create a raw value, use the raw() or charToRaw() functions. Try charToRaw('Hello World!'):\n\ncharToRaw('Hello World!')\n\n [1] 48 65 6c 6c 6f 20 57 6f 72 6c 64 21\n\n\nTo check if you have raw data, use the is.raw() function. Try is.raw(charToRaw('Hello World!')):\n\nis.raw(charToRaw('Hello World!'))\n\n[1] TRUE\n\n\n\n\nMissing\nThe last data class in R is missing data denoted as NA. Whenever you see NA in any of the analysis you see, it means that the data is missing. To check if you have missing data, use the is.na() function. Try is.na(NA):\n\nis.na(NA)\n\n[1] TRUE"
   },
   {
     "objectID": "r/r_lab_0.html#r-objects",
     "href": "r/r_lab_0.html#r-objects",
     "title": "Introduction to R",
     "section": "R Objects",
-    "text": "R Objects\nR objects are where most of the statistical analysis is conducted on. An R object can be thought of as a container of data. For the most part, you will only use a data frame (or tibble) for your data analysis. However, it is always a good idea to to have some basic understanding of the other R objects.\n\nAssigning objects\nTo create an R object, all we need to do is assign data to a variable. The variable is the name of the R object. it can be called anything, but you can only use alphanumeric values, underscore, and periods. To assign a value to a variable, use the &lt;- operator. This is known a left assignment. Kinda like an arrow pointing left. Try assigning 9 to ‘x’ (x&lt;-9)`:\n\nx&lt;-9\n\nTo see if x contains 9, type x in the console:\n\nx\n\n[1] 9\n\n\nNow x can be treated as data and we can perform data analysis on it. For example, try squaring it:\n\nx^2\n\n[1] 81\n\n\nYou can use any mathematical operation from the previous sections. Try some other operations and see what happens.\nThe output R prints out can be stored in a variable using the asign operator, &lt;-. Try storing x^3 in a variable called x_cubed:\n\nx_cubed&lt;-x^3\n\nTo see what is stored in x_cubed you can either type x_cubed in the console or use the print() function with ‘x_cubed’ inside the paranthesis.\n\nx_cubed\n\n[1] 729\n\nprint(x_cubed)\n\n[1] 729\n\n\n\n\nVectors\nA vector is a set data values of a certain leng. The R object x is considered as a numerical vector (because it contains a number) with the length 1. To check, try is.numeric(x) and is.vector(x):\n\nis.numeric(x)\n\n[1] TRUE\n\nis.vector(x)\n\n[1] TRUE\n\n\nNow let’s create a logical vector that contains 4 elements (have it follow this sequence: T,F,T,F) and assign it to y. To create a vector use the c() function and type all the values and seperating it with columns. Type y&lt;-c(T,F,T,F):\n\ny&lt;-c(T,F,T,F)\n\nNow, lets see how y looks like. Type y:\n\ny\n\n[1]  TRUE FALSE  TRUE FALSE\n\n\nNow lets see if it’s a logical vector:\n\nis.logical(y)\n\n[1] TRUE\n\nis.vector(y)\n\n[1] TRUE\n\n\nFortunately, this vector is really small to count how many elements it has, but what if the vector is really large? To find out how many elements a vector has, use the length() function. Try length(y):\n\nlength(y)\n\n[1] 4\n\n\nThe c() function allows you to put any data type and as many values as you wish. The only condition of a vector is that it must be the same data type.\n\n\nMatrices\nA matrix can be thought as a square or rectangular grid of data values. This grid can be constructed in any shape. Similar to vectors they must contain the same data type. The size of a matrix is usually denoted as \\(n\\times k\\), where \\(n\\) represents the number of rows and \\(k\\) represents the number of columns. To get a rough idea of how a matrix may look like, type matrix(rep(1,12),nrow=4,ncol=3)3:\n\nmatrix(rep(1,12),nrow=4,ncol=3)\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n[4,]    1    1    1\n\n\nNotice that this is a \\(4\\times 3\\) matrix. Each element in the matrix has the value 1. Now try this matrix(rbinom(12,1.5),nrow=4,ncol=3)4:\n\nmatrix(rbinom(12,1,.5),nrow=4,ncol=3)\n\n     [,1] [,2] [,3]\n[1,]    0    1    0\n[2,]    1    0    0\n[3,]    1    0    0\n[4,]    1    0    1\n\n\nYour matrix may look different, but that is to be expected. Notice that some elements in a matrix are 0’s and some are 1’s. Each element in a matrix can hold any value.\nConstructing a matrix can be a bit difficult to do because the data values may need to be arranged in a certain way. Notice that I used the matrix() function to create the matrix. The examples above contain other components in the function that we will discuss later.\n\n\nArrays\nMatrices can be considered as a 2-dimensional block of numbers. An array is an n-dimensional block of numbers. While you may never need to use an array for data analysis. It may come in handy when programming by hand. To create an array, use the array() function. Below is an example of a \\(3 \\times 3 \\times 3\\) with the numbers 1, 2, and 3 representing the 3rd dimension stored in an R object called first_array5.\n\n(first_array &lt;- array(c(rep(1,9),rep(2,9),rep(3,9)),dim=c(3,3,3)))\n\n, , 1\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n\n, , 2\n\n     [,1] [,2] [,3]\n[1,]    2    2    2\n[2,]    2    2    2\n[3,]    2    2    2\n\n, , 3\n\n     [,1] [,2] [,3]\n[1,]    3    3    3\n[2,]    3    3    3\n[3,]    3    3    3\n\n\n\n\nData Frames\nData frames can be thought as the data sets that we normally see in other softwares. You can think about it as an excel spreadsheet. However, you cannot not change the values easily other than coding the changes. In a much general sense, a data frame is just a collection of labeled vectors. To get an idea of what a data frame looks like, try head(iris):\n\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa\n\n\nThe head() function just tells R to only print the top few components of the data frame.\nNow try tail(iris):\n\ntail(iris)\n\n    Sepal.Length Sepal.Width Petal.Length Petal.Width   Species\n145          6.7         3.3          5.7         2.5 virginica\n146          6.7         3.0          5.2         2.3 virginica\n147          6.3         2.5          5.0         1.9 virginica\n148          6.5         3.0          5.2         2.0 virginica\n149          6.2         3.4          5.4         2.3 virginica\n150          5.9         3.0          5.1         1.8 virginica\n\n\nThe tail() function provides the last 6 rows of the data frame.\n\n\nLists\nTo me a list is just a container that you can store practically anything. It is compiled of elements, where each element contains an R object. For example, the first element of a list may contain a data frame, the second element may contain a vector, and the third element may contain another list. It is just a way to store things.\nTo create a list, use the list() function. Create a list compiled of first element with the mtcars data set, second element with a vector of zeros of size 4, and a matrix \\(3 \\times 3\\) identity matrix6. Store the list in an object called list_one:\n\nlist_one&lt;-list(mtcars,rep(0,4),diag(rep(1,3)))\n\nType list_one to see what pops out:\n\nlist_one\n\n[[1]]\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n[[2]]\n[1] 0 0 0 0\n\n[[3]]\n     [,1] [,2] [,3]\n[1,]    1    0    0\n[2,]    0    1    0\n[3,]    0    0    1\n\n\nEach element in the list is labeled as a number. It is more useful to have the elements named. An element is named by typing the name in quotes followed by the = symbol before your object in the list() function (mtcars=mtcars).\n\nlist_one&lt;-list(mtcars=mtcars,vector=rep(0,4),identity=diag(rep(1,3)))\n\nHere I am creating an object called list_one, where the first element is mtcars labeled mtcars, the second element is a vector of zeros labeled vector and the last element is the identity matrix labeled identity.’\nNow create a new list called list_two and store list_one labeled as list_one and first_array labeled as array.\n\n(list_two&lt;-list(list_one=list_one,array=first_array))\n\n$list_one\n$list_one$mtcars\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n$list_one$vector\n[1] 0 0 0 0\n\n$list_one$identity\n     [,1] [,2] [,3]\n[1,]    1    0    0\n[2,]    0    1    0\n[3,]    0    0    1\n\n\n$array\n, , 1\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n\n, , 2\n\n     [,1] [,2] [,3]\n[1,]    2    2    2\n[2,]    2    2    2\n[3,]    2    2    2\n\n, , 3\n\n     [,1] [,2] [,3]\n[1,]    3    3    3\n[2,]    3    3    3\n[3,]    3    3    3"
+    "text": "R Objects\nR objects are where most of the statistical analysis is conducted on. An R object can be thought of as a container of data. For the most part, you will only use a data frame (or tibble) for your data analysis. However, it is always a good idea to to have some basic understanding of the other R objects.\n\nAssigning objects\nTo create an R object, all we need to do is assign data to a variable. The variable is the name of the R object. it can be called anything, but you can only use alphanumeric values, underscore, and periods. To assign a value to a variable, use the &lt;- operator. This is known a left assignment. Kinda like an arrow pointing left. Try assigning 9 to ‘x’ (x&lt;-9)`:\n\nx&lt;-9\n\nTo see if x contains 9, type x in the console:\n\nx\n\n[1] 9\n\n\nNow x can be treated as data and we can perform data analysis on it. For example, try squaring it:\n\nx^2\n\n[1] 81\n\n\nYou can use any mathematical operation from the previous sections. Try some other operations and see what happens.\nThe output R prints out can be stored in a variable using the asign operator, &lt;-. Try storing x^3 in a variable called x_cubed:\n\nx_cubed&lt;-x^3\n\nTo see what is stored in x_cubed you can either type x_cubed in the console or use the print() function with ‘x_cubed’ inside the paranthesis.\n\nx_cubed\n\n[1] 729\n\nprint(x_cubed)\n\n[1] 729\n\n\n\n\nVectors\nA vector is a set data values of a certain leng. The R object x is considered as a numerical vector (because it contains a number) with the length 1. To check, try is.numeric(x) and is.vector(x):\n\nis.numeric(x)\n\n[1] TRUE\n\nis.vector(x)\n\n[1] TRUE\n\n\nNow let’s create a logical vector that contains 4 elements (have it follow this sequence: T,F,T,F) and assign it to y. To create a vector use the c() function and type all the values and seperating it with columns. Type y&lt;-c(T,F,T,F):\n\ny&lt;-c(T,F,T,F)\n\nNow, lets see how y looks like. Type y:\n\ny\n\n[1]  TRUE FALSE  TRUE FALSE\n\n\nNow lets see if it’s a logical vector:\n\nis.logical(y)\n\n[1] TRUE\n\nis.vector(y)\n\n[1] TRUE\n\n\nFortunately, this vector is really small to count how many elements it has, but what if the vector is really large? To find out how many elements a vector has, use the length() function. Try length(y):\n\nlength(y)\n\n[1] 4\n\n\nThe c() function allows you to put any data type and as many values as you wish. The only condition of a vector is that it must be the same data type.\n\n\nMatrices\nA matrix can be thought as a square or rectangular grid of data values. This grid can be constructed in any shape. Similar to vectors they must contain the same data type. The size of a matrix is usually denoted as \\(n\\times k\\), where \\(n\\) represents the number of rows and \\(k\\) represents the number of columns. To get a rough idea of how a matrix may look like, type matrix(rep(1,12),nrow=4,ncol=3)3:\n\nmatrix(rep(1,12),nrow=4,ncol=3)\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n[4,]    1    1    1\n\n\nNotice that this is a \\(4\\times 3\\) matrix. Each element in the matrix has the value 1. Now try this matrix(rbinom(12,1.5),nrow=4,ncol=3)4:\n\nmatrix(rbinom(12,1,.5),nrow=4,ncol=3)\n\n     [,1] [,2] [,3]\n[1,]    1    1    0\n[2,]    1    1    1\n[3,]    0    0    0\n[4,]    0    0    1\n\n\nYour matrix may look different, but that is to be expected. Notice that some elements in a matrix are 0’s and some are 1’s. Each element in a matrix can hold any value.\nConstructing a matrix can be a bit difficult to do because the data values may need to be arranged in a certain way. Notice that I used the matrix() function to create the matrix. The examples above contain other components in the function that we will discuss later.\n\n\nArrays\nMatrices can be considered as a 2-dimensional block of numbers. An array is an n-dimensional block of numbers. While you may never need to use an array for data analysis. It may come in handy when programming by hand. To create an array, use the array() function. Below is an example of a \\(3 \\times 3 \\times 3\\) with the numbers 1, 2, and 3 representing the 3rd dimension stored in an R object called first_array5.\n\n(first_array &lt;- array(c(rep(1,9),rep(2,9),rep(3,9)),dim=c(3,3,3)))\n\n, , 1\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n\n, , 2\n\n     [,1] [,2] [,3]\n[1,]    2    2    2\n[2,]    2    2    2\n[3,]    2    2    2\n\n, , 3\n\n     [,1] [,2] [,3]\n[1,]    3    3    3\n[2,]    3    3    3\n[3,]    3    3    3\n\n\n\n\nData Frames\nData frames can be thought as the data sets that we normally see in other softwares. You can think about it as an excel spreadsheet. However, you cannot not change the values easily other than coding the changes. In a much general sense, a data frame is just a collection of labeled vectors. To get an idea of what a data frame looks like, try head(iris):\n\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa\n\n\nThe head() function just tells R to only print the top few components of the data frame.\nNow try tail(iris):\n\ntail(iris)\n\n    Sepal.Length Sepal.Width Petal.Length Petal.Width   Species\n145          6.7         3.3          5.7         2.5 virginica\n146          6.7         3.0          5.2         2.3 virginica\n147          6.3         2.5          5.0         1.9 virginica\n148          6.5         3.0          5.2         2.0 virginica\n149          6.2         3.4          5.4         2.3 virginica\n150          5.9         3.0          5.1         1.8 virginica\n\n\nThe tail() function provides the last 6 rows of the data frame.\n\n\nLists\nTo me a list is just a container that you can store practically anything. It is compiled of elements, where each element contains an R object. For example, the first element of a list may contain a data frame, the second element may contain a vector, and the third element may contain another list. It is just a way to store things.\nTo create a list, use the list() function. Create a list compiled of first element with the mtcars data set, second element with a vector of zeros of size 4, and a matrix \\(3 \\times 3\\) identity matrix6. Store the list in an object called list_one:\n\nlist_one&lt;-list(mtcars,rep(0,4),diag(rep(1,3)))\n\nType list_one to see what pops out:\n\nlist_one\n\n[[1]]\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n[[2]]\n[1] 0 0 0 0\n\n[[3]]\n     [,1] [,2] [,3]\n[1,]    1    0    0\n[2,]    0    1    0\n[3,]    0    0    1\n\n\nEach element in the list is labeled as a number. It is more useful to have the elements named. An element is named by typing the name in quotes followed by the = symbol before your object in the list() function (mtcars=mtcars).\n\nlist_one&lt;-list(mtcars=mtcars,vector=rep(0,4),identity=diag(rep(1,3)))\n\nHere I am creating an object called list_one, where the first element is mtcars labeled mtcars, the second element is a vector of zeros labeled vector and the last element is the identity matrix labeled identity.’\nNow create a new list called list_two and store list_one labeled as list_one and first_array labeled as array.\n\n(list_two&lt;-list(list_one=list_one,array=first_array))\n\n$list_one\n$list_one$mtcars\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n$list_one$vector\n[1] 0 0 0 0\n\n$list_one$identity\n     [,1] [,2] [,3]\n[1,]    1    0    0\n[2,]    0    1    0\n[3,]    0    0    1\n\n\n$array\n, , 1\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n\n, , 2\n\n     [,1] [,2] [,3]\n[1,]    2    2    2\n[2,]    2    2    2\n[3,]    2    2    2\n\n, , 3\n\n     [,1] [,2] [,3]\n[1,]    3    3    3\n[2,]    3    3    3\n[3,]    3    3    3"
   },
   {
     "objectID": "r/r_lab_0.html#footnotes",
@@ -1740,14 +1649,14 @@
     "href": "r/r_lab_2.html#normal-distribution",
     "title": "Lab 2: Optimization",
     "section": "Normal Distribution",
-    "text": "Normal Distribution\nTo begin we will simulate 250 random variables from \\(N(2,1.5)\\).\n\nx &lt;- rnorm(250, 2, sqrt(1.5))\n\nThen, we construct a function that will provide the negative log-likelihood function. We will create a function using function and set two arguments: data to specify a vector data, and params as a vector for \\(\\mu\\) and \\(\\sigma²\\). To obtain the log-likelihood values, we will use the dnorm function and set log=T. Then, we sill add up all the values and return the negative values. The code below is used to construct the function:\n\nll_norm &lt;- function(data, params){\n  ll &lt;- sum(dnorm(data, params[1], sqrt(params[2]), log = T))\n  return(-ll)\n}\n\nTo minimize the function, we will optim and provide the initial values for params [c(0,1)], then the function ll_norm, and data=x. R will minimize the function and provide output to interpret.\n\noptim(c(0,1), ll_norm, data = x)\n\n$par\n[1] 2.100826 1.417400\n\n$value\n[1] 398.323\n\n$counts\nfunction gradient \n      67       NA \n\n$convergence\n[1] 0\n\n$message\nNULL\n\n\nThe par element provides the values for the parameters. The first value is for \\(\\mu\\) and the second value is for \\(\\sigma²\\). Notice how close it is from the true values. Notice that it is slightly off to \\(\\bar x\\) and \\((n-1)s²/n\\)."
+    "text": "Normal Distribution\nTo begin we will simulate 250 random variables from \\(N(2,1.5)\\).\n\nx &lt;- rnorm(250, 2, sqrt(1.5))\n\nThen, we construct a function that will provide the negative log-likelihood function. We will create a function using function and set two arguments: data to specify a vector data, and params as a vector for \\(\\mu\\) and \\(\\sigma²\\). To obtain the log-likelihood values, we will use the dnorm function and set log=T. Then, we sill add up all the values and return the negative values. The code below is used to construct the function:\n\nll_norm &lt;- function(data, params){\n  ll &lt;- sum(dnorm(data, params[1], sqrt(params[2]), log = T))\n  return(-ll)\n}\n\nTo minimize the function, we will optim and provide the initial values for params [c(0,1)], then the function ll_norm, and data=x. R will minimize the function and provide output to interpret.\n\noptim(c(0,1), ll_norm, data = x)\n\n$par\n[1] 2.037172 1.305616\n\n$value\n[1] 388.0654\n\n$counts\nfunction gradient \n     109       NA \n\n$convergence\n[1] 0\n\n$message\nNULL\n\n\nThe par element provides the values for the parameters. The first value is for \\(\\mu\\) and the second value is for \\(\\sigma²\\). Notice how close it is from the true values. Notice that it is slightly off to \\(\\bar x\\) and \\((n-1)s²/n\\)."
   },
   {
     "objectID": "r/r_lab_2.html#uniform-distribution",
     "href": "r/r_lab_2.html#uniform-distribution",
     "title": "Lab 2: Optimization",
     "section": "Uniform Distribution",
-    "text": "Uniform Distribution\nSimulate 250 random variables from \\(U(0,3)\\).\n\nx &lt;- runif(250, max = 3)\n\nLet’s assume that we know the lower bound 0 and was interested in estimating the upper bound from the data. We will construct an R function that provides the negative log-likelihood function. We will follow similar steps to the normal distribution:\n\nll_unif &lt;- function(data, params){\n  ll &lt;- sum(dunif(data, 0, params, log = T))\n  return(-ll)\n}\n\nNow we will use optim to minimize the function. We will use the maximum of x for the initial value of the upper bound:\n\noptim(max(x), ll_unif, data = x)\n\nWarning in optim(max(x), ll_unif, data = x): one-dimensional optimization by Nelder-Mead is unreliable:\nuse \"Brent\" or optimize() directly\n\n\n$par\n[1] 2.997954\n\n$value\n[1] 274.4825\n\n$counts\nfunction gradient \n      48       NA \n\n$convergence\n[1] 0\n\n$message\nNULL\n\n\nIs this value close the maximum of the data?"
+    "text": "Uniform Distribution\nSimulate 250 random variables from \\(U(0,3)\\).\n\nx &lt;- runif(250, max = 3)\n\nLet’s assume that we know the lower bound 0 and was interested in estimating the upper bound from the data. We will construct an R function that provides the negative log-likelihood function. We will follow similar steps to the normal distribution:\n\nll_unif &lt;- function(data, params){\n  ll &lt;- sum(dunif(data, 0, params, log = T))\n  return(-ll)\n}\n\nNow we will use optim to minimize the function. We will use the maximum of x for the initial value of the upper bound:\n\noptim(max(x), ll_unif, data = x)\n\nWarning in optim(max(x), ll_unif, data = x): one-dimensional optimization by Nelder-Mead is unreliable:\nuse \"Brent\" or optimize() directly\n\n\n$par\n[1] 2.961267\n\n$value\n[1] 271.4043\n\n$counts\nfunction gradient \n      48       NA \n\n$convergence\n[1] 0\n\n$message\nNULL\n\n\nIs this value close the maximum of the data?"
   },
   {
     "objectID": "r/r_lab_2.html#questions",
@@ -1827,179 +1736,368 @@
     "text": "Resources\n\n\n\nLecture\nSlides\nVideo\n\n\n\n\nMonday\nSlides\nVideo\n\n\nWednesday\nSlides\nVideo"
   },
   {
-    "objectID": "hws/hw1.html",
-    "href": "hws/hw1.html",
-    "title": "Homework 1",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to Mathematical Statistics!",
     "section": "",
-    "text": "Homework 1 is due 9/7/2024 at 11:59 PM. Submit your homework on Canvas as one PDF document.\n\nX\\sim Bin(n,p), show that the variance of Binomial distribution is np(1-p).\nX\\sim Pois(\\lambda) , show that the expected value of a Poisson distribution is \\lambda.\nX\\sim Pois(\\lambda) , show that the variance of a Poisson distribution is \\lambda.\nX\\sim N(\\mu,\\sigma^2), show that the expected value is \\mu."
+    "text": "Brief Introduction\n\n\n\n\n\nWelcome to the course! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 6\n\n\n\n\n\nThis week focuses on statistical estimators \n\n\n\n\n\nSep 30, 2024\n\n\n\n\n\n\n\nWeek 5\n\n\n\n\n\nThis week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem. \n\n\n\n\n\nSep 23, 2024\n\n\n\n\n\n\n\nWeek 4\n\n\n\n\n\nThis week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem. \n\n\n\n\n\nSep 12, 2024\n\n\n\n\n\n\n\nWeek 3\n\n\n\n\n\nThis week, we will cover Transformations of Random Variables \n\n\n\n\n\nSep 5, 2024\n\n\n\n\n\n\n\nWeek 2\n\n\n\n\n\nThis week we will review basic concepts related to distribution functions and random variables \n\n\n\n\n\nAug 29, 2024\n\n\n\n\n\n\n\nWeek 1\n\n\n\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R. \n\n\n\n\n\nAug 22, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "r.html",
-    "href": "r.html",
-    "title": "R Labs",
+    "objectID": "hws/hw2.html",
+    "href": "hws/hw2.html",
+    "title": "Homework 2",
     "section": "",
-    "text": "Below are the R Labs for the course. Make sure you complete and submit your QMD file by the deadline on Canvas.\n\n\n\n\n\n\n\n\n\nLab 2: Optimization\n\n\n\n\n\n\n\n\n\n\n\nOct 26, 2022\n\n\n\n\n\n\n\nLab 3: Generalized Linear Models\n\n\n\n\n\n\n\n\n\n\n\nOct 26, 2022\n\n\n\n\n\n\n\nCentral Limit Theorem\n\n\n\n\n\n\n\n\n\n\n\nOct 23, 2022\n\n\n\n\n\n\n\nIntroduction to R\n\n\n\n\n\n\n\n\n\n\n\nAug 16, 2022\n\n\n\n\n\n\nNo matching items"
+    "text": "Homework 2 is due 9/22/2024 at 11:59 PM. Submit your homework on Canvas as one PDF document.\n\nShow that the moment generating function for a random variable \\(X\\sim Gamma(\\alpha,\\beta)\\) is \\(\\left(1-\\beta t\\right)^{-\\alpha}\\).\nLet \\(X\\) be a discrete random variable with PMF\n\\[\nP(X=x)=\\left\\{\\begin{array}{cc}\n0.25+0.5e^{-\\theta} & x =0 \\\\\n0.25+0.5\\theta e^{-\\theta} & x =1 \\\\\n0.5\\frac{\\theta^x}{x!}e^{-\\theta} & x = 2,3,\\ldots\\\\\n0 & \\textrm{otherwise}\n\\end{array}\\right.\n\\] Show that the PMF is valid.\nLet \\(X\\) and \\(Y\\) be two random variables that have the following joint distribution function:\n\n\\[\nf(x,y)=\\left\\{\\begin{array}{cc}\ne^{-x/2}ye^{-y²} & x&gt;0;y&gt;0\\\\\n0 & \\mathrm{otherwise}\n\\end{array}\n\\right.\n\\]\nWhat is the marginal distribution of \\(Y\\)?\n\nFind the moment-generating function of \\(X\\sim\\chi^2_k\\) and \\(f_X(x)=\\frac{x^{k/2-1}\\exp\\{-x/2\\}}{2^{k/2}\\Gamma(k/2)}\\) with \\(x&gt;0\\)."
   },
   {
-    "objectID": "lectures/3a.html#function-of-random-variables-1",
-    "href": "lectures/3a.html#function-of-random-variables-1",
-    "title": "Functions of Random Variables",
-    "section": "Function of Random Variables",
-    "text": "Function of Random Variables"
+    "objectID": "lectures/1b.html#random-variables",
+    "href": "lectures/1b.html#random-variables",
+    "title": "Review:",
+    "section": "Random Variables",
+    "text": "Random Variables\nA random variable is function that maps the sample space to real value."
   },
   {
-    "objectID": "lectures/3a.html#using-the-distribution-function",
-    "href": "lectures/3a.html#using-the-distribution-function",
-    "title": "Functions of Random Variables",
-    "section": "Using the Distribution Function",
-    "text": "Using the Distribution Function\nLet there be a random variable \\(X\\) with a known distribution function \\(F_X(x)\\), the density function for the random variable \\(Y=g(X)\\) can be found with the following steps\n\n\n\nFind the region of \\(Y\\) in the space of \\(X\\), find \\(g^{-1}(y)\\)\nFind the region of \\(Y\\le y\\)\nFind \\(F_Y(y)=P(Y\\le y)\\) using the probability density function of \\(X\\) over region \\(Y\\le y\\)\nFind \\(f_Y(y)\\) by differentiating \\(F_Y(y)\\)"
+    "objectID": "lectures/1b.html#discrete-random-variables-1",
+    "href": "lectures/1b.html#discrete-random-variables-1",
+    "title": "Review:",
+    "section": "Discrete Random Variables",
+    "text": "Discrete Random Variables\nA random variable is considered to be discrete if it can only map to a finite or countably infinite number of distinct values."
   },
   {
-    "objectID": "lectures/3a.html#example-1",
-    "href": "lectures/3a.html#example-1",
-    "title": "Functions of Random Variables",
-    "section": "Example 1",
-    "text": "Example 1\nLet \\(X\\) have the following probability density function:\n\\[\nf_X(x)=\\left\\{\\begin{array}{cc}\n2x & 0\\le x \\le 1 \\\\\n0 & \\mathrm{otherwise}\n\\end{array}\n\\right.\n\\]\nFind the probability density function of \\(Y=3X-1\\)?"
+    "objectID": "lectures/1b.html#pmf",
+    "href": "lectures/1b.html#pmf",
+    "title": "Review:",
+    "section": "PMF",
+    "text": "PMF\nThe probability mass function of discrete variable can be represented by a formula, table, or a graph. The Probability of a random variable Y can be expressed as \\(P(Y=y)\\) for all values of \\(y\\)."
   },
   {
-    "objectID": "lectures/3a.html#using-the-pdf",
-    "href": "lectures/3a.html#using-the-pdf",
-    "title": "Functions of Random Variables",
-    "section": "Using the PDF",
-    "text": "Using the PDF\nLet there be a random variable \\(X\\) with a known distribution function \\(F_X(x)\\), if the random variable \\(Y=g(X)\\) is either increasing or decreasing, than the probability density function can be found as\n\\[\nf_Y(y) = f_X\\{g^{-1}(y)\\}\\left|\\frac{dg^{-1}(y)}{dy}\\right|\n\\]"
+    "objectID": "lectures/1b.html#cdf",
+    "href": "lectures/1b.html#cdf",
+    "title": "Review:",
+    "section": "CDF",
+    "text": "CDF\nThe cumulative distribution function provides the \\(P(Y\\leq y)\\) for a random variable \\(Y\\)."
   },
   {
-    "objectID": "lectures/3a.html#example-2",
-    "href": "lectures/3a.html#example-2",
-    "title": "Functions of Random Variables",
-    "section": "Example 2",
-    "text": "Example 2\nLet \\(X\\) have the following probability density function:\n\\[\nf_X(x)=\\left\\{\\begin{array}{cc}\n\\frac{3}{2}x^2 + x & 0\\le y \\le 1 \\\\\n0 & \\mathrm{otherwise}\n\\end{array}\n\\right.\n\\]\nFind the probability density function of \\(Y=5-(X/2)\\)?"
+    "objectID": "lectures/1b.html#expected-value",
+    "href": "lectures/1b.html#expected-value",
+    "title": "Review:",
+    "section": "Expected Value",
+    "text": "Expected Value\nThe expected value is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of Y is\n\\[\nE(Y)=\\sum_y yP(y)\n\\]"
   },
   {
-    "objectID": "lectures/3a.html#using-the-mgf",
-    "href": "lectures/3a.html#using-the-mgf",
-    "title": "Functions of Random Variables",
-    "section": "Using the MGF",
-    "text": "Using the MGF\nUsing the uniqueness property of Moment Generating Functions, for a random variable \\(X\\) with a known distribution function \\(F_X(x)\\) and random variable \\(Y=g(X)\\), the distribution of \\(Y\\) can be found by:\n\n\nFind the moment generating function of \\(Y\\), \\(M_Y(t)\\).\nCompare \\(M_Y(t)\\), with known moment generating functions. If \\(M_Y(t)=M_V(t)\\), for all values \\(t\\), them \\(Y\\) and \\(V\\) have identical distributions."
+    "objectID": "lectures/1b.html#variance",
+    "href": "lectures/1b.html#variance",
+    "title": "Review:",
+    "section": "Variance",
+    "text": "Variance\nThe variance is the expected squared difference between the random variable and expected value.\n\\[\nVar(Y)=\\sum_y\\{y-E(Y)\\}^2P(y)\n\\]\n\\[\nVar(Y) = E(X^2) - E(X)^2\n\\]"
   },
   {
-    "objectID": "lectures/3a.html#example-3",
-    "href": "lectures/3a.html#example-3",
-    "title": "Functions of Random Variables",
-    "section": "Example 3",
-    "text": "Example 3\nLet \\(X\\) follow a normal distribution with mean \\(\\mu\\) and variance \\(\\sigma^2\\). Find the distribution of \\(Z=\\frac{X-\\mu}{\\sigma}\\)."
+    "objectID": "lectures/1b.html#known-distributions",
+    "href": "lectures/1b.html#known-distributions",
+    "title": "Review:",
+    "section": "Known Distributions",
+    "text": "Known Distributions\n\n\n\n\n\n\n\n\nDistribution\nParameter(s)\nPMF \\(P(Y=y)\\)\n\n\n\n\nBernoulli\n\\(p\\)\n\\(p\\)\n\n\nBinomial\n\\(n\\) and \\(p\\)\n\\((^n_y)p^y(1-p)^{n-p}\\)\n\n\nGeometric\n\\(p\\)\n\\((1-p)^{y-1}p\\)\n\n\nNegative Binomial\n\\(r\\) and \\(p\\)\n\\((^{y-1}_{r-1})p^{r-1}(1-p)^{y-r}\\)\n\n\nHypergeometric\n\\(N\\), \\(n\\), and \\(r\\)\n\\(\\frac{(^r_y)(^{N-r}_{n-y})}{(^N_n)}\\)\n\n\nPoisson\n\\(\\lambda\\)\n\\(\\frac{\\lambda^y}{y!} e^{-\\lambda}\\)"
   },
   {
-    "objectID": "lectures/3a.html#example-4",
-    "href": "lectures/3a.html#example-4",
-    "title": "Functions of Random Variables",
-    "section": "Example 4",
-    "text": "Example 4\nLet \\(Z\\) follow a standard normal distribution with mean \\(0\\) and variance \\(1\\). Find the distribution of \\(Y=Z^2\\)"
+    "objectID": "lectures/1b.html#binomial-distribution-1",
+    "href": "lectures/1b.html#binomial-distribution-1",
+    "title": "Review:",
+    "section": "Binomial Distribution",
+    "text": "Binomial Distribution\nAn experiment is said to follow a binomial distribution if\n\nFixed \\(n\\)\nEach trial has 2 outcomes\nThe probability of success is a constant \\(p\\)\nThe trials are independent of each\n\n\n\\(P(X=x)=(^n_x)p^x(1-p)^{n-x}\\)"
   },
   {
-    "objectID": "lectures/4a.html#independent-random-variables",
-    "href": "lectures/4a.html#independent-random-variables",
-    "title": "Joint Distribution Functions",
-    "section": "Independent Random Variables",
-    "text": "Independent Random Variables\nRandom variables are considered independent of each other if the probability of one variable does not affect the probability of another variable."
+    "objectID": "lectures/1b.html#expected-value-of-a-binomial-distribution",
+    "href": "lectures/1b.html#expected-value-of-a-binomial-distribution",
+    "title": "Review:",
+    "section": "Expected Value of a Binomial Distribution",
+    "text": "Expected Value of a Binomial Distribution"
   },
   {
-    "objectID": "lectures/4a.html#discrete-independent-random-variables",
-    "href": "lectures/4a.html#discrete-independent-random-variables",
-    "title": "Joint Distribution Functions",
-    "section": "Discrete Independent Random Variables",
-    "text": "Discrete Independent Random Variables\nLet \\(X_1\\) and \\(X_2\\) be 2 discrete random variables, with a joint density function of \\(p_{X_1,X_2}(x_1,x_2)\\). \\(X_1\\) is independent of \\(X_2\\) if and only if\n\\[\np_{X_1,X_2}(x_1,x_2) = p_{X_1}(x_1)p_{X_2}(x_2)\n\\]"
+    "objectID": "lectures/1b.html#continued",
+    "href": "lectures/1b.html#continued",
+    "title": "Review:",
+    "section": "Continued",
+    "text": "Continued"
   },
   {
-    "objectID": "lectures/4a.html#continuous-independent-random-variables",
-    "href": "lectures/4a.html#continuous-independent-random-variables",
-    "title": "Joint Distribution Functions",
-    "section": "Continuous Independent Random Variables",
-    "text": "Continuous Independent Random Variables\nLet \\(X_1\\) and \\(X_2\\) be 2 continuous random variables, with a joint density function of \\(f_{X_1,X_2}(x_1,x_2)\\). \\(X_1\\) is independent of \\(X_2\\) if and only if\n\\[\nf_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2)\n\\]"
+    "objectID": "lectures/1b.html#poisson-distribution-1",
+    "href": "lectures/1b.html#poisson-distribution-1",
+    "title": "Review:",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\nThe poisson distribution describes an experiment that measures that occurrence of an event at specific point and/or time period.\n\n\\(P(X=x)=\\frac{\\lambda^x}{x!}e^{-\\lambda}\\)"
   },
   {
-    "objectID": "lectures/4a.html#matrix-algebra",
-    "href": "lectures/4a.html#matrix-algebra",
-    "title": "Joint Distribution Functions",
-    "section": "Matrix Algebra",
-    "text": "Matrix Algebra\n\\[\nA = \\left(\\begin{array}{cc}\na_1 & 0\\\\\n0 & a_2\n\\end{array}\\right)\n\\]\n\\[\n\\det(A) = a_1a_2\n\\]\n\\[\nA^{-1}=\\left(\\begin{array}{cc}\n1/a_1 & 0 \\\\\n0 & 1/a_2\n\\end{array}\\right)\n\\]"
+    "objectID": "lectures/1b.html#expected-value-of-a-poisson-distribution",
+    "href": "lectures/1b.html#expected-value-of-a-poisson-distribution",
+    "title": "Review:",
+    "section": "Expected Value of a Poisson Distribution",
+    "text": "Expected Value of a Poisson Distribution"
   },
   {
-    "objectID": "lectures/4a.html#example",
-    "href": "lectures/4a.html#example",
-    "title": "Joint Distribution Functions",
-    "section": "Example",
-    "text": "Example\n\\[\n\\left(\\begin{array}{c}\nX\\\\\nY\n\\end{array}\\right)\\sim N \\left\\{\n\\left(\\begin{array}{c}\n\\mu_x\\\\\n\\mu_y\n\\end{array}\\right),\\left(\\begin{array}{cc}\n\\sigma_x^2 & 0\\\\\n0 & \\sigma_y^2\n\\end{array}\\right)\n\\right\\}\n\\]\nShow that \\(X\\perp Y\\).\n\\[\nf_{X,Y}(x,y)=\\det(2\\pi\\Sigma)^{-1/2}\\exp\\left\\{-\\frac{1}{2}(\\boldsymbol{w}-\\boldsymbol\\mu)^T\\Sigma^{-1}(\\boldsymbol w-\\boldsymbol\\mu)\\right\\}\n\\]\nwhere \\(\\Sigma=\\left(\\begin{array}{cc}\\sigma_y^2 & 0\\\\0 & \\sigma_y^2\\end{array}\\right)\\), \\(\\boldsymbol \\mu = \\left(\\begin{array}{cc}\\mu_x\\\\ \\mu_y \\end{array}\\right)\\), and \\(\\boldsymbol w = \\left(\\begin{array}{cc} x\\\\ y \\end{array}\\right)\\)"
+    "objectID": "lectures/1b.html#continuous-random-variables-1",
+    "href": "lectures/1b.html#continuous-random-variables-1",
+    "title": "Review:",
+    "section": "Continuous Random Variables",
+    "text": "Continuous Random Variables\nA random variable \\(X\\) is considered continuous if the \\(P(X=x)\\) does not exist."
   },
   {
-    "objectID": "lectures/4a.html#expectations-1",
-    "href": "lectures/4a.html#expectations-1",
-    "title": "Joint Distribution Functions",
-    "section": "Expectations",
-    "text": "Expectations\nLet \\(X_1, X_2, \\ldots,X_n\\) be a set of random variables, the expectation of a function \\(g(X_1,\\ldots, X_n)\\) is defined as\n\\[\nE\\{g(X_1,\\ldots, X_n)\\} = \\sum_{x_1\\in X_1}\\cdots\\sum_{x_n\\in X_n}g(X_1,\\ldots, X_n)p(x_1,\\ldots,x_n)\n\\]\nor\n\\[\nE\\{g(\\boldsymbol X)\\} = \\int_{x_1\\in X_1}\\cdots\\int_{x_n\\in X_n}g(\\boldsymbol X)f(\\boldsymbol X)dx_n \\cdots dx_1\n\\]\n\n\\(\\boldsymbol X = (X_1,\\cdots, X_n)\\)"
+    "objectID": "lectures/1b.html#cdf-1",
+    "href": "lectures/1b.html#cdf-1",
+    "title": "Review:",
+    "section": "CDF",
+    "text": "CDF\nThe cumulative distribution function of \\(X\\) provides the \\(P(X\\leq x)\\), denoted by \\(F(x)\\), for the domain of \\(X\\).\nProperties of the CDF of \\(X\\):\n\n\\(F(-\\infty)\\equiv \\lim_{y\\rightarrow -\\infty}F(y)=0\\)\n\\(F(\\infty)\\equiv \\lim_{y\\rightarrow \\infty}F(y)=1\\)\n\\(F(x)\\) is a nondecreaseing function"
   },
   {
-    "objectID": "lectures/4a.html#expected-value-and-variance-of-linear-functions",
-    "href": "lectures/4a.html#expected-value-and-variance-of-linear-functions",
-    "title": "Joint Distribution Functions",
-    "section": "Expected Value and Variance of Linear Functions",
-    "text": "Expected Value and Variance of Linear Functions\nLet \\(X_1,\\ldots,X_n\\) and \\(Y_1,\\ldots,Y_m\\) be random variables with \\(E(X_i)=\\mu_i\\) and \\(E(Y_j)=\\tau_j\\). Furthermore, let \\(U = \\sum^n_{i=1}a_iX_i\\) and \\(V=\\sum^m_{j=1}b_jY_j\\) where \\(\\{a_i\\}^n_{i=1}\\) and \\(\\{b_j\\}_{j=1}^m\\) are constants. We have the following properties:\n\n\\(E(U)=\\sum_{i=1}^na_i\\mu_i\\)\n\\(Var(U)=\\sum^n_{i=1}a_i^2Var(X_i)+2\\underset{i&lt;j}{\\sum\\sum}a_ia_jCov(X_i,X_j)\\)\n\\(Cov(U,V)=\\sum^n_{i=1}\\sum^m_{j=1}Cov(X_i,Y_j)\\)"
+    "objectID": "lectures/1b.html#pdf",
+    "href": "lectures/1b.html#pdf",
+    "title": "Review:",
+    "section": "PDF",
+    "text": "PDF\nThe probability density function of the random variable \\(X\\) is given by\n\\[\nf(x)=\\frac{dF(x)}{d(x)}=F^\\prime(x)\n\\]\nwherever the derivative exists.\nProperties of pdfs:\n\n\\(f(x)\\geq 0\\)\n\\(\\int^\\infty_{-\\infty}f(x)dx=1\\)\n\\(P(a\\leq X\\leq b) = P(a&lt;X&lt;b)=\\int^b_af(x)dx\\)"
   },
   {
-    "objectID": "lectures/4a.html#expectation-of-product",
-    "href": "lectures/4a.html#expectation-of-product",
-    "title": "Joint Distribution Functions",
-    "section": "Expectation of Product",
-    "text": "Expectation of Product\nLet \\(X\\) and \\(Y\\) be independent random variables with Joint Function \\(f_{XY}(x,y)\\), then\n\\[\nE(XY) = E(X)E(Y)\n\\]\n\nProve it!"
+    "objectID": "lectures/1b.html#expected-value-1",
+    "href": "lectures/1b.html#expected-value-1",
+    "title": "Review:",
+    "section": "Expected Value",
+    "text": "Expected Value\nThe expected value for a continuous distribution is defined as\n\\[\nE(X)=\\int x f(x)dx\n\\]\nThe expectation of a function \\(g(X)\\) is defined as\n\\[\nE\\{g(X)\\}=\\int g(x)f(x)dx\n\\]"
   },
   {
-    "objectID": "lectures/4a.html#conditional-expectations",
-    "href": "lectures/4a.html#conditional-expectations",
-    "title": "Joint Distribution Functions",
-    "section": "Conditional Expectations",
-    "text": "Conditional Expectations\nLet \\(X_1\\) and \\(X_2\\) be two random variables, the conditional expectation of \\(g(X_1)\\), given \\(X_2=x_2\\), is defined as\n\\[\nE\\{g(X_1)|X_2=x_2\\}=\\sum_{x_1}g(x_1)p(x_1|x_2)\n\\]\nor\n\\[\nE\\{g(X_1)|X_2=x_2\\}=\\int_{x_1}g(x_1)f(x_1|x_2)dx_1.\n\\]"
+    "objectID": "lectures/1b.html#expected-value-properties",
+    "href": "lectures/1b.html#expected-value-properties",
+    "title": "Review:",
+    "section": "Expected Value Properties",
+    "text": "Expected Value Properties\n\n\\(E(c)=c\\), where \\(c\\) is constant\n\\(E\\{cg(X)\\}=cE\\{g(X)\\}\\)\n\\(E\\{g_1(X)+g_2(X)+\\cdots+g_n(X)\\}=E\\{g_1(X)\\}+E\\{g_2(X)\\}+\\cdots+E\\{g_n(X)\\}\\)"
   },
   {
-    "objectID": "lectures/4a.html#conditional-expectations-1",
-    "href": "lectures/4a.html#conditional-expectations-1",
-    "title": "Joint Distribution Functions",
-    "section": "Conditional Expectations",
-    "text": "Conditional Expectations\nFurthermore,\n\\[\nE(X_1)=E_{X_2}\\{E_{X_1|X_2}(X_1|X_2)\\}\n\\]\nand\n\\[\nVar(X_1) = E_{X_2}\\{Var_{X_1|X_2}(X_1|X_2)\\} + Var_{X_2}\\{E_{X_1|X_2}(X_1|X_2)\\}\n\\]"
+    "objectID": "lectures/1b.html#variance-1",
+    "href": "lectures/1b.html#variance-1",
+    "title": "Review:",
+    "section": "Variance",
+    "text": "Variance\nThe variance of continuous variable is defined as\n\\[\nVar(X) =  E[\\{X-E(X)\\}^2] = \\int \\{X-E(X)\\}^2 f(x)dx\n\\]"
   },
   {
-    "objectID": "lectures/4a.html#covariance-1",
-    "href": "lectures/4a.html#covariance-1",
-    "title": "Joint Distribution Functions",
-    "section": "Covariance",
-    "text": "Covariance\nLet \\(X_1\\) and \\(X_2\\) be 2 random variables with mean \\(E(X_1)=\\mu_1\\) and \\(E(X_2)=\\mu_2\\), respectively. The covariance of \\(X_1\\) and \\(X_2\\) is defined as\n\\[\n\\begin{eqnarray*}\nCov(X_1,X_2) & = & E\\{(X_1-\\mu_1)(X_2-\\mu_2)\\}\\\\\n& =& E(X_1X_2)-\\mu_1\\mu_2\n\\end{eqnarray*}\n\\]\nIf \\(X_1\\) and \\(X_2\\) are independent random variables, then\n\\[\nCov(X_1,X_2)=0\n\\]"
+    "objectID": "lectures/1b.html#uniform-distribution-1",
+    "href": "lectures/1b.html#uniform-distribution-1",
+    "title": "Review:",
+    "section": "Uniform Distribution",
+    "text": "Uniform Distribution\nA random variable is said to follow uniform distribution if the density function is constant between two parameters.\n\n\\[\nf(x) = \\left\\{\\begin{array}{cc}\n\\frac{1}{b-a} & a \\leq x \\leq b\\\\\n0 & \\mathrm{elsewhere}\n\\end{array}\\right.\n\\]"
   },
   {
-    "objectID": "lectures/4a.html#correlation",
-    "href": "lectures/4a.html#correlation",
-    "title": "Joint Distribution Functions",
-    "section": "Correlation",
-    "text": "Correlation\nThe correlation of \\(X_1\\) and \\(X_2\\) is defined as\n\\[\n\\rho = Cor(X_1,X_2) = \\frac{Cov(X_1,X_2)}{\\sqrt{Var(X_1)Var(X_2)}}\n\\]"
+    "objectID": "lectures/1b.html#expected-value-2",
+    "href": "lectures/1b.html#expected-value-2",
+    "title": "Review:",
+    "section": "Expected Value",
+    "text": "Expected Value"
   },
   {
-    "objectID": "lectures/4a.html#mgf-property-independence",
-    "href": "lectures/4a.html#mgf-property-independence",
-    "title": "Joint Distribution Functions",
-    "section": "MGF Property: Independence",
-    "text": "MGF Property: Independence\nLet \\(X\\) and \\(Y\\) be independent random variables. Let \\(Z = X+Y\\), the MGF of Z is\n\\[\nM_Z(t) = M_X(t)M_Y(t)\n\\]"
+    "objectID": "lectures/1b.html#normal-distribution-1",
+    "href": "lectures/1b.html#normal-distribution-1",
+    "title": "Review:",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\nA random variable is said to follow a normal distribution if the the frequency of occurrence follow a Gaussian function.\n\n\\[\nf(x)=\\frac{1}{\\sqrt{2\\pi \\sigma^2}}\\exp\\left\\{-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right\\}\n\\]"
   },
   {
-    "objectID": "lectures/4a.html#examples-1",
-    "href": "lectures/4a.html#examples-1",
-    "title": "Joint Distribution Functions",
-    "section": "Examples",
-    "text": "Examples\nLet \\(X_1\\sim Bin(n_1,p)\\) and \\(X_2\\sim Bin(n_2, p)\\). Find the distribution function of \\(Y=X_1 + X_2\\). Assume \\(X_1\\perp X_2\\)."
+    "objectID": "lectures/1b.html#expected-value-3",
+    "href": "lectures/1b.html#expected-value-3",
+    "title": "Review:",
+    "section": "Expected Value",
+    "text": "Expected Value"
   },
   {
-    "objectID": "lectures/4a.html#examples-2",
-    "href": "lectures/4a.html#examples-2",
-    "title": "Joint Distribution Functions",
-    "section": "Examples",
-    "text": "Examples\nLet \\(X_1\\sim N(\\mu_1,\\sigma_1^2)\\) and \\(X_2\\sim N(\\mu_2,\\sigma_2^2)\\). Find the distribution function of \\(Y=X_1 + X_2\\). Assume \\(X_1\\perp X_2\\)."
+    "objectID": "lectures/1b.html#continued-1",
+    "href": "lectures/1b.html#continued-1",
+    "title": "Review:",
+    "section": "Continued",
+    "text": "Continued"
+  },
+  {
+    "objectID": "lectures/2b.html#learning-outcomes",
+    "href": "lectures/2b.html#learning-outcomes",
+    "title": "Review:",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nDefine Moment Generating Functions\nDiscuss Properties"
+  },
+  {
+    "objectID": "lectures/2b.html#moments",
+    "href": "lectures/2b.html#moments",
+    "title": "Review:",
+    "section": "Moments",
+    "text": "Moments\nThe \\(k\\)th moment is defined as the expectation of the random variable, raised to the \\(k\\)th power, defined as \\(E(X^k)\\)."
+  },
+  {
+    "objectID": "lectures/2b.html#moment-generating-functions-1",
+    "href": "lectures/2b.html#moment-generating-functions-1",
+    "title": "Review:",
+    "section": "Moment Generating Functions",
+    "text": "Moment Generating Functions\nThe moment generating functions is used to obtain the \\(k\\)th moment. The mgf is defined as\n\\[\nm(t) = E(e^{tX})\n\\]\nThe \\(k\\)th moment can be obtained by taking the \\(k\\)th derivative of the mgf, with respect to \\(t\\), and setting \\(t\\) equal to 0:\n\\[\nE(X^k)=\\frac{d^km(t)}{dt}\\Bigg|_{t=0}\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#mgf",
+    "href": "lectures/2b.html#mgf",
+    "title": "Review:",
+    "section": "MGF",
+    "text": "MGF"
+  },
+  {
+    "objectID": "lectures/2b.html#expected-value",
+    "href": "lectures/2b.html#expected-value",
+    "title": "Review:",
+    "section": "Expected Value",
+    "text": "Expected Value"
+  },
+  {
+    "objectID": "lectures/2b.html#variance",
+    "href": "lectures/2b.html#variance",
+    "title": "Review:",
+    "section": "Variance",
+    "text": "Variance"
+  },
+  {
+    "objectID": "lectures/2b.html#variance-1",
+    "href": "lectures/2b.html#variance-1",
+    "title": "Review:",
+    "section": "Variance",
+    "text": "Variance"
+  },
+  {
+    "objectID": "lectures/2b.html#mgf-1",
+    "href": "lectures/2b.html#mgf-1",
+    "title": "Review:",
+    "section": "MGF",
+    "text": "MGF"
+  },
+  {
+    "objectID": "lectures/2b.html#mgf-2",
+    "href": "lectures/2b.html#mgf-2",
+    "title": "Review:",
+    "section": "MGF",
+    "text": "MGF"
+  },
+  {
+    "objectID": "lectures/2b.html#mgf-3",
+    "href": "lectures/2b.html#mgf-3",
+    "title": "Review:",
+    "section": "MGF",
+    "text": "MGF"
+  },
+  {
+    "objectID": "lectures/2b.html#linearity",
+    "href": "lectures/2b.html#linearity",
+    "title": "Review:",
+    "section": "Linearity",
+    "text": "Linearity\nLet \\(X\\) follow a distribution \\(f\\), with the an MGF \\(M_X(t)\\), the MGF of \\(Y=aX+b\\) is given as\n\\[\nM_Y(t) = e^{tb}M_X(at)\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#derivation",
+    "href": "lectures/2b.html#derivation",
+    "title": "Review:",
+    "section": "Derivation",
+    "text": "Derivation"
+  },
+  {
+    "objectID": "lectures/2b.html#linearity-1",
+    "href": "lectures/2b.html#linearity-1",
+    "title": "Review:",
+    "section": "Linearity",
+    "text": "Linearity\nLet \\(X\\) and \\(Y\\) be two random variables with MGFs \\(M_X(t)\\) and \\(M_Y(t)\\), respectively, and are independent. The MGF of \\(U=X-Y\\)\n\\[\nM_U(t) = M_X(t)M_Y(-t)\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#derivation-1",
+    "href": "lectures/2b.html#derivation-1",
+    "title": "Review:",
+    "section": "Derivation",
+    "text": "Derivation"
+  },
+  {
+    "objectID": "lectures/2b.html#uniqueness",
+    "href": "lectures/2b.html#uniqueness",
+    "title": "Review:",
+    "section": "Uniqueness",
+    "text": "Uniqueness\nLet \\(X\\) and \\(Y\\) have the following distributions \\(F_X(x)\\) and \\(F_Y(y)\\) and MGFs \\(M_X(t)\\) and \\(M_Y(t)\\), respectively. \\(X\\) and \\(Y\\) have the same distribution \\(F_X(x)=F_Y(y)\\) if and only if \\(M_X(t)=M_Y(t)\\)."
+  },
+  {
+    "objectID": "lectures/2b.html#uniqueness-1",
+    "href": "lectures/2b.html#uniqueness-1",
+    "title": "Review:",
+    "section": "Uniqueness",
+    "text": "Uniqueness\nLet \\(X_1,\\cdots, X_n\\) be independent random variables, where \\(X_i\\sim N(\\mu_i, \\sigma^2_i)\\), with \\(M_{X_i}(t)=\\exp\\{\\mu_i t+\\sigma^2_it^2/2\\}\\) for \\(i=1,\\cdots, n\\). Find the MGF of \\(Y=a_1X_1+\\cdots+a_nX_n\\), where \\(a_1, \\cdots, a_n\\) are constants."
+  },
+  {
+    "objectID": "lectures/6a.html#estimators-1",
+    "href": "lectures/6a.html#estimators-1",
+    "title": "Statistical Estimators",
+    "section": "Estimators",
+    "text": "Estimators\nAn estimator is an operation computing the value of an estimate, that targets the parameter, using measurements from a sample."
+  },
+  {
+    "objectID": "lectures/6a.html#unbiased-estimator",
+    "href": "lectures/6a.html#unbiased-estimator",
+    "title": "Statistical Estimators",
+    "section": "Unbiased Estimator",
+    "text": "Unbiased Estimator\nAn unbiased estimator \\(\\hat\\theta\\) is an estimator that satisfies the following condition:\n\\[\nE(\\hat\\theta) = \\theta\n\\]"
+  },
+  {
+    "objectID": "lectures/6a.html#bias",
+    "href": "lectures/6a.html#bias",
+    "title": "Statistical Estimators",
+    "section": "Bias",
+    "text": "Bias\nThe bias of an estimator is defined as\n\\[\nB(\\hat\\theta) = E(\\hat\\theta)-\\theta\n\\]"
+  },
+  {
+    "objectID": "lectures/6a.html#mean-square-error",
+    "href": "lectures/6a.html#mean-square-error",
+    "title": "Statistical Estimators",
+    "section": "Mean Square Error",
+    "text": "Mean Square Error\nThe mean square of an estimator is \\(\\hat\\theta\\) is given as\n\\[\n\\begin{eqnarray}\nMSE(\\hat\\theta) & = & E\\{(\\hat\\theta-\\theta)^2\\} \\\\\n& = & Var(\\hat\\theta) + B(\\hat\\theta)^2\n\\end{eqnarray}\n\\]"
+  },
+  {
+    "objectID": "lectures/6a.html#is-bar-x-an-unbiased-estimator-of-mu",
+    "href": "lectures/6a.html#is-bar-x-an-unbiased-estimator-of-mu",
+    "title": "Statistical Estimators",
+    "section": "Is \\(\\bar X\\) an unbiased estimator of \\(\\mu\\)?",
+    "text": "Is \\(\\bar X\\) an unbiased estimator of \\(\\mu\\)?\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}N(\\mu,\\sigma^2)\\), find the bias of \\(\\bar X\\)."
+  },
+  {
+    "objectID": "lectures/6a.html#why-is-s²-divided-by-n-1-instead-of-n",
+    "href": "lectures/6a.html#why-is-s²-divided-by-n-1-instead-of-n",
+    "title": "Statistical Estimators",
+    "section": "Why is \\(S²\\) divided by \\(n-1\\) instead of \\(n\\)?",
+    "text": "Why is \\(S²\\) divided by \\(n-1\\) instead of \\(n\\)?\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}N(\\mu,\\sigma^2)\\), find the bias of \\(S²\\)."
+  },
+  {
+    "objectID": "lectures/6a.html#problem",
+    "href": "lectures/6a.html#problem",
+    "title": "Statistical Estimators",
+    "section": "Problem",
+    "text": "Problem\nLet \\(X_1,X_2,X_3\\) follow and exponential distribution with mean and variance \\(\\lambda\\) and \\(\\lambda²\\), respectively. Using the following estimators:\n\n\\(\\hat\\theta_1 = X_1\\)\n\\(\\hat\\theta_2 = \\frac{X_1+X_2}{2}\\)\n\\(\\hat\\theta_3 = \\frac{X_1+2X_2}{3}\\)\n\\(\\hat\\theta_4 = \\frac{X_1+X_2+X_3}{3}\\)\n\nIdentify which estimator\n\nIs unbiased?\nHas the lowest variance?"
+  },
+  {
+    "objectID": "lectures/6a.html#likelihood-function-1",
+    "href": "lectures/6a.html#likelihood-function-1",
+    "title": "Statistical Estimators",
+    "section": "Likelihood Function",
+    "text": "Likelihood Function\nUsing the joint pdf or pmf of the sample \\(\\boldsymbol X\\), the likelihood function is a function of \\(\\boldsymbol \\theta\\), given the observed data \\(\\boldsymbol X =\\boldsymbol x\\), defined as\n\\[\nL(\\boldsymbol \\theta|\\boldsymbol x)=f(\\boldsymbol x|\\boldsymbol \\theta)\n\\]\nIf the data is iid, then\n\\[\nf(\\boldsymbol x|\\boldsymbol \\theta) = \\prod^n_{i=1}f(x_i|\\boldsymbol\\theta)\n\\]"
+  },
+  {
+    "objectID": "lectures/6a.html#log-likelihood-function-1",
+    "href": "lectures/6a.html#log-likelihood-function-1",
+    "title": "Statistical Estimators",
+    "section": "Log-Likelihood Function",
+    "text": "Log-Likelihood Function\nIf \\(\\ln\\{L(\\boldsymbol \\theta)\\}\\) is monotone of \\(\\boldsymbol \\theta\\), then maximizing \\(\\ln\\{L(\\boldsymbol \\theta)\\}\\) will yield the maximum likelihood estimators."
+  },
+  {
+    "objectID": "lectures/6a.html#bernoulli-distribution",
+    "href": "lectures/6a.html#bernoulli-distribution",
+    "title": "Statistical Estimators",
+    "section": "Bernoulli Distribution",
+    "text": "Bernoulli Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Bernoulli}(p)\\), show that the MLE of \\(p\\) is \\(\\bar x\\)."
+  },
+  {
+    "objectID": "lectures/6a.html#normal-distribution",
+    "href": "lectures/6a.html#normal-distribution",
+    "title": "Statistical Estimators",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}N(\\mu,\\sigma^2)\\). Show that the MLE’s of \\(\\mu\\) and \\(\\sigma^2\\) are \\(\\bar x\\) and \\(\\frac{n-1}{n}s^2\\), respectively."
   },
   {
     "objectID": "lectures/5b.html#central-limit-theorem-1",

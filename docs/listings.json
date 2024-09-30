@@ -1,12 +1,11 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/r.html",
     "items": [
-      "/posts/week_5.html",
-      "/posts/week_4.html",
-      "/posts/week_3.html",
-      "/posts/week_2.html",
-      "/posts/week_1.html"
+      "/r/r_lab_2.html",
+      "/r/r_lab_3.html",
+      "/r/r_lab_1.html",
+      "/r/r_lab_0.html"
     ]
   },
   {
@@ -26,12 +25,14 @@
     ]
   },
   {
-    "listing": "/r.html",
+    "listing": "/index.html",
     "items": [
-      "/r/r_lab_2.html",
-      "/r/r_lab_3.html",
-      "/r/r_lab_1.html",
-      "/r/r_lab_0.html"
+      "/posts/week_6.html",
+      "/posts/week_5.html",
+      "/posts/week_4.html",
+      "/posts/week_3.html",
+      "/posts/week_2.html",
+      "/posts/week_1.html"
     ]
   }
 ]
