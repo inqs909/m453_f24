@@ -86,7 +86,7 @@ Let $X_1,X_2,X_3$ follow and exponential distribution with mean and variance $\l
 Identify which estimator:
 
 1.  Is unbiased?
-2.  Has the lowest variance?
+2.  Has the smallest variance?
 
 # Likelihood Function
 
