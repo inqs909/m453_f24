@@ -354,13 +354,10 @@
 <p>Likelihood Function</p>
 </div></li>
 <li><div class="agenda-inactive agenda-post-active">
-<p>Maximum Likelihood Estimator</p>
+<p>MLE</p>
 </div></li>
 <li><div class="agenda-inactive agenda-post-active">
-<p>Log-Likelihood Function</p>
-</div></li>
-<li><div class="agenda-inactive agenda-post-active">
-<p>Examples</p>
+<p>Example</p>
 </div></li>
 </ul>
 </div>
@@ -410,7 +407,7 @@ MSE(\hat\theta) &amp; = &amp; E\{(\hat\theta-\theta)^2\} \\
 <li><p><span class="math inline">\(\hat\theta_3 = \frac{X_1+2X_2}{3}\)</span></p></li>
 <li><p><span class="math inline">\(\hat\theta_4 = \frac{X_1+X_2+X_3}{3}\)</span></p></li>
 </ul>
-<p>Identify which estimator</p>
+<p>Identify which estimator:</p>
 <ol type="1">
 <li>Is unbiased?</li>
 <li>Has the lowest variance?</li>
@@ -428,13 +425,10 @@ MSE(\hat\theta) &amp; = &amp; E\{(\hat\theta-\theta)^2\} \\
 <p>Likelihood Function</p>
 </div></li>
 <li><div class="agenda-inactive agenda-post-active">
-<p>Maximum Likelihood Estimator</p>
+<p>MLE</p>
 </div></li>
 <li><div class="agenda-inactive agenda-post-active">
-<p>Log-Likelihood Function</p>
-</div></li>
-<li><div class="agenda-inactive agenda-post-active">
-<p>Examples</p>
+<p>Example</p>
 </div></li>
 </ul>
 </div>
@@ -450,33 +444,9 @@ L(\boldsymbol \theta|\boldsymbol x)=f(\boldsymbol x|\boldsymbol \theta)
 f(\boldsymbol x|\boldsymbol \theta) = \prod^n_{i=1}f(x_i|\boldsymbol\theta)
 \]</span></p>
 </section></section>
-<section id="maximum-likelihood-estimator" class="title-slide slide level1 agenda-slide center">
-<h1>Maximum Likelihood Estimator</h1>
-<div class="agenda">
-<ul>
-<li><div class="agenda-inactive agenda-pre-active">
-<p>Estimators</p>
-</div></li>
-<li><div class="agenda-inactive agenda-pre-active">
-<p>Likelihood Function</p>
-</div></li>
-<li><div class="agenda-active">
-<p>Maximum Likelihood Estimator</p>
-</div></li>
-<li><div class="agenda-inactive agenda-post-active">
-<p>Log-Likelihood Function</p>
-</div></li>
-<li><div class="agenda-inactive agenda-post-active">
-<p>Examples</p>
-</div></li>
-</ul>
-</div>
-<p>The maximum likelihood estimator are the estimates of <span class="math inline">\(\boldsymbol \theta\)</span> that maximize <span class="math inline">\(L(\boldsymbol\theta)\)</span>.</p>
-</section>
-
 <section>
-<section id="log-likelihood-function" class="title-slide slide level1 agenda-slide center">
-<h1>Log-Likelihood Function</h1>
+<section id="mle" class="title-slide slide level1 agenda-slide center">
+<h1>MLE</h1>
 <div class="agenda">
 <ul>
 <li><div class="agenda-inactive agenda-pre-active">
@@ -485,25 +455,37 @@ f(\boldsymbol x|\boldsymbol \theta) = \prod^n_{i=1}f(x_i|\boldsymbol\theta)
 <li><div class="agenda-inactive agenda-pre-active">
 <p>Likelihood Function</p>
 </div></li>
-<li><div class="agenda-inactive agenda-pre-active">
-<p>Maximum Likelihood Estimator</p>
-</div></li>
 <li><div class="agenda-active">
-<p>Log-Likelihood Function</p>
+<p>MLE</p>
 </div></li>
 <li><div class="agenda-inactive agenda-post-active">
-<p>Examples</p>
+<p>Example</p>
 </div></li>
 </ul>
 </div>
 </section>
-<section id="log-likelihood-function-1" class="slide level2">
+<section id="likelihood-function-2" class="slide level2">
+<h2>Likelihood Function</h2>
+<p>Using the joint pdf or pmf of the sample <span class="math inline">\(\boldsymbol X\)</span>, the likelihood function is a function of <span class="math inline">\(\boldsymbol \theta\)</span>, given the observed data <span class="math inline">\(\boldsymbol X =\boldsymbol x\)</span>, defined as</p>
+<p><span class="math display">\[
+L(\boldsymbol \theta|\boldsymbol x)=f(\boldsymbol x|\boldsymbol \theta)
+\]</span></p>
+<p>If the data is iid, then</p>
+<p><span class="math display">\[
+f(\boldsymbol x|\boldsymbol \theta) = \prod^n_{i=1}f(x_i|\boldsymbol\theta)
+\]</span></p>
+</section>
+<section id="log-likelihood-function" class="slide level2">
 <h2>Log-Likelihood Function</h2>
-<p>If <span class="math inline">\(\ln\{L(\boldsymbol \theta)\}\)</span> is monotone of <span class="math inline">\(\boldsymbol \theta\)</span>, then maximizing <span class="math inline">\(\ln\{L(\boldsymbol \theta)\}\)</span> will yield the maximum likelihood estimators.</p>
+<p>If <span class="math inline">\(\ln\{L(\boldsymbol \theta)\}\)</span> is monotone of <span class="math inline">\(\boldsymbol \theta\)</span>, then maximizing <span class="math inline">\(\ell(\boldsymbol\theta) = \ln\{L(\boldsymbol \theta)\}\)</span> will yield the maximum likelihood estimators.</p>
+</section>
+<section id="maximum-log-likelihood-estimator" class="slide level2">
+<h2>Maximum log-Likelihood Estimator</h2>
+<p>The maximum likelihood estimator are the estimates of <span class="math inline">\(\boldsymbol \theta\)</span> that maximize <span class="math inline">\(\ell(\boldsymbol\theta)\)</span>.</p>
 </section></section>
 <section>
-<section id="examples" class="title-slide slide level1 agenda-slide center">
-<h1>Examples</h1>
+<section id="example" class="title-slide slide level1 agenda-slide center">
+<h1>Example</h1>
 <div class="agenda">
 <ul>
 <li><div class="agenda-inactive agenda-pre-active">
@@ -513,24 +495,25 @@ f(\boldsymbol x|\boldsymbol \theta) = \prod^n_{i=1}f(x_i|\boldsymbol\theta)
 <p>Likelihood Function</p>
 </div></li>
 <li><div class="agenda-inactive agenda-pre-active">
-<p>Maximum Likelihood Estimator</p>
-</div></li>
-<li><div class="agenda-inactive agenda-pre-active">
-<p>Log-Likelihood Function</p>
+<p>MLE</p>
 </div></li>
 <li><div class="agenda-active">
-<p>Examples</p>
+<p>Example</p>
 </div></li>
 </ul>
 </div>
 </section>
-<section id="bernoulli-distribution" class="slide level2">
-<h2>Bernoulli Distribution</h2>
-<p>Let <span class="math inline">\(X_1,\ldots,X_n\overset{iid}{\sim}\mathrm{Bernoulli}(p)\)</span>, show that the MLE of <span class="math inline">\(p\)</span> is <span class="math inline">\(\bar x\)</span>.</p>
+<section id="poisson-distribution" class="slide level2">
+<h2>Poisson Distribution</h2>
+<p>Let <span class="math inline">\(X_1,\ldots,X_n\overset{iid}{\sim}\mathrm{Pois}(\lambda)\)</span>, show that the MLE of <span class="math inline">\(\lambda\)</span> is <span class="math inline">\(\bar x\)</span>.</p>
 </section>
 <section id="normal-distribution" class="slide level2">
 <h2>Normal Distribution</h2>
 <p>Let <span class="math inline">\(X_1,\ldots,X_n\overset{iid}{\sim}N(\mu,\sigma^2)\)</span>. Show that the MLE’s of <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma^2\)</span> are <span class="math inline">\(\bar x\)</span> and <span class="math inline">\(\frac{n-1}{n}s^2\)</span>, respectively.</p>
+</section>
+<section id="exponential-distribution" class="slide level2">
+<h2>Exponential Distribution</h2>
+<p>Let <span class="math inline">\(X_1,\ldots,X_n\overset{iid}{\sim}Exp(\lambda)\)</span>. Find the MLE of <span class="math inline">\(\lambda\)</span></p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">

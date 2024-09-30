@@ -83,7 +83,7 @@ Let $X_1,X_2,X_3$ follow and exponential distribution with mean and variance $\l
 
 -   $\hat\theta_4 = \frac{X_1+X_2+X_3}{3}$
 
-Identify which estimator
+Identify which estimator:
 
 1.  Is unbiased?
 2.  Has the lowest variance?
@@ -104,22 +104,40 @@ $$
 f(\boldsymbol x|\boldsymbol \theta) = \prod^n_{i=1}f(x_i|\boldsymbol\theta)
 $$
 
-# Maximum Likelihood Estimator
+# MLE
 
-The maximum likelihood estimator are the estimates of $\boldsymbol \theta$ that maximize $L(\boldsymbol\theta)$.
+## Likelihood Function
 
-# Log-Likelihood Function
+Using the joint pdf or pmf of the sample $\boldsymbol X$, the likelihood function is a function of $\boldsymbol \theta$, given the observed data $\boldsymbol X =\boldsymbol x$, defined as
+
+$$
+L(\boldsymbol \theta|\boldsymbol x)=f(\boldsymbol x|\boldsymbol \theta)
+$$
+
+If the data is iid, then
+
+$$
+f(\boldsymbol x|\boldsymbol \theta) = \prod^n_{i=1}f(x_i|\boldsymbol\theta)
+$$
 
 ## Log-Likelihood Function
 
-If $\ln\{L(\boldsymbol \theta)\}$ is monotone of $\boldsymbol \theta$, then maximizing $\ln\{L(\boldsymbol \theta)\}$ will yield the maximum likelihood estimators.
+If $\ln\{L(\boldsymbol \theta)\}$ is monotone of $\boldsymbol \theta$, then maximizing $\ell(\boldsymbol\theta) = \ln\{L(\boldsymbol \theta)\}$ will yield the maximum likelihood estimators.
 
-# Examples
+## Maximum log-Likelihood Estimator
 
-## Bernoulli Distribution
+The maximum likelihood estimator are the estimates of $\boldsymbol \theta$ that maximize $\ell(\boldsymbol\theta)$.
 
-Let $X_1,\ldots,X_n\overset{iid}{\sim}\mathrm{Bernoulli}(p)$, show that the MLE of $p$ is $\bar x$.
+# Example
+
+## Poisson Distribution
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}\mathrm{Pois}(\lambda)$, show that the MLE of $\lambda$ is $\bar x$.
 
 ## Normal Distribution
 
 Let $X_1,\ldots,X_n\overset{iid}{\sim}N(\mu,\sigma^2)$. Show that the MLE's of $\mu$ and $\sigma^2$ are $\bar x$ and $\frac{n-1}{n}s^2$, respectively.
+
+## Exponential Distribution
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}Exp(\lambda)$. Find the MLE of $\lambda$
