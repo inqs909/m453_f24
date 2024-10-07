@@ -833,102 +833,123 @@
     "text": "Multistage Sampling"
   },
   {
-    "objectID": "lectures/1a.html#introductions",
-    "href": "lectures/1a.html#introductions",
-    "title": "Welcome!",
-    "section": "Introductions",
-    "text": "Introductions\n\nSan Bernardino, CA\nCSU Monterey Bay\n\nBS Biology\n\nSan Diego State University\n\nMaster’s in Public Health\n\nUC Riverside\n\nPhD in Applied Statistics"
+    "objectID": "lectures/7a.html#likelihood-function",
+    "href": "lectures/7a.html#likelihood-function",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Likelihood Function",
+    "text": "Likelihood Function\nUsing the joint pdf or pmf of the sample \\(\\boldsymbol X\\), the likelihood function is a function of \\(\\boldsymbol \\theta\\), given the observed data \\(\\boldsymbol X =\\boldsymbol x\\), defined as\n\\[\nL(\\boldsymbol \\theta|\\boldsymbol x)=f(\\boldsymbol x|\\boldsymbol \\theta)\n\\]\nIf the data is iid, then\n\\[\nf(\\boldsymbol x|\\boldsymbol \\theta) = \\prod^n_{i=1}f(x_i|\\boldsymbol\\theta)\n\\]"
   },
   {
-    "objectID": "lectures/1a.html#introductions-1",
-    "href": "lectures/1a.html#introductions-1",
-    "title": "Welcome!",
-    "section": "Introductions",
-    "text": "Introductions\n\n\nName\nYear\nMajor\nFun Fact\nCareer Goal"
+    "objectID": "lectures/7a.html#likelihood-function-1",
+    "href": "lectures/7a.html#likelihood-function-1",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Likelihood Function",
+    "text": "Likelihood Function\nUsing the joint pdf or pmf of the sample \\(\\boldsymbol X\\), the likelihood function is a function of \\(\\boldsymbol \\theta\\), given the observed data \\(\\boldsymbol X =\\boldsymbol x\\), defined as\n\\[\nL(\\boldsymbol \\theta|\\boldsymbol x)=f(\\boldsymbol x|\\boldsymbol \\theta)\n\\]\nIf the data is iid, then\n\\[\nf(\\boldsymbol x|\\boldsymbol \\theta) = \\prod^n_{i=1}f(x_i|\\boldsymbol\\theta)\n\\]"
   },
   {
-    "objectID": "lectures/1a.html#learning-objectives",
-    "href": "lectures/1a.html#learning-objectives",
-    "title": "Welcome!",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nDefine and identify population, sample, parameter, and statistics\nDefine and identify different variable types (quantitative and categorical)\nDefine concept of random samples and sampling methods"
+    "objectID": "lectures/7a.html#log-likelihood-function",
+    "href": "lectures/7a.html#log-likelihood-function",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Log-Likelihood Function",
+    "text": "Log-Likelihood Function\nIf \\(\\ln\\{L(\\boldsymbol \\theta)\\}\\) is monotone of \\(\\boldsymbol \\theta\\), then maximizing \\(\\ell(\\boldsymbol\\theta) = \\ln\\{L(\\boldsymbol \\theta)\\}\\) will yield the maximum likelihood estimators."
   },
   {
-    "objectID": "lectures/1a.html#website-and-syllabus",
-    "href": "lectures/1a.html#website-and-syllabus",
-    "title": "Welcome!",
-    "section": "Website and Syllabus",
-    "text": "Website and Syllabus"
+    "objectID": "lectures/7a.html#maximum-log-likelihood-estimator",
+    "href": "lectures/7a.html#maximum-log-likelihood-estimator",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Maximum log-Likelihood Estimator",
+    "text": "Maximum log-Likelihood Estimator\nThe maximum likelihood estimator are the estimates of \\(\\boldsymbol \\theta\\) that maximize \\(\\ell(\\boldsymbol\\theta)\\)."
   },
   {
-    "objectID": "lectures/1a.html#fundamental-of-statistics-1",
-    "href": "lectures/1a.html#fundamental-of-statistics-1",
-    "title": "Welcome!",
-    "section": "Fundamental of Statistics",
-    "text": "Fundamental of Statistics\n\nObservational Unit\nVariable\n\nTypes of Variables\n\nQuantitative\nCategorical\n\nRoles of Variables\n\nPredictors\nOutcome"
+    "objectID": "lectures/7a.html#poisson-distribution",
+    "href": "lectures/7a.html#poisson-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Pois}(\\lambda)\\), show that the MLE of \\(\\lambda\\) is \\(\\bar x\\)."
   },
   {
-    "objectID": "lectures/1a.html#observational-unit",
-    "href": "lectures/1a.html#observational-unit",
-    "title": "Welcome!",
-    "section": "Observational Unit",
-    "text": "Observational Unit"
+    "objectID": "lectures/7a.html#normal-distribution",
+    "href": "lectures/7a.html#normal-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}N(\\mu,\\sigma^2)\\). Show that the MLE’s of \\(\\mu\\) and \\(\\sigma^2\\) are \\(\\bar x\\) and \\(\\frac{n-1}{n}s^2\\), respectively."
   },
   {
-    "objectID": "lectures/1a.html#type-of-variable---quantitative",
-    "href": "lectures/1a.html#type-of-variable---quantitative",
-    "title": "Welcome!",
-    "section": "Type of Variable - Quantitative",
-    "text": "Type of Variable - Quantitative"
+    "objectID": "lectures/7a.html#exponential-distribution",
+    "href": "lectures/7a.html#exponential-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Exponential Distribution",
+    "text": "Exponential Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}Exp(\\lambda)\\). Find the MLE of \\(\\lambda\\)"
   },
   {
-    "objectID": "lectures/1a.html#type-of-variable---qualitative",
-    "href": "lectures/1a.html#type-of-variable---qualitative",
-    "title": "Welcome!",
-    "section": "Type of Variable - Qualitative",
-    "text": "Type of Variable - Qualitative"
+    "objectID": "lectures/5a.html#s2",
+    "href": "lectures/5a.html#s2",
+    "title": "Sampling Distributions",
+    "section": "\\(s^2\\)",
+    "text": "\\(s^2\\)"
   },
   {
-    "objectID": "lectures/1a.html#predictor-variables",
-    "href": "lectures/1a.html#predictor-variables",
-    "title": "Welcome!",
-    "section": "Predictor Variables",
-    "text": "Predictor Variables"
+    "objectID": "lectures/5a.html#t-distribution",
+    "href": "lectures/5a.html#t-distribution",
+    "title": "Sampling Distributions",
+    "section": "t-distribution",
+    "text": "t-distribution\nLet \\(Z\\sim N(0,1)\\), \\(W\\sim \\chi^2_\\nu\\), \\(Z\\perp W\\); therefore:\n\\[\nT=\\frac{Z}{\\sqrt{W/\\nu}} \\sim t_\\nu\n\\]"
   },
   {
-    "objectID": "lectures/1a.html#outcomes",
-    "href": "lectures/1a.html#outcomes",
-    "title": "Welcome!",
-    "section": "Outcomes",
-    "text": "Outcomes"
+    "objectID": "lectures/5a.html#f-distribution",
+    "href": "lectures/5a.html#f-distribution",
+    "title": "Sampling Distributions",
+    "section": "F-distribution",
+    "text": "F-distribution\nLet \\(W_1\\sim\\chi^2_{\\nu_1}\\) \\(W_2\\sim\\chi^2_{\\nu_2}\\), and \\(W_1\\perp W_2\\); therefore:\n\\[\nF = \\frac{W_1/\\nu_1}{W_2/\\nu_2}\\sim F_{\\nu_1,\\nu_2}\n\\]"
   },
   {
-    "objectID": "lectures/1a.html#activity",
-    "href": "lectures/1a.html#activity",
-    "title": "Welcome!",
-    "section": "Activity",
-    "text": "Activity\n\nHow many Harry Potter books have you read?\nWith which hand do you write?\nHow many hours have you slept in the past 24 hours?\nHave you have slept for at least 7 hours in the past 24 hours?\nWhich college is your major in?\nHow many states have you visited?"
+    "objectID": "lectures/5a.html#central-limit-theorem-1",
+    "href": "lectures/5a.html#central-limit-theorem-1",
+    "title": "Sampling Distributions",
+    "section": "Central Limit Theorem",
+    "text": "Central Limit Theorem\nLet \\(X_1, X_2, \\ldots, X_n\\) be identical and independent distributed random variables with \\(E(X_i)=\\mu\\) and \\(Var(X_i) = \\sigma²\\). We define\n\\[\nY_n = \\sqrt n \\left(\\frac{\\bar X-\\mu}{\\sigma}\\right) \\mathrm{ where }\\ \\bar X = x\\frac{1}{n}\\sum^n_{i=1}X_i.\n\\]\nThen, the distribution of the function \\(Y_n\\) converges to a standard normal distribution function as \\(n\\rightarrow \\infty\\)."
   },
   {
-    "objectID": "lectures/1a.html#activity-1",
-    "href": "lectures/1a.html#activity-1",
-    "title": "Welcome!",
-    "section": "Activity",
-    "text": "Activity\n\nWhat is the average number of Harry Potter books read by a student in this class?\nWhat percentage of students in this class are left-handed?"
+    "objectID": "lectures/5a.html#central-limit-theorem-2",
+    "href": "lectures/5a.html#central-limit-theorem-2",
+    "title": "Sampling Distributions",
+    "section": "Central Limit Theorem",
+    "text": "Central Limit Theorem\n\\[\n\\bar X \\sim N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)\n\\]"
   },
   {
-    "objectID": "lectures/1a.html#fundamental-of-statistical-inference-1",
-    "href": "lectures/1a.html#fundamental-of-statistical-inference-1",
-    "title": "Welcome!",
-    "section": "Fundamental of Statistical Inference",
-    "text": "Fundamental of Statistical Inference\n\n\n\nCategorical Variables\n\nProportions\n\np or \\(\\pi\\)\n\\(\\hat p\\)\n\n\n\n\n\nContinuous Variables\n\nMeans or Averages\n\n\\(\\mu\\)\n\\(\\hat \\mu\\) or \\(\\bar X\\)\n\nVariances\n\n\\(\\sigma^2\\)\n\\(\\hat \\sigma^2\\) or \\(s^2\\)"
+    "objectID": "lectures/5a.html#example",
+    "href": "lectures/5a.html#example",
+    "title": "Sampling Distributions",
+    "section": "Example",
+    "text": "Example\nLet \\(X_1, \\ldots, X_n \\overset{iid}{\\sim} \\chi^2_p\\), the MGF is \\(M(t)=(1-2t)^{-p/2}\\). Find the distribution of \\(\\bar X\\) as \\(n \\rightarrow \\infty\\)."
   },
   {
-    "objectID": "lectures/1a.html#sampling-techniques-1",
-    "href": "lectures/1a.html#sampling-techniques-1",
-    "title": "Welcome!",
-    "section": "Sampling Techniques",
-    "text": "Sampling Techniques\n\nSimple Random Sampling\nStratified Sampling\nCluster Sampling\nMultistage Sampling"
+    "objectID": "lectures/5a.html#order-statistics-1",
+    "href": "lectures/5a.html#order-statistics-1",
+    "title": "Sampling Distributions",
+    "section": "Order Statistics",
+    "text": "Order Statistics\nOrder statistics are a fundamental concept in statistics and probability, dealing with the properties of sorted random variables. They provide insights into the distribution and behavior of sample data, such as minimum, maximum, and quantiles. Understanding order statistics is crucial in various fields such as risk management, quality control, and data analysis."
+  },
+  {
+    "objectID": "lectures/5a.html#order-statistics-2",
+    "href": "lectures/5a.html#order-statistics-2",
+    "title": "Sampling Distributions",
+    "section": "Order Statistics",
+    "text": "Order Statistics\nLet \\(X_1, X_2, \\ldots, X_n\\) be a sample of \\(n\\) independent and identically distributed (i.i.d.) random variables with a common probability density function \\(f(x)\\). The order statistics are the sorted values of this sample, denoted as:\n\\[\n  X_{(1)} \\leq X_{(2)} \\leq \\cdots \\leq X_{(n)}\n  \\]\nHere, \\(X_{(1)}\\) is the minimum, and \\(X_{(n)}\\) is the maximum of the sample."
+  },
+  {
+    "objectID": "lectures/5a.html#order-statistics-3",
+    "href": "lectures/5a.html#order-statistics-3",
+    "title": "Sampling Distributions",
+    "section": "Order Statistics",
+    "text": "Order Statistics\n\n\\(X_{(k)}\\): The \\(k\\)-th order statistic, representing the \\(k\\)-th smallest value in the sample.\n\\(X_{(1)}, X_{(n)}\\): The minimum and maximum of the sample, respectively."
+  },
+  {
+    "objectID": "lectures/5a.html#distribution-of-order-statistic",
+    "href": "lectures/5a.html#distribution-of-order-statistic",
+    "title": "Sampling Distributions",
+    "section": "Distribution of Order Statistic",
+    "text": "Distribution of Order Statistic\nThe distribution of the \\(k\\)-th order statistic \\(X_{(k)}\\) can be derived using combinatorial arguments. Its PDF is given by: \\[\n  f_{X_{(k)}}(x) = \\frac{n!}{(k-1)!(n-k)!} [F(x)]^{k-1} [1 - F(x)]^{n-k} f(x)\n  \\]\nThis formula shows how the distribution of \\(X_{(k)}\\) depends on the underlying distribution of the sample and its position \\(k\\)."
   },
   {
     "objectID": "lectures/4b.html#sample",
@@ -1383,7 +1404,7 @@
     "href": "posts/week_6.html#resources",
     "title": "Week 6",
     "section": "Resources",
-    "text": "Resources\nYou must log on to your CI Google account to access the video.\nPress the “b” key to access hidden notes.\n\n\n\nLecture\nSlides\nVideos\n\n\n\n\nMonday\nSlides\n\n\n\nWednesday"
+    "text": "Resources\nYou must log on to your CI Google account to access the video.\nPress the “b” key to access hidden notes.\n\n\n\nLecture\nSlides\nVideos\n\n\n\n\nMonday\nSlides\nVideo\n\n\nWednesday"
   },
   {
     "objectID": "posts/week_3.html#resources",
@@ -1391,6 +1412,27 @@
     "title": "Week 3",
     "section": "Resources",
     "text": "Resources\nYou must log on to your CI Google account to access the video.\n\n\n\nLecture\nSlides\nVideos\n\n\n\n\nMonday\nSlides\nVideo\n\n\nWednesday\nSlides\nAudio Only"
+  },
+  {
+    "objectID": "posts/week_7.html",
+    "href": "posts/week_7.html",
+    "title": "Week 7",
+    "section": "",
+    "text": "MLE\n\n\n\n\n\nMoM"
+  },
+  {
+    "objectID": "posts/week_7.html#learning-outcomes",
+    "href": "posts/week_7.html#learning-outcomes",
+    "title": "Week 7",
+    "section": "",
+    "text": "MLE\n\n\n\n\n\nMoM"
+  },
+  {
+    "objectID": "posts/week_7.html#resources",
+    "href": "posts/week_7.html#resources",
+    "title": "Week 7",
+    "section": "Resources",
+    "text": "Resources\nYou must log on to your CI Google account to access the video.\nPress the “b” key to access hidden notes.\n\n\n\nLecture\nSlides\nVideos\n\n\n\n\nMonday\nSlides\n\n\n\nWednesday\nSlides"
   },
   {
     "objectID": "posts/week_5.html",
@@ -1614,14 +1656,14 @@
     "href": "r/r_lab_0.html#types-of-data",
     "title": "Introduction to R",
     "section": "Types of Data",
-    "text": "Types of Data\nIn R, the type of data, also known as class, that we are using dictates how the programming works. For the most part, users will use ‘numeric’,‘logical’, ‘POSIX’ and ‘character’ data types. Other types of data you may encounter are ‘integer’, ‘complex’, and ‘raw’. These types of data are rarely used. To obtain more information on them, use the ? operator.\n\nNumeric\nThe numeric class is the data that are numbers. Almost every analysis that you use will be based on the numeric class. To check if you have a numeric class, you just need to use the is.numeric() function. For example, try is.numeric(5):\n\nis.numeric(5)\n\n[1] TRUE\n\n\nNotice that when you input an number into R, it automatically changes it to a numeric class. R is changes data to the class that it most likely needs to be. Now this is great because you do not need to do anything on your end. Howerver, if you need a different class, you will need to change it.\n\n\nLogical\nA logical class are data where the only value is ‘TRUE’ or ‘FALSE’. Sometimes the data is coded as 1 for ‘TRUE’ and 0 for ‘FALSE’. The data may also be coded as ‘T’ or ‘F’. To check if data belongs in the logical class, you will need the is.logical() function. Try is.logical(3&lt;4):\n\nis.logical(3&lt;4)\n\n[1] TRUE\n\n\nRemember when we ran 3&lt;4 in the previous section. The output was ‘TRUE’. Now R is checking whether the output is of a logical class. Since it it, R returns ‘TRUE’. Now try is.logical(3&gt;4):\n\nis.logical(3&gt;4)\n\n[1] TRUE\n\n\nThe output is ‘TRUE’ as well even though the condition 3&gt;4 is ‘FALSE’. Since the output is a logical data type, it is a logical variable.\n\n\nPOSIX\nThe POSIX class are date-time data. Where the data value is a time component. The POSIX class can be very complex in how it is formatted. IF you would like to learn more try ?POSIXct or ?POSIClt. First, lets run Sys.time() to check what is today’s data and time:\n\nSys.time()\n\n[1] \"2024-09-30 12:00:27 PDT\"\n\n\nNow lets check if its of POSIX class, you can use the class() function to figure out which class is it. Try class(Sys.time()):\n\nclass(Sys.time())\n\n[1] \"POSIXct\" \"POSIXt\" \n\n\n\n\nCharacter\nA character value is where the data values follow a string format. Examples of characters values are letters, words and even numbers. A character value is any value surrounded by quotation marks. For example, the phrase “Hello World!” is considere as one character value. Another example if you data is coded with the actual words “yes” or “no”. To check if you have character data, use the is.character() function. Try is.character(\"Hello World!\"):\n\nis.character(\"Hello World!\")\n\n[1] TRUE\n\n\nNotice that the output says ‘TRUE’. Character values can be created with single quotations. Try is.character('Hello World!'):\n\nis.character('Hello World!')\n\n[1] TRUE\n\n\n\n\nIntegers\nIntegers are just whole numbers for the most part. To create an interger, type the letter ‘L’ after a number. To check if you are using integer data, use the is.integer() function. Try is.integer(5L):\n\nis.integer(5L)\n\n[1] TRUE\n\n\n\n\nComplex Numbers\nComplex numbers are data values where there is a real component and an imaginary component. The imaginary component is a number multiplied by \\(i=\\sqrt{-1}\\). To create a complect number, use the complex() function. To check if a number is complex, use the is.complex() function. Try the following to create a complex number complex(1,4,5):\n\ncomplex(1,4,5)\n\n[1] 4+5i\n\n\nNow try is.complex(complex(1,4,5)):\n\nis.complex(complex(1,4,5))\n\n[1] TRUE\n\n\n\n\nRaw\nYou will probably never use raw data. I have never used raw data in R. To create a raw value, use the raw() or charToRaw() functions. Try charToRaw('Hello World!'):\n\ncharToRaw('Hello World!')\n\n [1] 48 65 6c 6c 6f 20 57 6f 72 6c 64 21\n\n\nTo check if you have raw data, use the is.raw() function. Try is.raw(charToRaw('Hello World!')):\n\nis.raw(charToRaw('Hello World!'))\n\n[1] TRUE\n\n\n\n\nMissing\nThe last data class in R is missing data denoted as NA. Whenever you see NA in any of the analysis you see, it means that the data is missing. To check if you have missing data, use the is.na() function. Try is.na(NA):\n\nis.na(NA)\n\n[1] TRUE"
+    "text": "Types of Data\nIn R, the type of data, also known as class, that we are using dictates how the programming works. For the most part, users will use ‘numeric’,‘logical’, ‘POSIX’ and ‘character’ data types. Other types of data you may encounter are ‘integer’, ‘complex’, and ‘raw’. These types of data are rarely used. To obtain more information on them, use the ? operator.\n\nNumeric\nThe numeric class is the data that are numbers. Almost every analysis that you use will be based on the numeric class. To check if you have a numeric class, you just need to use the is.numeric() function. For example, try is.numeric(5):\n\nis.numeric(5)\n\n[1] TRUE\n\n\nNotice that when you input an number into R, it automatically changes it to a numeric class. R is changes data to the class that it most likely needs to be. Now this is great because you do not need to do anything on your end. Howerver, if you need a different class, you will need to change it.\n\n\nLogical\nA logical class are data where the only value is ‘TRUE’ or ‘FALSE’. Sometimes the data is coded as 1 for ‘TRUE’ and 0 for ‘FALSE’. The data may also be coded as ‘T’ or ‘F’. To check if data belongs in the logical class, you will need the is.logical() function. Try is.logical(3&lt;4):\n\nis.logical(3&lt;4)\n\n[1] TRUE\n\n\nRemember when we ran 3&lt;4 in the previous section. The output was ‘TRUE’. Now R is checking whether the output is of a logical class. Since it it, R returns ‘TRUE’. Now try is.logical(3&gt;4):\n\nis.logical(3&gt;4)\n\n[1] TRUE\n\n\nThe output is ‘TRUE’ as well even though the condition 3&gt;4 is ‘FALSE’. Since the output is a logical data type, it is a logical variable.\n\n\nPOSIX\nThe POSIX class are date-time data. Where the data value is a time component. The POSIX class can be very complex in how it is formatted. IF you would like to learn more try ?POSIXct or ?POSIClt. First, lets run Sys.time() to check what is today’s data and time:\n\nSys.time()\n\n[1] \"2024-10-06 23:06:38 PDT\"\n\n\nNow lets check if its of POSIX class, you can use the class() function to figure out which class is it. Try class(Sys.time()):\n\nclass(Sys.time())\n\n[1] \"POSIXct\" \"POSIXt\" \n\n\n\n\nCharacter\nA character value is where the data values follow a string format. Examples of characters values are letters, words and even numbers. A character value is any value surrounded by quotation marks. For example, the phrase “Hello World!” is considere as one character value. Another example if you data is coded with the actual words “yes” or “no”. To check if you have character data, use the is.character() function. Try is.character(\"Hello World!\"):\n\nis.character(\"Hello World!\")\n\n[1] TRUE\n\n\nNotice that the output says ‘TRUE’. Character values can be created with single quotations. Try is.character('Hello World!'):\n\nis.character('Hello World!')\n\n[1] TRUE\n\n\n\n\nIntegers\nIntegers are just whole numbers for the most part. To create an interger, type the letter ‘L’ after a number. To check if you are using integer data, use the is.integer() function. Try is.integer(5L):\n\nis.integer(5L)\n\n[1] TRUE\n\n\n\n\nComplex Numbers\nComplex numbers are data values where there is a real component and an imaginary component. The imaginary component is a number multiplied by \\(i=\\sqrt{-1}\\). To create a complect number, use the complex() function. To check if a number is complex, use the is.complex() function. Try the following to create a complex number complex(1,4,5):\n\ncomplex(1,4,5)\n\n[1] 4+5i\n\n\nNow try is.complex(complex(1,4,5)):\n\nis.complex(complex(1,4,5))\n\n[1] TRUE\n\n\n\n\nRaw\nYou will probably never use raw data. I have never used raw data in R. To create a raw value, use the raw() or charToRaw() functions. Try charToRaw('Hello World!'):\n\ncharToRaw('Hello World!')\n\n [1] 48 65 6c 6c 6f 20 57 6f 72 6c 64 21\n\n\nTo check if you have raw data, use the is.raw() function. Try is.raw(charToRaw('Hello World!')):\n\nis.raw(charToRaw('Hello World!'))\n\n[1] TRUE\n\n\n\n\nMissing\nThe last data class in R is missing data denoted as NA. Whenever you see NA in any of the analysis you see, it means that the data is missing. To check if you have missing data, use the is.na() function. Try is.na(NA):\n\nis.na(NA)\n\n[1] TRUE"
   },
   {
     "objectID": "r/r_lab_0.html#r-objects",
     "href": "r/r_lab_0.html#r-objects",
     "title": "Introduction to R",
     "section": "R Objects",
-    "text": "R Objects\nR objects are where most of the statistical analysis is conducted on. An R object can be thought of as a container of data. For the most part, you will only use a data frame (or tibble) for your data analysis. However, it is always a good idea to to have some basic understanding of the other R objects.\n\nAssigning objects\nTo create an R object, all we need to do is assign data to a variable. The variable is the name of the R object. it can be called anything, but you can only use alphanumeric values, underscore, and periods. To assign a value to a variable, use the &lt;- operator. This is known a left assignment. Kinda like an arrow pointing left. Try assigning 9 to ‘x’ (x&lt;-9)`:\n\nx&lt;-9\n\nTo see if x contains 9, type x in the console:\n\nx\n\n[1] 9\n\n\nNow x can be treated as data and we can perform data analysis on it. For example, try squaring it:\n\nx^2\n\n[1] 81\n\n\nYou can use any mathematical operation from the previous sections. Try some other operations and see what happens.\nThe output R prints out can be stored in a variable using the asign operator, &lt;-. Try storing x^3 in a variable called x_cubed:\n\nx_cubed&lt;-x^3\n\nTo see what is stored in x_cubed you can either type x_cubed in the console or use the print() function with ‘x_cubed’ inside the paranthesis.\n\nx_cubed\n\n[1] 729\n\nprint(x_cubed)\n\n[1] 729\n\n\n\n\nVectors\nA vector is a set data values of a certain leng. The R object x is considered as a numerical vector (because it contains a number) with the length 1. To check, try is.numeric(x) and is.vector(x):\n\nis.numeric(x)\n\n[1] TRUE\n\nis.vector(x)\n\n[1] TRUE\n\n\nNow let’s create a logical vector that contains 4 elements (have it follow this sequence: T,F,T,F) and assign it to y. To create a vector use the c() function and type all the values and seperating it with columns. Type y&lt;-c(T,F,T,F):\n\ny&lt;-c(T,F,T,F)\n\nNow, lets see how y looks like. Type y:\n\ny\n\n[1]  TRUE FALSE  TRUE FALSE\n\n\nNow lets see if it’s a logical vector:\n\nis.logical(y)\n\n[1] TRUE\n\nis.vector(y)\n\n[1] TRUE\n\n\nFortunately, this vector is really small to count how many elements it has, but what if the vector is really large? To find out how many elements a vector has, use the length() function. Try length(y):\n\nlength(y)\n\n[1] 4\n\n\nThe c() function allows you to put any data type and as many values as you wish. The only condition of a vector is that it must be the same data type.\n\n\nMatrices\nA matrix can be thought as a square or rectangular grid of data values. This grid can be constructed in any shape. Similar to vectors they must contain the same data type. The size of a matrix is usually denoted as \\(n\\times k\\), where \\(n\\) represents the number of rows and \\(k\\) represents the number of columns. To get a rough idea of how a matrix may look like, type matrix(rep(1,12),nrow=4,ncol=3)3:\n\nmatrix(rep(1,12),nrow=4,ncol=3)\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n[4,]    1    1    1\n\n\nNotice that this is a \\(4\\times 3\\) matrix. Each element in the matrix has the value 1. Now try this matrix(rbinom(12,1.5),nrow=4,ncol=3)4:\n\nmatrix(rbinom(12,1,.5),nrow=4,ncol=3)\n\n     [,1] [,2] [,3]\n[1,]    1    0    0\n[2,]    1    1    1\n[3,]    1    1    1\n[4,]    1    0    0\n\n\nYour matrix may look different, but that is to be expected. Notice that some elements in a matrix are 0’s and some are 1’s. Each element in a matrix can hold any value.\nConstructing a matrix can be a bit difficult to do because the data values may need to be arranged in a certain way. Notice that I used the matrix() function to create the matrix. The examples above contain other components in the function that we will discuss later.\n\n\nArrays\nMatrices can be considered as a 2-dimensional block of numbers. An array is an n-dimensional block of numbers. While you may never need to use an array for data analysis. It may come in handy when programming by hand. To create an array, use the array() function. Below is an example of a \\(3 \\times 3 \\times 3\\) with the numbers 1, 2, and 3 representing the 3rd dimension stored in an R object called first_array5.\n\n(first_array &lt;- array(c(rep(1,9),rep(2,9),rep(3,9)),dim=c(3,3,3)))\n\n, , 1\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n\n, , 2\n\n     [,1] [,2] [,3]\n[1,]    2    2    2\n[2,]    2    2    2\n[3,]    2    2    2\n\n, , 3\n\n     [,1] [,2] [,3]\n[1,]    3    3    3\n[2,]    3    3    3\n[3,]    3    3    3\n\n\n\n\nData Frames\nData frames can be thought as the data sets that we normally see in other softwares. You can think about it as an excel spreadsheet. However, you cannot not change the values easily other than coding the changes. In a much general sense, a data frame is just a collection of labeled vectors. To get an idea of what a data frame looks like, try head(iris):\n\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa\n\n\nThe head() function just tells R to only print the top few components of the data frame.\nNow try tail(iris):\n\ntail(iris)\n\n    Sepal.Length Sepal.Width Petal.Length Petal.Width   Species\n145          6.7         3.3          5.7         2.5 virginica\n146          6.7         3.0          5.2         2.3 virginica\n147          6.3         2.5          5.0         1.9 virginica\n148          6.5         3.0          5.2         2.0 virginica\n149          6.2         3.4          5.4         2.3 virginica\n150          5.9         3.0          5.1         1.8 virginica\n\n\nThe tail() function provides the last 6 rows of the data frame.\n\n\nLists\nTo me a list is just a container that you can store practically anything. It is compiled of elements, where each element contains an R object. For example, the first element of a list may contain a data frame, the second element may contain a vector, and the third element may contain another list. It is just a way to store things.\nTo create a list, use the list() function. Create a list compiled of first element with the mtcars data set, second element with a vector of zeros of size 4, and a matrix \\(3 \\times 3\\) identity matrix6. Store the list in an object called list_one:\n\nlist_one&lt;-list(mtcars,rep(0,4),diag(rep(1,3)))\n\nType list_one to see what pops out:\n\nlist_one\n\n[[1]]\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n[[2]]\n[1] 0 0 0 0\n\n[[3]]\n     [,1] [,2] [,3]\n[1,]    1    0    0\n[2,]    0    1    0\n[3,]    0    0    1\n\n\nEach element in the list is labeled as a number. It is more useful to have the elements named. An element is named by typing the name in quotes followed by the = symbol before your object in the list() function (mtcars=mtcars).\n\nlist_one&lt;-list(mtcars=mtcars,vector=rep(0,4),identity=diag(rep(1,3)))\n\nHere I am creating an object called list_one, where the first element is mtcars labeled mtcars, the second element is a vector of zeros labeled vector and the last element is the identity matrix labeled identity.’\nNow create a new list called list_two and store list_one labeled as list_one and first_array labeled as array.\n\n(list_two&lt;-list(list_one=list_one,array=first_array))\n\n$list_one\n$list_one$mtcars\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n$list_one$vector\n[1] 0 0 0 0\n\n$list_one$identity\n     [,1] [,2] [,3]\n[1,]    1    0    0\n[2,]    0    1    0\n[3,]    0    0    1\n\n\n$array\n, , 1\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n\n, , 2\n\n     [,1] [,2] [,3]\n[1,]    2    2    2\n[2,]    2    2    2\n[3,]    2    2    2\n\n, , 3\n\n     [,1] [,2] [,3]\n[1,]    3    3    3\n[2,]    3    3    3\n[3,]    3    3    3"
+    "text": "R Objects\nR objects are where most of the statistical analysis is conducted on. An R object can be thought of as a container of data. For the most part, you will only use a data frame (or tibble) for your data analysis. However, it is always a good idea to to have some basic understanding of the other R objects.\n\nAssigning objects\nTo create an R object, all we need to do is assign data to a variable. The variable is the name of the R object. it can be called anything, but you can only use alphanumeric values, underscore, and periods. To assign a value to a variable, use the &lt;- operator. This is known a left assignment. Kinda like an arrow pointing left. Try assigning 9 to ‘x’ (x&lt;-9)`:\n\nx&lt;-9\n\nTo see if x contains 9, type x in the console:\n\nx\n\n[1] 9\n\n\nNow x can be treated as data and we can perform data analysis on it. For example, try squaring it:\n\nx^2\n\n[1] 81\n\n\nYou can use any mathematical operation from the previous sections. Try some other operations and see what happens.\nThe output R prints out can be stored in a variable using the asign operator, &lt;-. Try storing x^3 in a variable called x_cubed:\n\nx_cubed&lt;-x^3\n\nTo see what is stored in x_cubed you can either type x_cubed in the console or use the print() function with ‘x_cubed’ inside the paranthesis.\n\nx_cubed\n\n[1] 729\n\nprint(x_cubed)\n\n[1] 729\n\n\n\n\nVectors\nA vector is a set data values of a certain leng. The R object x is considered as a numerical vector (because it contains a number) with the length 1. To check, try is.numeric(x) and is.vector(x):\n\nis.numeric(x)\n\n[1] TRUE\n\nis.vector(x)\n\n[1] TRUE\n\n\nNow let’s create a logical vector that contains 4 elements (have it follow this sequence: T,F,T,F) and assign it to y. To create a vector use the c() function and type all the values and seperating it with columns. Type y&lt;-c(T,F,T,F):\n\ny&lt;-c(T,F,T,F)\n\nNow, lets see how y looks like. Type y:\n\ny\n\n[1]  TRUE FALSE  TRUE FALSE\n\n\nNow lets see if it’s a logical vector:\n\nis.logical(y)\n\n[1] TRUE\n\nis.vector(y)\n\n[1] TRUE\n\n\nFortunately, this vector is really small to count how many elements it has, but what if the vector is really large? To find out how many elements a vector has, use the length() function. Try length(y):\n\nlength(y)\n\n[1] 4\n\n\nThe c() function allows you to put any data type and as many values as you wish. The only condition of a vector is that it must be the same data type.\n\n\nMatrices\nA matrix can be thought as a square or rectangular grid of data values. This grid can be constructed in any shape. Similar to vectors they must contain the same data type. The size of a matrix is usually denoted as \\(n\\times k\\), where \\(n\\) represents the number of rows and \\(k\\) represents the number of columns. To get a rough idea of how a matrix may look like, type matrix(rep(1,12),nrow=4,ncol=3)3:\n\nmatrix(rep(1,12),nrow=4,ncol=3)\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n[4,]    1    1    1\n\n\nNotice that this is a \\(4\\times 3\\) matrix. Each element in the matrix has the value 1. Now try this matrix(rbinom(12,1.5),nrow=4,ncol=3)4:\n\nmatrix(rbinom(12,1,.5),nrow=4,ncol=3)\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    0    0    1\n[4,]    0    1    1\n\n\nYour matrix may look different, but that is to be expected. Notice that some elements in a matrix are 0’s and some are 1’s. Each element in a matrix can hold any value.\nConstructing a matrix can be a bit difficult to do because the data values may need to be arranged in a certain way. Notice that I used the matrix() function to create the matrix. The examples above contain other components in the function that we will discuss later.\n\n\nArrays\nMatrices can be considered as a 2-dimensional block of numbers. An array is an n-dimensional block of numbers. While you may never need to use an array for data analysis. It may come in handy when programming by hand. To create an array, use the array() function. Below is an example of a \\(3 \\times 3 \\times 3\\) with the numbers 1, 2, and 3 representing the 3rd dimension stored in an R object called first_array5.\n\n(first_array &lt;- array(c(rep(1,9),rep(2,9),rep(3,9)),dim=c(3,3,3)))\n\n, , 1\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n\n, , 2\n\n     [,1] [,2] [,3]\n[1,]    2    2    2\n[2,]    2    2    2\n[3,]    2    2    2\n\n, , 3\n\n     [,1] [,2] [,3]\n[1,]    3    3    3\n[2,]    3    3    3\n[3,]    3    3    3\n\n\n\n\nData Frames\nData frames can be thought as the data sets that we normally see in other softwares. You can think about it as an excel spreadsheet. However, you cannot not change the values easily other than coding the changes. In a much general sense, a data frame is just a collection of labeled vectors. To get an idea of what a data frame looks like, try head(iris):\n\nhead(iris)\n\n  Sepal.Length Sepal.Width Petal.Length Petal.Width Species\n1          5.1         3.5          1.4         0.2  setosa\n2          4.9         3.0          1.4         0.2  setosa\n3          4.7         3.2          1.3         0.2  setosa\n4          4.6         3.1          1.5         0.2  setosa\n5          5.0         3.6          1.4         0.2  setosa\n6          5.4         3.9          1.7         0.4  setosa\n\n\nThe head() function just tells R to only print the top few components of the data frame.\nNow try tail(iris):\n\ntail(iris)\n\n    Sepal.Length Sepal.Width Petal.Length Petal.Width   Species\n145          6.7         3.3          5.7         2.5 virginica\n146          6.7         3.0          5.2         2.3 virginica\n147          6.3         2.5          5.0         1.9 virginica\n148          6.5         3.0          5.2         2.0 virginica\n149          6.2         3.4          5.4         2.3 virginica\n150          5.9         3.0          5.1         1.8 virginica\n\n\nThe tail() function provides the last 6 rows of the data frame.\n\n\nLists\nTo me a list is just a container that you can store practically anything. It is compiled of elements, where each element contains an R object. For example, the first element of a list may contain a data frame, the second element may contain a vector, and the third element may contain another list. It is just a way to store things.\nTo create a list, use the list() function. Create a list compiled of first element with the mtcars data set, second element with a vector of zeros of size 4, and a matrix \\(3 \\times 3\\) identity matrix6. Store the list in an object called list_one:\n\nlist_one&lt;-list(mtcars,rep(0,4),diag(rep(1,3)))\n\nType list_one to see what pops out:\n\nlist_one\n\n[[1]]\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n[[2]]\n[1] 0 0 0 0\n\n[[3]]\n     [,1] [,2] [,3]\n[1,]    1    0    0\n[2,]    0    1    0\n[3,]    0    0    1\n\n\nEach element in the list is labeled as a number. It is more useful to have the elements named. An element is named by typing the name in quotes followed by the = symbol before your object in the list() function (mtcars=mtcars).\n\nlist_one&lt;-list(mtcars=mtcars,vector=rep(0,4),identity=diag(rep(1,3)))\n\nHere I am creating an object called list_one, where the first element is mtcars labeled mtcars, the second element is a vector of zeros labeled vector and the last element is the identity matrix labeled identity.’\nNow create a new list called list_two and store list_one labeled as list_one and first_array labeled as array.\n\n(list_two&lt;-list(list_one=list_one,array=first_array))\n\n$list_one\n$list_one$mtcars\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n$list_one$vector\n[1] 0 0 0 0\n\n$list_one$identity\n     [,1] [,2] [,3]\n[1,]    1    0    0\n[2,]    0    1    0\n[3,]    0    0    1\n\n\n$array\n, , 1\n\n     [,1] [,2] [,3]\n[1,]    1    1    1\n[2,]    1    1    1\n[3,]    1    1    1\n\n, , 2\n\n     [,1] [,2] [,3]\n[1,]    2    2    2\n[2,]    2    2    2\n[3,]    2    2    2\n\n, , 3\n\n     [,1] [,2] [,3]\n[1,]    3    3    3\n[2,]    3    3    3\n[3,]    3    3    3"
   },
   {
     "objectID": "r/r_lab_0.html#footnotes",
@@ -1649,14 +1691,14 @@
     "href": "r/r_lab_2.html#normal-distribution",
     "title": "Lab 2: Optimization",
     "section": "Normal Distribution",
-    "text": "Normal Distribution\nTo begin we will simulate 250 random variables from \\(N(2,1.5)\\).\n\nx &lt;- rnorm(250, 2, sqrt(1.5))\n\nThen, we construct a function that will provide the negative log-likelihood function. We will create a function using function and set two arguments: data to specify a vector data, and params as a vector for \\(\\mu\\) and \\(\\sigma²\\). To obtain the log-likelihood values, we will use the dnorm function and set log=T. Then, we sill add up all the values and return the negative values. The code below is used to construct the function:\n\nll_norm &lt;- function(data, params){\n  ll &lt;- sum(dnorm(data, params[1], sqrt(params[2]), log = T))\n  return(-ll)\n}\n\nTo minimize the function, we will optim and provide the initial values for params [c(0,1)], then the function ll_norm, and data=x. R will minimize the function and provide output to interpret.\n\noptim(c(0,1), ll_norm, data = x)\n\n$par\n[1] 2.026886 1.544093\n\n$value\n[1] 409.0475\n\n$counts\nfunction gradient \n      75       NA \n\n$convergence\n[1] 0\n\n$message\nNULL\n\n\nThe par element provides the values for the parameters. The first value is for \\(\\mu\\) and the second value is for \\(\\sigma²\\). Notice how close it is from the true values. Notice that it is slightly off to \\(\\bar x\\) and \\((n-1)s²/n\\)."
+    "text": "Normal Distribution\nTo begin we will simulate 250 random variables from \\(N(2,1.5)\\).\n\nx &lt;- rnorm(250, 2, sqrt(1.5))\n\nThen, we construct a function that will provide the negative log-likelihood function. We will create a function using function and set two arguments: data to specify a vector data, and params as a vector for \\(\\mu\\) and \\(\\sigma²\\). To obtain the log-likelihood values, we will use the dnorm function and set log=T. Then, we sill add up all the values and return the negative values. The code below is used to construct the function:\n\nll_norm &lt;- function(data, params){\n  ll &lt;- sum(dnorm(data, params[1], sqrt(params[2]), log = T))\n  return(-ll)\n}\n\nTo minimize the function, we will optim and provide the initial values for params [c(0,1)], then the function ll_norm, and data=x. R will minimize the function and provide output to interpret.\n\noptim(c(0,1), ll_norm, data = x)\n\n$par\n[1] 2.003169 1.430080\n\n$value\n[1] 399.461\n\n$counts\nfunction gradient \n      77       NA \n\n$convergence\n[1] 0\n\n$message\nNULL\n\n\nThe par element provides the values for the parameters. The first value is for \\(\\mu\\) and the second value is for \\(\\sigma²\\). Notice how close it is from the true values. Notice that it is slightly off to \\(\\bar x\\) and \\((n-1)s²/n\\)."
   },
   {
     "objectID": "r/r_lab_2.html#uniform-distribution",
     "href": "r/r_lab_2.html#uniform-distribution",
     "title": "Lab 2: Optimization",
     "section": "Uniform Distribution",
-    "text": "Uniform Distribution\nSimulate 250 random variables from \\(U(0,3)\\).\n\nx &lt;- runif(250, max = 3)\n\nLet’s assume that we know the lower bound 0 and was interested in estimating the upper bound from the data. We will construct an R function that provides the negative log-likelihood function. We will follow similar steps to the normal distribution:\n\nll_unif &lt;- function(data, params){\n  ll &lt;- sum(dunif(data, 0, params, log = T))\n  return(-ll)\n}\n\nNow we will use optim to minimize the function. We will use the maximum of x for the initial value of the upper bound:\n\noptim(max(x), ll_unif, data = x)\n\nWarning in optim(max(x), ll_unif, data = x): one-dimensional optimization by Nelder-Mead is unreliable:\nuse \"Brent\" or optimize() directly\n\n\n$par\n[1] 2.997879\n\n$value\n[1] 274.4763\n\n$counts\nfunction gradient \n      48       NA \n\n$convergence\n[1] 0\n\n$message\nNULL\n\n\nIs this value close the maximum of the data?"
+    "text": "Uniform Distribution\nSimulate 250 random variables from \\(U(0,3)\\).\n\nx &lt;- runif(250, max = 3)\n\nLet’s assume that we know the lower bound 0 and was interested in estimating the upper bound from the data. We will construct an R function that provides the negative log-likelihood function. We will follow similar steps to the normal distribution:\n\nll_unif &lt;- function(data, params){\n  ll &lt;- sum(dunif(data, 0, params, log = T))\n  return(-ll)\n}\n\nNow we will use optim to minimize the function. We will use the maximum of x for the initial value of the upper bound:\n\noptim(max(x), ll_unif, data = x)\n\nWarning in optim(max(x), ll_unif, data = x): one-dimensional optimization by Nelder-Mead is unreliable:\nuse \"Brent\" or optimize() directly\n\n\n$par\n[1] 2.962344\n\n$value\n[1] 271.4952\n\n$counts\nfunction gradient \n      48       NA \n\n$convergence\n[1] 0\n\n$message\nNULL\n\n\nIs this value close the maximum of the data?"
   },
   {
     "objectID": "r/r_lab_2.html#questions",
@@ -1740,7 +1782,7 @@
     "href": "index.html",
     "title": "Welcome to Mathematical Statistics!",
     "section": "",
-    "text": "Brief Introduction\n\n\n\n\n\nWelcome to the course! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 6\n\n\n\n\n\nThis week focuses on statistical estimators \n\n\n\n\n\nSep 30, 2024\n\n\n\n\n\n\n\nWeek 5\n\n\n\n\n\nThis week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem. \n\n\n\n\n\nSep 23, 2024\n\n\n\n\n\n\n\nWeek 4\n\n\n\n\n\nThis week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem. \n\n\n\n\n\nSep 12, 2024\n\n\n\n\n\n\n\nWeek 3\n\n\n\n\n\nThis week, we will cover Transformations of Random Variables \n\n\n\n\n\nSep 5, 2024\n\n\n\n\n\n\n\nWeek 2\n\n\n\n\n\nThis week we will review basic concepts related to distribution functions and random variables \n\n\n\n\n\nAug 29, 2024\n\n\n\n\n\n\n\nWeek 1\n\n\n\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R. \n\n\n\n\n\nAug 22, 2024\n\n\n\n\n\n\nNo matching items"
+    "text": "Brief Introduction\n\n\n\n\n\nWelcome to the course! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 7\n\n\n\n\n\nThis week focuses on statistical estimators. \n\n\n\n\n\nOct 5, 2024\n\n\n\n\n\n\n\nWeek 6\n\n\n\n\n\nThis week focuses on statistical estimators \n\n\n\n\n\nSep 30, 2024\n\n\n\n\n\n\n\nWeek 5\n\n\n\n\n\nThis week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem. \n\n\n\n\n\nSep 23, 2024\n\n\n\n\n\n\n\nWeek 4\n\n\n\n\n\nThis week, we will review functions of random variables and introduce the idea of sampling distributions and Central Limit Theorem. \n\n\n\n\n\nSep 12, 2024\n\n\n\n\n\n\n\nWeek 3\n\n\n\n\n\nThis week, we will cover Transformations of Random Variables \n\n\n\n\n\nSep 5, 2024\n\n\n\n\n\n\n\nWeek 2\n\n\n\n\n\nThis week we will review basic concepts related to distribution functions and random variables \n\n\n\n\n\nAug 29, 2024\n\n\n\n\n\n\n\nWeek 1\n\n\n\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R. \n\n\n\n\n\nAug 22, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "hws/hw2.html",
@@ -2219,74 +2261,158 @@
     "text": "Problem\nLet \\(X_1,X_2,X_3\\) follow and exponential distribution with mean and variance \\(\\lambda\\) and \\(\\lambda²\\), respectively. Using the following estimators:\n\n\\(\\hat\\theta_1 = X_1\\)\n\\(\\hat\\theta_2 = \\frac{X_1+X_2}{2}\\)\n\\(\\hat\\theta_3 = \\frac{X_1+2X_2}{3}\\)\n\\(\\hat\\theta_4 = \\frac{X_1+X_2+X_3}{3}\\)\n\nIdentify which estimator\n\nIs unbiased?\nHas the lowest variance?"
   },
   {
-    "objectID": "lectures/5a.html#s2",
-    "href": "lectures/5a.html#s2",
-    "title": "Sampling Distributions",
-    "section": "\\(s^2\\)",
-    "text": "\\(s^2\\)"
+    "objectID": "lectures/7b.html#estimators",
+    "href": "lectures/7b.html#estimators",
+    "title": "Method of Moment Estimator",
+    "section": "Estimators",
+    "text": "Estimators\nAn estimator is an operation computing the value of an estimate, that targets the parameter, using measurements from a sample."
   },
   {
-    "objectID": "lectures/5a.html#t-distribution",
-    "href": "lectures/5a.html#t-distribution",
-    "title": "Sampling Distributions",
-    "section": "t-distribution",
-    "text": "t-distribution\nLet \\(Z\\sim N(0,1)\\), \\(W\\sim \\chi^2_\\nu\\), \\(Z\\perp W\\); therefore:\n\\[\nT=\\frac{Z}{\\sqrt{W/\\nu}} \\sim t_\\nu\n\\]"
+    "objectID": "lectures/7b.html#data",
+    "href": "lectures/7b.html#data",
+    "title": "Method of Moment Estimator",
+    "section": "Data",
+    "text": "Data\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}F(\\boldsymbol \\theta)\\) where \\(F(\\cdot)\\) is a known distribution function and \\(\\boldsymbol\\theta\\) is a vector of parameters. Let \\(\\boldsymbol X = (X_1,\\ldots, X_n)^\\mathrm{T}\\), be the sample collected."
   },
   {
-    "objectID": "lectures/5a.html#f-distribution",
-    "href": "lectures/5a.html#f-distribution",
-    "title": "Sampling Distributions",
-    "section": "F-distribution",
-    "text": "F-distribution\nLet \\(W_1\\sim\\chi^2_{\\nu_1}\\) \\(W_2\\sim\\chi^2_{\\nu_2}\\), and \\(W_1\\perp W_2\\); therefore:\n\\[\nF = \\frac{W_1/\\nu_1}{W_2/\\nu_2}\\sim F_{\\nu_1,\\nu_2}\n\\]"
+    "objectID": "lectures/7b.html#method-of-moments",
+    "href": "lectures/7b.html#method-of-moments",
+    "title": "Method of Moment Estimator",
+    "section": "Method of Moments",
+    "text": "Method of Moments\nLet the \\(k\\)th moment be defined as \\(\\mu_k\\) and the corresponding \\(k\\)th moment average \\(\\frac{1}{n}\\sum^n_{i=1}X_i^{k}\\):\n\\[\n\\mu_k = \\frac{1}{n}\\sum^n_{i=1}X_i^k.\n\\]\nThe parameter estimates are for \\(t\\) parameters are the solutions for \\(\\mu_k\\) for \\(k=1,\\ldots,t\\)."
   },
   {
-    "objectID": "lectures/5a.html#central-limit-theorem-1",
-    "href": "lectures/5a.html#central-limit-theorem-1",
-    "title": "Sampling Distributions",
-    "section": "Central Limit Theorem",
-    "text": "Central Limit Theorem\nLet \\(X_1, X_2, \\ldots, X_n\\) be identical and independent distributed random variables with \\(E(X_i)=\\mu\\) and \\(Var(X_i) = \\sigma²\\). We define\n\\[\nY_n = \\sqrt n \\left(\\frac{\\bar X-\\mu}{\\sigma}\\right) \\mathrm{ where }\\ \\bar X = x\\frac{1}{n}\\sum^n_{i=1}X_i.\n\\]\nThen, the distribution of the function \\(Y_n\\) converges to a standard normal distribution function as \\(n\\rightarrow \\infty\\)."
+    "objectID": "lectures/7b.html#bernoulli-distribution",
+    "href": "lectures/7b.html#bernoulli-distribution",
+    "title": "Method of Moment Estimator",
+    "section": "Bernoulli Distribution",
+    "text": "Bernoulli Distribution\nLet \\(X_1, \\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Bin}(n,p)\\), find the method of moments estimator for \\(p\\)."
   },
   {
-    "objectID": "lectures/5a.html#central-limit-theorem-2",
-    "href": "lectures/5a.html#central-limit-theorem-2",
-    "title": "Sampling Distributions",
-    "section": "Central Limit Theorem",
-    "text": "Central Limit Theorem\n\\[\n\\bar X \\sim N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)\n\\]"
+    "objectID": "lectures/7b.html#poisson-distribution",
+    "href": "lectures/7b.html#poisson-distribution",
+    "title": "Method of Moment Estimator",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\nLet \\(X_1, \\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Pois}(\\lambda)\\), find the method of moments estimator for \\(\\lambda\\)."
   },
   {
-    "objectID": "lectures/5a.html#example",
-    "href": "lectures/5a.html#example",
-    "title": "Sampling Distributions",
-    "section": "Example",
-    "text": "Example\nLet \\(X_1, \\ldots, X_n \\overset{iid}{\\sim} \\chi^2_p\\), the MGF is \\(M(t)=(1-2t)^{-p/2}\\). Find the distribution of \\(\\bar X\\) as \\(n \\rightarrow \\infty\\)."
+    "objectID": "lectures/7b.html#uniform-distribution",
+    "href": "lectures/7b.html#uniform-distribution",
+    "title": "Method of Moment Estimator",
+    "section": "Uniform Distribution",
+    "text": "Uniform Distribution\nLet \\(X_1, \\ldots,X_n\\overset{iid}{\\sim}U(1,\\theta)\\), find the method of moments estimator for \\(\\theta\\)."
   },
   {
-    "objectID": "lectures/5a.html#order-statistics-1",
-    "href": "lectures/5a.html#order-statistics-1",
-    "title": "Sampling Distributions",
-    "section": "Order Statistics",
-    "text": "Order Statistics\nOrder statistics are a fundamental concept in statistics and probability, dealing with the properties of sorted random variables. They provide insights into the distribution and behavior of sample data, such as minimum, maximum, and quantiles. Understanding order statistics is crucial in various fields such as risk management, quality control, and data analysis."
+    "objectID": "lectures/7b.html#gamma-distribution",
+    "href": "lectures/7b.html#gamma-distribution",
+    "title": "Method of Moment Estimator",
+    "section": "Gamma Distribution",
+    "text": "Gamma Distribution\nLet \\(X_1, \\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Gamma}(\\alpha,\\beta)\\), find the method of moments estimator for \\(\\alpha\\) and \\(\\beta\\)."
   },
   {
-    "objectID": "lectures/5a.html#order-statistics-2",
-    "href": "lectures/5a.html#order-statistics-2",
-    "title": "Sampling Distributions",
-    "section": "Order Statistics",
-    "text": "Order Statistics\nLet \\(X_1, X_2, \\ldots, X_n\\) be a sample of \\(n\\) independent and identically distributed (i.i.d.) random variables with a common probability density function \\(f(x)\\). The order statistics are the sorted values of this sample, denoted as:\n\\[\n  X_{(1)} \\leq X_{(2)} \\leq \\cdots \\leq X_{(n)}\n  \\]\nHere, \\(X_{(1)}\\) is the minimum, and \\(X_{(n)}\\) is the maximum of the sample."
+    "objectID": "lectures/7b.html#nomal-distribution",
+    "href": "lectures/7b.html#nomal-distribution",
+    "title": "Method of Moment Estimator",
+    "section": "Nomal Distribution",
+    "text": "Nomal Distribution\nLet \\(X_1, \\ldots,X_n\\overset{iid}{\\sim}N(\\mu,\\sigma^2)\\), find the method of moments estimator for \\(\\mu\\) and \\(\\sigma^2\\)."
   },
   {
-    "objectID": "lectures/5a.html#order-statistics-3",
-    "href": "lectures/5a.html#order-statistics-3",
-    "title": "Sampling Distributions",
-    "section": "Order Statistics",
-    "text": "Order Statistics\n\n\\(X_{(k)}\\): The \\(k\\)-th order statistic, representing the \\(k\\)-th smallest value in the sample.\n\\(X_{(1)}, X_{(n)}\\): The minimum and maximum of the sample, respectively."
+    "objectID": "lectures/1a.html#introductions",
+    "href": "lectures/1a.html#introductions",
+    "title": "Welcome!",
+    "section": "Introductions",
+    "text": "Introductions\n\nSan Bernardino, CA\nCSU Monterey Bay\n\nBS Biology\n\nSan Diego State University\n\nMaster’s in Public Health\n\nUC Riverside\n\nPhD in Applied Statistics"
   },
   {
-    "objectID": "lectures/5a.html#distribution-of-order-statistic",
-    "href": "lectures/5a.html#distribution-of-order-statistic",
-    "title": "Sampling Distributions",
-    "section": "Distribution of Order Statistic",
-    "text": "Distribution of Order Statistic\nThe distribution of the \\(k\\)-th order statistic \\(X_{(k)}\\) can be derived using combinatorial arguments. Its PDF is given by: \\[\n  f_{X_{(k)}}(x) = \\frac{n!}{(k-1)!(n-k)!} [F(x)]^{k-1} [1 - F(x)]^{n-k} f(x)\n  \\]\nThis formula shows how the distribution of \\(X_{(k)}\\) depends on the underlying distribution of the sample and its position \\(k\\)."
+    "objectID": "lectures/1a.html#introductions-1",
+    "href": "lectures/1a.html#introductions-1",
+    "title": "Welcome!",
+    "section": "Introductions",
+    "text": "Introductions\n\n\nName\nYear\nMajor\nFun Fact\nCareer Goal"
+  },
+  {
+    "objectID": "lectures/1a.html#learning-objectives",
+    "href": "lectures/1a.html#learning-objectives",
+    "title": "Welcome!",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nDefine and identify population, sample, parameter, and statistics\nDefine and identify different variable types (quantitative and categorical)\nDefine concept of random samples and sampling methods"
+  },
+  {
+    "objectID": "lectures/1a.html#website-and-syllabus",
+    "href": "lectures/1a.html#website-and-syllabus",
+    "title": "Welcome!",
+    "section": "Website and Syllabus",
+    "text": "Website and Syllabus"
+  },
+  {
+    "objectID": "lectures/1a.html#fundamental-of-statistics-1",
+    "href": "lectures/1a.html#fundamental-of-statistics-1",
+    "title": "Welcome!",
+    "section": "Fundamental of Statistics",
+    "text": "Fundamental of Statistics\n\nObservational Unit\nVariable\n\nTypes of Variables\n\nQuantitative\nCategorical\n\nRoles of Variables\n\nPredictors\nOutcome"
+  },
+  {
+    "objectID": "lectures/1a.html#observational-unit",
+    "href": "lectures/1a.html#observational-unit",
+    "title": "Welcome!",
+    "section": "Observational Unit",
+    "text": "Observational Unit"
+  },
+  {
+    "objectID": "lectures/1a.html#type-of-variable---quantitative",
+    "href": "lectures/1a.html#type-of-variable---quantitative",
+    "title": "Welcome!",
+    "section": "Type of Variable - Quantitative",
+    "text": "Type of Variable - Quantitative"
+  },
+  {
+    "objectID": "lectures/1a.html#type-of-variable---qualitative",
+    "href": "lectures/1a.html#type-of-variable---qualitative",
+    "title": "Welcome!",
+    "section": "Type of Variable - Qualitative",
+    "text": "Type of Variable - Qualitative"
+  },
+  {
+    "objectID": "lectures/1a.html#predictor-variables",
+    "href": "lectures/1a.html#predictor-variables",
+    "title": "Welcome!",
+    "section": "Predictor Variables",
+    "text": "Predictor Variables"
+  },
+  {
+    "objectID": "lectures/1a.html#outcomes",
+    "href": "lectures/1a.html#outcomes",
+    "title": "Welcome!",
+    "section": "Outcomes",
+    "text": "Outcomes"
+  },
+  {
+    "objectID": "lectures/1a.html#activity",
+    "href": "lectures/1a.html#activity",
+    "title": "Welcome!",
+    "section": "Activity",
+    "text": "Activity\n\nHow many Harry Potter books have you read?\nWith which hand do you write?\nHow many hours have you slept in the past 24 hours?\nHave you have slept for at least 7 hours in the past 24 hours?\nWhich college is your major in?\nHow many states have you visited?"
+  },
+  {
+    "objectID": "lectures/1a.html#activity-1",
+    "href": "lectures/1a.html#activity-1",
+    "title": "Welcome!",
+    "section": "Activity",
+    "text": "Activity\n\nWhat is the average number of Harry Potter books read by a student in this class?\nWhat percentage of students in this class are left-handed?"
+  },
+  {
+    "objectID": "lectures/1a.html#fundamental-of-statistical-inference-1",
+    "href": "lectures/1a.html#fundamental-of-statistical-inference-1",
+    "title": "Welcome!",
+    "section": "Fundamental of Statistical Inference",
+    "text": "Fundamental of Statistical Inference\n\n\n\nCategorical Variables\n\nProportions\n\np or \\(\\pi\\)\n\\(\\hat p\\)\n\n\n\n\n\nContinuous Variables\n\nMeans or Averages\n\n\\(\\mu\\)\n\\(\\hat \\mu\\) or \\(\\bar X\\)\n\nVariances\n\n\\(\\sigma^2\\)\n\\(\\hat \\sigma^2\\) or \\(s^2\\)"
+  },
+  {
+    "objectID": "lectures/1a.html#sampling-techniques-1",
+    "href": "lectures/1a.html#sampling-techniques-1",
+    "title": "Welcome!",
+    "section": "Sampling Techniques",
+    "text": "Sampling Techniques\n\nSimple Random Sampling\nStratified Sampling\nCluster Sampling\nMultistage Sampling"
   },
   {
     "objectID": "syllabus.html",

@@ -26,7 +26,6 @@ knitr::opts_chunk$set(echo = T)
 
 -   Covariance
 
-
 # Independence
 
 ## Independent Random Variables
@@ -122,7 +121,6 @@ Let $X_1,\ldots,X_n$ and $Y_1,\ldots,Y_m$ be random variables with $E(X_i)=\mu_i
 
 -   $Cov(U,V)=\sum^n_{i=1}\sum^m_{j=1}Cov(X_i,Y_j)$
 
-
 ## Expectation of Product
 
 Let $X$ and $Y$ be independent random variables with Joint Function $f_{XY}(x,y)$, then
@@ -134,7 +132,6 @@ $$
 ::: fragment
 Prove it!
 :::
-
 
 ## Conditional Expectations
 
@@ -203,11 +200,10 @@ $$
 
 Let $Z$ follow a standard normal distribution with mean 0 and variance 1. Find the distribution of $Y = Z^2$
 
-
 ## Examples
 
 Let $X_1\sim Bin(n_1,p)$ and $X_2\sim Bin(n_2, p)$. Find the distribution function of $Y=X_1 + X_2$. Assume $X_1\perp X_2$.
 
-## Examples 
+## Examples
 
 Let $X_1\sim N(\mu_1,\sigma_1^2)$ and $X_2\sim N(\mu_2,\sigma_2^2)$. Find the distribution function of $Y=X_1 + X_2$. Assume $X_1\perp X_2$.
