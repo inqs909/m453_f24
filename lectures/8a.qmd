@@ -47,28 +47,23 @@ Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameter $\the
 
 The **Factorization Theorem** provides a condition for a statistic $T(X)$ to be sufficient for a parameter $\theta$ given a probability density function or probability mass function.
 
-## Factorization Theorem 
+## Factorization Theorem
 
 Let $X = (X_1, X_2, \dots, X_n)$ be a random sample with joint probability density (or mass) function $f(x|\theta)$, where $\theta$ is a parameter.
 
-**Theorem**: 
-A statistic $T(X)$ is sufficient for $\theta$ if and only if the joint density (or mass) function $f(x|\theta)$ can be factored into the form
+**Theorem**: A statistic $T(X)$ is sufficient for $\theta$ if and only if the joint density (or mass) function $f(x|\theta)$ can be factored into the form
 
 $$
 f(x|\theta) = g(T(x), \theta) \cdot h(x)
 $$
 
-where:
-- $g(T(x), \theta)$ is a function that depends on $T(x)$ and $\theta$,
-- $h(x)$ is a function that does not depend on $\theta$.
+where: - $g(T(x), \theta)$ is a function that depends on $T(x)$ and $\theta$, - $h(x)$ is a function that does not depend on $\theta$.
 
 ## Factorization Theorem
 
 In other words, $f(x|\theta)$ can be written as a product of two functions, where only one function depends on the parameter $\theta$ and the sufficient statistic $T(X)$.
 
-**Implications**:
-The Factorization Theorem is useful for identifying sufficient statistics, which summarize all necessary information from a sample about the parameter $\theta$.
-
+**Implications**: The Factorization Theorem is useful for identifying sufficient statistics, which summarize all necessary information from a sample about the parameter $\theta$.
 
 ## Example
 
