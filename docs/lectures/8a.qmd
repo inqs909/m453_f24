@@ -2,6 +2,7 @@
 title: "Goodness of Estimators"
 format:
   revealjs:
+    scrollable: true
     navigation-mode: vertical
     controls-layout: bottom-right
     incremental: true 
