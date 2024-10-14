@@ -383,7 +383,11 @@
 <p><span class="math display">\[
 f(x|\theta) = g(T(x), \theta) \cdot h(x)
 \]</span></p>
-<p>where: - <span class="math inline">\(g(T(x), \theta)\)</span> is a function that depends on <span class="math inline">\(T(x)\)</span> and <span class="math inline">\(\theta\)</span>, - <span class="math inline">\(h(x)\)</span> is a function that does not depend on <span class="math inline">\(\theta\)</span>.</p>
+<p>where:</p>
+<ul>
+<li class="fragment"><p><span class="math inline">\(g(T(x), \theta)\)</span> is a function that depends on <span class="math inline">\(T(x)\)</span> and <span class="math inline">\(\theta\)</span>,</p></li>
+<li class="fragment"><p><span class="math inline">\(h(x)\)</span> is a function that does not depend on <span class="math inline">\(\theta\)</span>.</p></li>
+</ul>
 </section>
 <section id="factorization-theorem-2" class="slide level2">
 <h2>Factorization Theorem</h2>
@@ -393,6 +397,10 @@ f(x|\theta) = g(T(x), \theta) \cdot h(x)
 <section id="example" class="slide level2">
 <h2>Example</h2>
 <p>Let <span class="math inline">\(X_1,\ldots, X_n\overset{iid}{\sim}Bernoulli(p)\)</span> and <span class="math inline">\(Y_n=\sum^n_{i=1}X_i\)</span>. Show that <span class="math inline">\(Y_n\)</span> is a sufficient statistic for <span class="math inline">\(p\)</span>.</p>
+</section>
+<section id="example-1" class="slide level2">
+<h2>Example</h2>
+<p>Let <span class="math inline">\(X_1,\ldots, X_n\overset{iid}{\sim}Normal(\mu,\sigma^2)\)</span> and <span class="math inline">\(Y_n=\sum^n_{i=1}X_i\)</span>. Show that <span class="math inline">\(Y_n\)</span> is a sufficient statistic for <span class="math inline">\(\mu\)</span>. Assume <span class="math inline">\(\sigma^2\)</span> is known.</p>
 </section></section>
 <section>
 <section id="information" class="title-slide slide level1 center">
@@ -441,7 +449,7 @@ E\left[-\frac{\partial^2}{\partial\theta^2}\log\{f(X;\theta)\}\right] = Var\left
 efficiency\ of\ T = \frac{1}{Var(T)nI(\theta)}
 \]</span></p>
 </section>
-<section id="example-1" class="slide level2">
+<section id="example-2" class="slide level2">
 <h2>Example</h2>
 <p>Let <span class="math inline">\(X_1,\ldots, X_n\overset{iid}{\sim}Unif(0,\theta)\)</span> and <span class="math inline">\(\hat\theta=2\bar X\)</span>. Find the efficiency of <span class="math inline">\(\hat \theta\)</span>.</p>
 

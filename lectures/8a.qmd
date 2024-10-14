@@ -57,7 +57,11 @@ $$
 f(x|\theta) = g(T(x), \theta) \cdot h(x)
 $$
 
-where: - $g(T(x), \theta)$ is a function that depends on $T(x)$ and $\theta$, - $h(x)$ is a function that does not depend on $\theta$.
+where:
+
+-   $g(T(x), \theta)$ is a function that depends on $T(x)$ and $\theta$,
+
+-   $h(x)$ is a function that does not depend on $\theta$.
 
 ## Factorization Theorem
 
@@ -68,6 +72,10 @@ In other words, $f(x|\theta)$ can be written as a product of two functions, wher
 ## Example
 
 Let $X_1,\ldots, X_n\overset{iid}{\sim}Bernoulli(p)$ and $Y_n=\sum^n_{i=1}X_i$. Show that $Y_n$ is a sufficient statistic for $p$.
+
+## Example
+
+Let $X_1,\ldots, X_n\overset{iid}{\sim}Normal(\mu,\sigma^2)$ and $Y_n=\sum^n_{i=1}X_i$. Show that $Y_n$ is a sufficient statistic for $\mu$. Assume $\sigma^2$ is known.
 
 # Information
 

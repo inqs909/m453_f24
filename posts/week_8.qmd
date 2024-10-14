@@ -1,10 +1,10 @@
 ---
 title: "Week 8"
-date: 10-10-24
+date: 10-13-24
 description: |
   This week, we will evaluate the goodness of point estimators and confidence intervals.
 editor: visual
-draft: true
+draft: false
 ---
 
 ## Learning Outcomes
@@ -20,17 +20,6 @@ draft: true
 
 -   Relative Efficiency
 -   Consisteny
-
-## Reading
-
-| Day                 | Reading          |
-|---------------------|------------------|
-| Monday's Lecture    | MMS: 7.1,7.3,7.4 |
-| Wednesday's Lecture | MMS: 8.1         |
-
-## Homework
-
-HW 5 can be found. It is due October 21 at 11:59 PM.
 
 ## Important Concepts
 
@@ -89,7 +78,7 @@ You must log on to your CI Google account to access the video.
 
 Press the "b" key to access hidden notes.
 
-| Lecture   | Slides                                                             | Videos                                |
+| Lecture   | Slides                                                             | Videos |
 |------------------|-----------------------------------|-------------------|
-| Monday    | [Slides](https://m453.inqs.info/files/Lecture_11_class/index.html) | [Video](https://youtu.be/kDcHunqn60s) |
-| Wednesday | [Slides](https://m453.inqs.info/files/Lecture_12_class/index.html) | [Video](https://youtu.be/q89hlaDR6ik) |
+| Monday    | [Slides](https://m453.inqs.info/lectures/8a#/title-slide)          |        |
+| Wednesday | [Slides](https://m453.inqs.info/files/Lecture_12_class/index.html) |        |
