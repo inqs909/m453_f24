@@ -11,5 +11,5 @@ draft: false
 
 | Lecture   | Slides                                                             | Videos                                |
 |-------------------|----------------------------------|-------------------|
-| Monday    | [Notes]() | [Video](https://youtu.be/GebIPvhJ7Jw) |
-| Wednesday | [Notes]() | [Video]() |
+| Monday    | [Notes](files/m453-10-21.pdf) | [Video](https://youtu.be/GebIPvhJ7Jw) |
+| Wednesday | [Notes](files/m453-10-23.pdf) | [Video](https://youtu.be/65XMA-dqsY0) |

@@ -9,15 +9,6 @@
     ]
   },
   {
-    "listing": "/hw.html",
-    "items": [
-      "/hws/hw4.html",
-      "/hws/hw3.html",
-      "/hws/hw2.html",
-      "/hws/hw1.html"
-    ]
-  },
-  {
     "listing": "/ec.html",
     "items": [
       "/exc/exc1.html",
@@ -27,8 +18,18 @@
     ]
   },
   {
+    "listing": "/hw.html",
+    "items": [
+      "/hws/hw4.html",
+      "/hws/hw3.html",
+      "/hws/hw2.html",
+      "/hws/hw1.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
+      "/posts/week_10.html",
       "/posts/week_9.html",
       "/posts/week_8.html",
       "/posts/week_7.html",
