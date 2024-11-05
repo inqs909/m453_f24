@@ -1,0 +1,15 @@
+---
+title: "Week 11"
+date: 11-02-24
+description: |
+  We will continue learning about statistical intervals.
+editor: source
+draft: false
+---
+
+## Resources
+
+| Lecture   | Slides                                                             | Videos                                |
+|-------------------|----------------------------------|-------------------|
+| Monday    | [Notes]() | [Video](https://youtu.be/dH6vdxo6Es0?feature=shared) |
+| Wednesday | [Notes]() | [Video]() |
