@@ -376,8 +376,7 @@ Number of Fisher Scoring iterations: 5</code></pre>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>mglm <span class="ot">&lt;-</span> <span class="fu">vglm</span>(<span class="fu">factor</span>(prog) <span class="sc">~</span> <span class="fu">factor</span>(ses) <span class="sc">+</span> write, <span class="at">data =</span> ml, <span class="at">family =</span> <span class="fu">multinomial</span>(<span class="at">refLevel =</span> <span class="st">"2"</span>))</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mglm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
+<pre><code>Call:
 vglm(formula = factor(prog) ~ factor(ses) + write, family = multinomial(refLevel = "2"), 
     data = ml)
 
@@ -426,8 +425,7 @@ Reference group is level  2  of the response</code></pre>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>oglm <span class="ot">&lt;-</span> <span class="fu">vglm</span>(apply<span class="sc">~</span>pared<span class="sc">+</span>public<span class="sc">+</span>gpa, <span class="at">data =</span> dat, <span class="at">family =</span> propodds)</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(oglm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
+<pre><code>Call:
 vglm(formula = apply ~ pared + public + gpa, family = propodds, 
     data = dat)
 

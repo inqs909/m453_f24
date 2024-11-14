@@ -1,8 +1,8 @@
 ---
-title: "Week 11"
-date: 11-02-24
+title: "Week 12"
+date: 11-11-24
 description: |
-  We will continue learning about statistical intervals.
+  We will begin hypothesis testing.
 editor: source
 draft: false
 ---
@@ -11,4 +11,4 @@ draft: false
 
 | Lecture   | Slides                                                             | Videos                                |
 |-------------------|----------------------------------|-------------------|
-| Monday    | [Notes](files/m453-11-04.pdf) | [Video](https://youtu.be/dH6vdxo6Es0?feature=shared) |
+| Wednesday    | [Notes](files/m453-11-13.pdf) | [Video](https://youtu.be/Xj8aGd6JUnw) |
