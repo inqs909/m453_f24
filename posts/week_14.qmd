@@ -1,58 +1,96 @@
 ---
 title: "Week 14"
-date: 11-15-24
-description: |
-  We will discuss Linear Regression.
-editor: source
-draft: true
+date: 11-21-24
+description: We will discuss essential concepts to hypothesis testing.
+editor: visual
+draft: false
 ---
 
 ## Learning Outcomes
 
 ### Monday
 
--   Simple Linear Regression
--   Ordinary Least Squares
--   Standard Errors
--   Unbiasedness
--   R Code
+-   Type I and Type II Errors
+-   Power of Tests
+-   Neyman-Pearson Lemma
 
 ### Wednesday
 
--   Matrix Notation
--   Multiple Linear Regression
--   Standard Errors
--   R Code
+-   Likelihood Ratio Test
 
 ## Important Concepts
 
-### Simple Linear Regression
+### Type I and II Errors
 
-#### Model
+With hypothesis testing, we are testing to either reject or fail to reject the $H_0$. We usually choose a significance value of $\alpha$ to determine how we will make our decision. In this case, $\alpha$ represents the probability that we reject $H_0$ given that $H_0$ is true ($P(Reject\ H_0| H_0\ true)$). If we reject $H_0$, given that it is true, we are committing Type I error. Generally speaking, we control Type I error by selecting a small $\alpha$
 
-#### Ordinary Least Squares
+Type II error is the opposite case, where we fail to reject $H_0$, given it is false. Similar to type I error, a hypothesis test will have a probability ($P(Fail\ to\ reject\ H_0|H_0\ False)$).
 
-#### Standard Error
+### Power of Tests
 
-#### Unbiasedness
+#### Power
 
-### Multiple Linear Regression
+The power of a test is the probability of rejecting $H_0$ when the true parameter is $\theta$.
 
-#### Model
+$$
+\mathrm{power}(\theta) = \mathrm P(\mathrm{Reject}\ H_0\ \mathrm{when}\ \theta\ \mathrm{is true}) 
+$$
 
-#### Matrix Notation
+#### Power and Type II Error
 
-#### Standard Errors
+$$
+\beta = 1 - \mathrm{power}(\theta_a)
+$$
 
-### R Code
+# 
+
+### Neyman-Pearson Lemma
+
+Suppose you test the simple null hypothesis ($H_0: \theta=\theta_0$) vs a simple alternative hypothesis ($H_a: \theta=\theta_1$), based on a random sample with parameter $\theta$. Let $L(\theta)$ denote the likelihood function of the sample with parameter $\theta$. Then for a given $\alpha$, the test that maximizes the power at $\theta_1$ has a rejection region determined by $$
+\frac{L(\theta_0)}{L(\theta_1)}<k
+$$The value of $k$ is chosen so that the test has the desired value for $\alpha$. such a test is most powerful $\alpha$-level test for $H_0$ vs $H_a$
+
+### Likelihood Ratio Test
+
+The likelihood ratio test is used when you cannot find a uniformly most powerful test for a given set of hypothesis. This will yield a very good test that is decently powerful.
+
+#### Hypothesis
+
+::: columns
+::: {.column width="40%"}
+$H_0:\ \theta\in\Theta_0$
+:::
+
+::: {.column width="40%"}
+$H_a:\ \theta\in\Theta_a$
+:::
+:::
+
+-   $\Theta = \Theta_0\cup\Theta_a$
+
+-   $\Theta$ is the parameters space
+
+#### Test Statistic
+
+$$
+\Lambda = \frac{L(\hat\theta_0)}{L(\hat\theta)}=\frac{f(x_1,\ldots,x_n;\hat\theta_0)}{f(x_1,\ldots,x_n;\hat\theta)}
+$$
+
+-   $\hat\theta_0=\underset{\theta\in\Theta_0}{\arg\max}\ L(\theta)$
+
+-   $\hat\theta=\underset{\theta\in\Theta}{\arg\max}\ L(\theta)$: MLE
+
+#### Decision
+
+Reject $H_0$ if $\Lambda\le k$
 
 ## Resources
 
-You must log on to your CI Google account to access the video.
 
 Press the "b" key to access hidden notes.
 
-| Lecture   | Slides                                                             | Videos |
-|---------------|-------------------------------------------|---------------|
-| Monday    | [Slides](https://m453.inqs.info/files/Lecture_17_class/index.html) |        |
-| Wednesday |                                                                    |        |
+| Lecture   | Slides                                                             | Videos                                |
+|-------------------|----------------------------------|-------------------|
+| Monday    | [Slides](https://m453.inqs.info/files/Lecture_15_class/index.html) | [Video](https://youtu.be/U42gpCH47Ns) |
+| Wednesday | [Slides](https://m453.inqs.info/files/Lecture_16_class/index.html) | [Video](https://youtu.be/xfrmVYdNuqU) |
+
