@@ -86,11 +86,9 @@ Reject $H_0$ if $\Lambda\le k$
 
 ## Resources
 
-
 Press the "b" key to access hidden notes.
 
 | Lecture   | Slides                                                             | Videos                                |
-|-------------------|----------------------------------|-------------------|
+|-----------|--------------------------------------------------------------------|---------------------------------------|
 | Monday    | [Slides](https://m453.inqs.info/files/Lecture_15_class/index.html) | [Video](https://youtu.be/U42gpCH47Ns) |
 | Wednesday | [Slides](https://m453.inqs.info/files/Lecture_16_class/index.html) | [Video](https://youtu.be/xfrmVYdNuqU) |
-
