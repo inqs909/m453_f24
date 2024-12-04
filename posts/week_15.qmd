@@ -18,7 +18,7 @@ draft: false
 
 ## Resources
 
-| Lecture   | Slides                                                             | Videos |
-|-------------------|----------------------------------|-------------------|
-| Monday    | [Slides](https://m453.inqs.info/lectures/15a)                      |        |
-| Wednesday | [Slides](https://m453.inqs.info/files/Lecture_16_class/index.html) |        |
+| Lecture   | Slides                                        | Videos |
+|-----------|-----------------------------------------------|--------|
+| Monday    | [Slides](https://m453.inqs.info/lectures/15a) |        |
+| Wednesday | [Slides](https://m453.inqs.info/lectures/15b) |        |
